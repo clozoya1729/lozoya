@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h2>{{ chapterTitle }}</h2>
+{% for paragraph in chapterAbstract %}
+<p>{{ paragraph }}</p>
+{% endfor %}
+{% for section in chapterSections %}
+{% if chapterSections[section]['displayTitle'] %}
+<h3>{{ section }}</h3>
+{% endif %}
+{% for paragraph in chapterSections[section]['abstract'] %}
+<p>{{ paragraph }}</p>
+{% endfor %}
+{% for subSection in chapterSections[section]['subSections'] %}
+<div class="{{
+            chapterSections[section]['subSections'][subSection]['column']
+            }}">
+    {% if chapterSections[section]['subSections'][subSection]['hide'] == False %}
+    {% if chapterSections[section]['subSections'][subSection]['displayTitle'] %}
+    <h4>{{ subSection }}</h4>
+    {% endif %}
+    {% for figure in chapterSections[section]['subSections'][subSection]['preFigures'] %}
+    {% if chapterSections[section]['subSections'][subSection]['preFigures'][figure]['image'] %}
+    <p><br><br></p>
+    <p>
+        <img
+                src="{{
+                                    chapterSections[section]['subSections'][subSection]['preFigures'][figure]['image']
+                                    }}"
+                class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}Image">
+    </p>
+    <p class="ImageCaption">
+        {% for paragraph in
+        chapterSections[section]['subSections'][subSection]['preFigures'][figure]['caption'] %}
+        {{ paragraph }}
+        {% endfor %}
+    </p>
+    {% endif %}
+    {% endfor %}
+    {% for paragraph in chapterSections[section]['subSections'][subSection]['preText'] %}
+    <p class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}P">
+        {{ paragraph }}
+    </p>
+    {% endfor %}
+    {% for figure in chapterSections[section]['subSections'][subSection]['postFigures'] %}
+    {% if chapterSections[section]['subSections'][subSection]['postFigures'][figure]['image'] %}
+    <p><br><br></p>
+    <p>
+        <img
+                src="{{
+                                    chapterSections[section]['subSections'][subSection]['postFigures'][figure]['image']
+                                    }}"
+                class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}Image">
+    </p>
+    <p class="ImageCaption">
+        {% for paragraph in
+        chapterSections[section]['subSections'][subSection]['postFigures'][figure]['caption'] %}
+        {{ paragraph }}
+        {% endfor %}
+    </p>
+    {% endif %}
+    {% endfor %}
+    <p><br><br></p>
+    {% for paragraph in chapterSections[section]['subSections'][subSection]['postText'] %}
+    <p class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}P">
+        {{ paragraph }}
+    </p>
+    {% endfor %}
+    {% if loop.index == subSection.__len__()
+    or chapterSections[section]['subSections'][subSection]['breakAfter'] %}
+    {% if chapterSections[section]['subSections'][subSection]['column']=='RightColumn'
+    or chapterSections[section]['subSections'][subSection]['column']=='CenterColumn' %}
+    <p class="PageNumber">
+        {{
+        chapterSections[section]['subSections'][subSection]['pageNumber']
+        }}
+    </p>
+    {% endif %}
+    <p class="PageBreak"></p>
+    <p class="PageBreak"></p>
+    {% endif %}
+    {% endif %}
+</div>
+{% endfor %}
+{% if loop.index == sections.__len__() or chapterSections[section]['breakAfter']==True %}
+<p class="PageBreak"></p>
+{% endif %}
+{% endfor %}
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h2>{{ chapterTitle }}</h2>
+{% for paragraph in chapterAbstract %}
+<p>{{ paragraph }}</p>
+{% endfor %}
+{% for section in chapterSections %}
+{% if chapterSections[section]['displayTitle'] %}
+<h3>{{ section }}</h3>
+{% endif %}
+{% for paragraph in chapterSections[section]['abstract'] %}
+<p>{{ paragraph }}</p>
+{% endfor %}
+{% for subSection in chapterSections[section]['subSections'] %}
+{% if chapterSections[section]['subSections'][subSection]['hide'] == False %}
+{% if chapterSections[section]['subSections'][subSection]['displayTitle'] %}
+<h4>{{ subSection }}</h4>
+{% endif %}
+{% for paragraph in chapterSections[section]['subSections'][subSection]['preText'] %}
+<p>{{ paragraph }}</p>
+{% endfor %}
+{% for figure in chapterSections[section]['subSections'][subSection]['figures'] %}
+<p><br><br></p>
+<p>
+    <img
+            src="{{
+                            chapterSections[section]['subSections'][subSection]['figures'][figure]['image']
+                            }}"
+            class="Image">
+</p>
+<p class="ImageCaption">
+    {% for paragraph in chapterSections[section]['subSections'][subSection]['figures'][figure]['caption'] %}
+    {{ paragraph }}
+</p>
+{% endfor %}
+{% endfor %}
+<p><br><br></p>
+{% for paragraph in chapterSections[section]['subSections'][subSection]['postText'] %}
+<p>{{ paragraph }}</p>
+{% endfor %}
+{% if loop.index != subSection.__len__()
+and chapterSections[section]['subSections'][subSection]['breakAfter']%}
+<p style="page-break-after: always"></p>
+{% endif %}
+{% endif %}
+{% endfor %}
+{% if loop.index != sections.__len__() and chapterSections[section]['breakAfter']%}
+<p style="page-break-after: always"></p>
+{% endif %}
+{% endfor %}
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h2>{{ chapterTitle }}</h2>
+{% for paragraph in chapterAbstract %}
+<p>{{ paragraph }}</p>
+{% endfor %}
+{% for section in chapterSections %}
+{% if chapterSections[section]['displayTitle'] %}
+<h3>{{ section }}</h3>
+{% endif %}
+{% for paragraph in chapterSections[section]['abstract'] %}
+<p>{{ paragraph }}</p>
+{% endfor %}
+{% for subSection in chapterSections[section]['subSections'] %}
+<div class="{{
+            chapterSections[section]['subSections'][subSection]['column']
+            }}">
+    {% if chapterSections[section]['subSections'][subSection]['hide'] == False %}
+    {% if chapterSections[section]['subSections'][subSection]['displayTitle'] %}
+    <h4>{{ subSection }}</h4>
+    {% endif %}
+    {% for paragraph in chapterSections[section]['subSections'][subSection]['preText'] %}
+    <p class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}P">
+        {{ paragraph }}
+    </p>
+    {% endfor %}
+    {% for figure in chapterSections[section]['subSections'][subSection]['figures'] %}
+    <p><br><br></p>
+    <p>
+        <img
+                src="{{
+                                chapterSections[section]['subSections'][subSection]['figures'][figure]['image']
+                                }}"
+                class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}Image">
+    </p>
+    <p class="ImageCaption">
+        {% for paragraph in
+        chapterSections[section]['subSections'][subSection]['figures'][figure]['caption'] %}
+        {{ paragraph }}
+        {% endfor %}
+    </p>
+    {% endfor %}
+    <p><br><br></p>
+    {% for paragraph in chapterSections[section]['subSections'][subSection]['postText'] %}
+    <p class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}P">
+        {{ paragraph }}
+    </p>
+    {% endfor %}
+    {% if loop.index == subSection.__len__()
+    or chapterSections[section]['subSections'][subSection]['breakAfter']==True %}
+    <p class="PageNumber">
+        {% if chapterSections[section]['subSections'][subSection]['column']=='RightColumn'
+        or chapterSections[section]['subSections'][subSection]['column']=='CenterColumn' %}
+        {{
+        chapterSections[section]['subSections'][subSection]['pageNumber']
+        }}
+        {% endif %}
+    </p>
+    <p class="PageNumber"></p>
+    {% endif %}
+    {% endif %}
+</div>
+{% endfor %}
+{% if loop.index == sections.__len__() or chapterSections[section]['breakAfter']==True %}
+<p class="PageNumber"></p>
+<p class="PageNumber"></p>
+{% endif %}
+{% endfor %}
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <link rel="stylesheet" type="text/css" href="ReportCSS.css">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+<p class="PageBreak"></p>
+<div id="{{ chapterTitle | replace(' ', '') }}">
+    <h2 id="{{ chapterTitle | replace(' ', '') }}">{{ chapterTitle }}</h2>
+
+    {% for paragraph in chapterAbstract %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+
+    {% for section in chapterSections %}
+
+    {% if chapterSections[section]['displayTitle'] %}
+    <h3 id="{{ chapterTitle+'.'+ section | replace(' ', '') }}">{{ section }}</h3>
+    {% endif %}
+
+    {% for paragraph in chapterSections[section]['abstract'] %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+
+    {% for subSection in chapterSections[section]['subSections'] %}
+
+    <div class="{{
+            chapterSections[section]['subSections'][subSection]['column']
+            }}">
+        {% if chapterSections[section]['subSections'][subSection]['hide'] == False %}
+        {% if chapterSections[section]['subSections'][subSection]['displayTitle'] %}
+        <h4 id="{{ chapterTitle+'.'+section+'.'+subSection | replace(' ', '') }}">{{ subSection }}</h4>
+        {% endif %}
+
+        {% for figure in chapterSections[section]['subSections'][subSection]['preFigures'] %}
+        {% if chapterSections[section]['subSections'][subSection]['preFigures'][figure]['image'] %}
+        <p><br><br></p>
+        <p>
+            <img
+                    src="{{
+                                    chapterSections[section]['subSections'][subSection]['preFigures'][figure]['image']
+                                    }}"
+                    class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}Image">
+        </p>
+        <p class="ImageCaption">
+            {% for paragraph in
+            chapterSections[section]['subSections'][subSection]['preFigures'][figure]['caption'] %}
+            {{ paragraph }}
+            {% endfor %}
+        </p>
+        {% endif %}
+        {% endfor %}
+
+        {% for paragraph in chapterSections[section]['subSections'][subSection]['preText'] %}
+        <p class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}P">
+            {{ paragraph }}
+        </p>
+        {% endfor %}
+
+        {% for figure in chapterSections[section]['subSections'][subSection]['postFigures'] %}
+        {% if chapterSections[section]['subSections'][subSection]['postFigures'][figure]['image'] %}
+        <p><br><br></p>
+        <p class="ImageCaption">
+            {% for paragraph in
+            chapterSections[section]['subSections'][subSection]['postFigures'][figure]['caption'] %}
+            {{ paragraph }}
+            {% endfor %}
+        </p>
+
+        <p>
+            <img
+                    src="{{
+                                    chapterSections[section]['subSections'][subSection]['postFigures'][figure]['image']
+                                    }}"
+                    class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}Image">
+        </p>
+
+        {% endif %}
+        {% endfor %}
+
+        <p><br><br></p>
+
+        {% for paragraph in chapterSections[section]['subSections'][subSection]['postText'] %}
+        <p class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}P">
+            {{ paragraph }}
+        </p>
+        {% endfor %}
+
+        {% if loop.index == subSection.__len__()
+        or chapterSections[section]['subSections'][subSection]['breakAfter'] %}
+        {% if chapterSections[section]['subSections'][subSection]['column']=='RightColumn'
+        or chapterSections[section]['subSections'][subSection]['column']=='CenterColumn' %}
+        <p class="PageNumber">
+            {{
+            chapterSections[section]['subSections'][subSection]['pageNumber']
+            }}
+        </p>
+        {% endif %}
+        <p class="PageBreak"></p>
+        <p class="PageBreak"></p>
+
+        {% endif %}
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    {% if loop.index == sections.__len__() or chapterSections[section]['breakAfter']==True %}
+    <p class="PageBreak"></p>
+    {% endif %}
+
+    {% endfor %}
+</div>
+<p class="PageBreak"></p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+<div id="{{ chapterTitle | replace(' ', '') }}">
+    <h2 id="{{ chapterTitle | replace(' ', '') }}">{{ chapterTitle }}</h2>
+    {% for paragraph in chapterAbstract %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+    {% for section in chapterSections %}
+    <div class="jumbotron">
+        <h3 id="{{ chapterTitle+'.'+ section | replace(' ', '') }}">{{ section }}</h3>
+        {% for paragraph in chapterSections[section]['abstract'] %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+        {% for subSection in chapterSections[section]['subSections'] %}
+        <h4 id="{{ chapterTitle+'.'+section+'.'+subSection | replace(' ', '') }}">{{ subSection }}</h4>
+        {% for figure in chapterSections[section]['subSections'][subSection]['preFigures'] %}
+        {% if chapterSections[section]['subSections'][subSection]['preFigures'][figure]['image'] %}
+        <img src="{{chapterSections[section]['subSections'][subSection]['preFigures'][figure]['image']}}">
+        <p class="ImageCaption">
+            {% for paragraph in
+            chapterSections[section]['subSections'][subSection]['preFigures'][figure]['caption'] %}
+            {{ paragraph }}
+            {% endfor %}
+        </p>
+        {% endif %}
+        {% endfor %}
+        {% for paragraph in chapterSections[section]['subSections'][subSection]['preText'] %}
+        <p> {{ paragraph }} </p>
+        {% endfor %}
+        {% for figure in chapterSections[section]['subSections'][subSection]['postFigures'] %}
+        {% if chapterSections[section]['subSections'][subSection]['postFigures'][figure]['image'] %}
+        <p class="ImageCaption">
+            {% for paragraph in
+            chapterSections[section]['subSections'][subSection]['postFigures'][figure]['caption'] %}
+            {{ paragraph }}
+            {% endfor %}
+        </p>
+        <p><img src="{{chapterSections[section]['subSections'][subSection]['postFigures'][figure]['image']}}"></p>
+        {% endif %}
+        {% endfor %}
+        {% for paragraph in chapterSections[section]['subSections'][subSection]['postText'] %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}
+{% endfor %}
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+<div id="{{ chapterTitle | replace(' ', '') }}">
+    <h2 id="{{ chapterTitle | replace(' ', '') }}">{{ chapterTitle }}</h2>
+
+    {% for paragraph in chapterAbstract %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+
+    {% for section in chapterSections %}
+
+    {% if chapterSections[section]['displayTitle'] %}
+    <h3 id="{{ chapterTitle+'.'+ section | replace(' ', '') }}">{{ section }}</h3>
+    {% endif %}
+
+    {% for paragraph in chapterSections[section]['abstract'] %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+
+    {% for subSection in chapterSections[section]['subSections'] %}
+
+    <div class="{{
+            chapterSections[section]['subSections'][subSection]['column']
+            }}">
+        {% if chapterSections[section]['subSections'][subSection]['hide'] == False %}
+        {% if chapterSections[section]['subSections'][subSection]['displayTitle'] %}
+        <h4 id="{{ chapterTitle+'.'+section+'.'+subSection | replace(' ', '') }}">{{ subSection }}</h4>
+        {% endif %}
+
+        {% for figure in chapterSections[section]['subSections'][subSection]['preFigures'] %}
+        {% if chapterSections[section]['subSections'][subSection]['preFigures'][figure]['image'] %}
+        <p><br><br></p>
+        <p>
+            <img
+                    src="{{
+                                    chapterSections[section]['subSections'][subSection]['preFigures'][figure]['image']
+                                    }}"
+                    class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}Image">
+        </p>
+        <p class="ImageCaption">
+            {% for paragraph in
+            chapterSections[section]['subSections'][subSection]['preFigures'][figure]['caption'] %}
+            {{ paragraph }}
+            {% endfor %}
+        </p>
+        {% endif %}
+        {% endfor %}
+
+        {% for paragraph in chapterSections[section]['subSections'][subSection]['preText'] %}
+        <p class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}P">
+            {{ paragraph }}
+        </p>
+        {% endfor %}
+
+        {% for figure in chapterSections[section]['subSections'][subSection]['postFigures'] %}
+        {% if chapterSections[section]['subSections'][subSection]['postFigures'][figure]['image'] %}
+        <p><br><br></p>
+        <p class="ImageCaption">
+            {% for paragraph in
+            chapterSections[section]['subSections'][subSection]['postFigures'][figure]['caption'] %}
+            {{ paragraph }}
+            {% endfor %}
+        </p>
+
+        <p>
+            <img
+                    src="{{
+                                    chapterSections[section]['subSections'][subSection]['postFigures'][figure]['image']
+                                    }}"
+                    class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}Image">
+        </p>
+
+        {% endif %}
+        {% endfor %}
+
+        <p><br><br></p>
+
+        {% for paragraph in chapterSections[section]['subSections'][subSection]['postText'] %}
+        <p class="{{chapterSections[section]['subSections'][subSection]['column'][:-6]}}P">
+            {{ paragraph }}
+        </p>
+        {% endfor %}
+        {% endif %}
+    </div>
+    {% endfor %}
+    {% endfor %}
+</div>
+</body>
+</html>

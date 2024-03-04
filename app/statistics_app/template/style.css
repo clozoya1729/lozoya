@@ -1,0 +1,742 @@
+.wrapper {
+}
+
+.LeftColumn {
+    float: left;
+    width: 50%;
+}
+
+.RightColumn {
+    float: right;
+    width: 50%;
+}
+
+.CenterColumn {
+}
+
+.wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.chapter, div.appendix {
+    page-break-after: always;
+}
+
+div.titlepage {
+    page: blank;
+}
+
+.functionString {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 25%;
+}
+
+h1, h2, h3, h4, pre, p, ImageCaption {
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28pt;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24pt;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18pt;
+}
+
+h4 {
+    text-align: center;
+    font-size: 14pt;
+}
+
+p, pre {
+    font-size: 12pt;
+    text-align: justify;
+    margin: 0 auto;
+    width: 49em;
+    /*padding: 10px;*/
+    line-height: 1.5;
+    text-indent: 2.0em;
+}
+
+.LeftP, .RightP {
+    width: 30em;
+}
+
+.CenterP {
+    /*width: 49em;*/
+    width: 60em;
+}
+
+.LeftImage, .RightImage {
+    padding-right: 20px;
+    margin-left: -20px;
+}
+
+.LeftP {
+    padding-right: 25px;
+}
+
+.RightP {
+    padding-left: 25px;
+}
+
+.LeftImage, .CenterImage, .RightImage {
+    width: 20em;
+    height: 20em;
+}
+
+.CenterImage {
+    padding-left: 100px;
+}
+
+@page {
+    size: 8.5in 11in;
+    /*margin: 1in 1in 1in 1in;*/
+    margin: 0.75in 0.75in 0.75in 0.75in;
+}
+
+
+.ImageCaption {
+    font-size: 10pt;
+}
+
+var {
+    font-weight: bold;
+}
+
+
+.PageBreak {
+    page-break-after: always
+}
+
+.PageNumber {
+
+}
+
+.wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.functionString {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 25%;
+}
+
+h1, h2, h3, h4, pre, p, ImageCaption {
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28pt;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24pt;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18pt;
+}
+
+h4 {
+    text-align: center;
+    font-size: 14pt;
+}
+
+.ImageCaption {
+    font-size: 10pt;
+}
+
+var {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-color: darkcyan;
+}
+
+.wrapper {
+}
+
+.LeftColumn {
+    float: left;
+    width: 50%;
+}
+
+.RightColumn {
+    float: right;
+    width: 50%;
+}
+
+.CenterColumn {
+}
+
+.wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.chapter, div.appendix {
+    page-break-after: always;
+}
+
+div.titlepage {
+    page: blank;
+}
+
+.functionString {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 25%;
+}
+
+h1, h2, h3, h4, pre, p, ImageCaption {
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28pt;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24pt;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18pt;
+}
+
+h4 {
+    text-align: center;
+    font-size: 14pt;
+}
+
+.LeftP, .RightP {
+    width: 30em;
+}
+
+.CenterP {
+    /*width: 49em;*/
+    width: 60em;
+}
+
+.LeftImage, .RightImage {
+    padding-right: 20px;
+    margin-left: -20px;
+}
+
+.LeftP {
+    padding-right: 25px;
+}
+
+.RightP {
+    padding-left: 25px;
+}
+
+.LeftImage, .CenterImage, .RightImage {
+    width: 20em;
+    height: 20em;
+}
+
+.CenterImage {
+    padding-left: 100px;
+}
+
+@page {
+    size: 8.5in 11in;
+    /*margin: 1in 1in 1in 1in;*/
+    margin: 1in 1in 1in 1in;
+}
+
+
+.ImageCaption {
+    font-size: 10pt;
+}
+
+var {
+    font-weight: bold;
+}
+
+
+.PageBreak {
+    page-break-after: always
+}
+
+.PageNumber {
+
+}
+
+.wrapper {
+}
+
+.LeftColumn {
+    float: left;
+    width: 50%;
+}
+
+.RightColumn {
+    float: right;
+    width: 50%;
+}
+
+.CenterColumn {
+}
+
+.wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.chapter, div.appendix {
+    page-break-after: always;
+}
+
+div.titlepage {
+    page: blank;
+}
+
+.functionString {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 25%;
+}
+
+h1, h2, h3, h4, pre, p, ImageCaption {
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28pt;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24pt;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18pt;
+}
+
+h4 {
+    text-align: center;
+    font-size: 14pt;
+}
+
+.LeftP, .RightP {
+    width: 30em;
+}
+
+.CenterP {
+    /*width: 49em;*/
+    width: 60em;
+}
+
+.LeftImage, .RightImage {
+    padding-right: 20px;
+    margin-left: -20px;
+}
+
+.LeftP {
+    padding-right: 25px;
+}
+
+.RightP {
+    padding-left: 25px;
+}
+
+.LeftImage, .CenterImage, .RightImage {
+    width: 20em;
+    height: 20em;
+}
+
+.CenterImage {
+    padding-left: 100px;
+}
+
+@page {
+    size: 8.5in 11in;
+    margin: 1in 1in 1in 1in;
+    counter-increment: page;
+
+    @bottom-right {
+        content: "Page " counter(page);
+    }
+}
+
+
+.ImageCaption {
+    font-size: 10pt;
+}
+
+var {
+    font-weight: bold;
+}
+
+
+.PageBreak {
+    page-break-after: always
+}
+
+
+.PageBreak:after {
+
+}
+
+/* style */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+
+:root {
+    font-size: 14px;
+    line-height: 18px;
+    --baseline: 18px;
+    font-family: 'spectral';
+
+}
+
+
+@page {
+    size: A4;
+    margin-left: 35mm;
+    margin-right: 35mm;
+    margin-bottom: 25mm;
+    margin-top: 25mm;
+
+    @top-left {
+        content: "";
+        width: 80mm;
+        background-color: #999;
+    }
+    @top-right {
+        content: "";
+        background-color: #999;
+    }
+    @top-center {
+        content: "arXiv:1808.09365 [cs.IT]";
+        width: 160px;
+        font-weight: 400;
+        color: #888;
+        vertical-align: top;
+        margin-top: 8.5mm;
+    }
+    @bottom-left {
+        content: "T. Sakurai � A weight enumerator of linear-congruence codes";
+        color: #888;
+        /* width: 80mm;
+        text-overflow: ellipsis;
+	    white-space: nowrap;
+	    overflow: hidden;  */
+    }
+    @bottom-right {
+        content: counter(page) " / " counter(pages);
+        color: #888;
+    }
+
+}
+
+
+.pagedjs_margin-top-left, .pagedjs_margin-top-right {
+    height: 6px;
+    margin-top: 10mm;
+}
+
+.pagedjs_margin-top {
+    align-items: top;
+}
+
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: calc(var(--baseline) * 2);
+    text-transform: uppercase;
+    text-align: center;
+    width: 130mm;
+    margin: 0 auto;
+    padding-top: calc(var(--baseline) * 3);
+    padding-bottom: calc(var(--baseline) * 1);
+}
+
+#authors, h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: calc(var(--baseline) * 3);
+    padding-bottom: calc(var(--baseline) * 1.5);
+}
+
+h3 {
+    display: inline;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 300px;
+    margin-top: calc(var(--baseline) * 2);
+}
+
+h3::after {
+    content: ". ";
+}
+
+
+p {
+    text-align: justify;
+    margin-bottom: calc(var(--baseline) * 0.5);
+}
+
+h3 + p {
+    display: inline;
+    margin-bottom: calc(var(--baseline) * 0.5);
+}
+
+
+#authors {
+    padding-bottom: calc(var(--baseline) * 2);
+}
+
+.source {
+    padding-bottom: calc(var(--baseline) * 1);
+}
+
+.abstract, .keywords, .date, .math-class, .source {
+    width: 120mm;
+    margin: 0 auto;
+}
+
+.abstract::before {
+    content: "Abstract. ";
+    font-variant: small-caps;
+}
+
+.keywords::before {
+    content: "Keywords and phrases. ";
+    font-variant: small-caps;
+}
+
+.keywords, .date, .math-class, .source {
+    text-align: left;
+}
+
+.keywords, .date {
+    padding-top: calc(var(--baseline) * 1);
+}
+
+
+/* margin and counter for mathjax */
+
+.math-class span, .source span {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.MJXc-display {
+    margin: calc(var(--baseline) * 0.5) 0 !important;
+}
+
+body {
+    counter-reset: num;
+}
+
+.num {
+    counter-increment: num;
+}
+
+.num::before {
+    content: "(" counter(num) ")";
+    display: block;
+    position: absolute;
+    margin-top: calc(var(--baseline) * 0.5);
+}
+
+/* tables style */
+table {
+    break-inside: avoid;
+    border-collapse: collapse;
+    border-bottom: 3px double black;
+    margin-bottom: calc(var(--baseline) * 3);
+}
+
+table caption {
+    margin-bottom: calc(var(--baseline) * 1);
+}
+
+table caption::before {
+    content: "Table. ";
+    font-variant: small-caps;
+}
+
+thead {
+    border-top: 3px double black;
+    border-bottom: 3px double black;
+}
+
+th, td {
+    height: calc(var(--baseline) * 2);
+    font-weight: 400;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+/* references counter */
+
+#references {
+    counter-reset: ref;
+}
+
+#references p {
+    counter-increment: ref;
+    padding-left: 1rem;
+}
+
+#references p::before {
+    /* content: "hello"; */
+    content: "[" counter(ref) "] ";
+    position: absolute;
+    left: -1rem;
+}
+
+
+/* To define how the book look on the screen: */
+@media screen {
+    body {
+        background-color: whitesmoke;
+    }
+
+    .pagedjs_page {
+        background-color: white;
+        box-shadow: 0 0 0 2px #888;
+        margin: 0 auto;
+        margin-top: 10mm;
+    }
+
+
+}
+
+
+/* hacks */
+#acknowledgments {
+    padding-top: 0;
+}
+
+.break-before {
+    break-before: page;
+}
+
+article {
+    size: A4;
+    margin: 1in
+}
+
+.col {
+    column-count: 2;
+    column-gap: 0.2in;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-variant: small-caps;
+    padding-bottom: 32pt;
+}
+
+p {
+    text-align: justify;
+    font-size: 12pt;
+    line-height: 18pt;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    orphans: 2;
+    widows: 2;
+}
+
+
+@top-center
+{
+    content: element(heading)
+;
+}
+
+p.rh {
+    position: running(heading);
+    font-variant: small-caps;
+}
+
+p.rh::before {
+    content: counter(page);
+}
+
+
+p {
+    counter-increment: page;
+}
+
+p::after {
+    content: counter(page);
+}
+
+
+body {
+    counter-reset: page;
+}
+
+page-break:after {
+    counter-increment: counter(page);
+}
+
+@page :left {
+    @top-right {
+        content: "Page" counter(page);
+    }
+}
+
+
+@page {
+
+    @top-center {
+        content: "start: ";
+    }
+}
+
+

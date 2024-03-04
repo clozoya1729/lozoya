@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>{{ jobName}}</title>
+</head>
+
+<body>
+<div id="TitlePage">
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <h2 id="{{ jobName | replace(' ', '')}}">{{ jobName }}</h2>
+    <br>
+    <h3 id="">LoPar Technologies</h3>
+    <h3 id="">{{ jobDate }}</h3>
+</div>
+<p class="PageBreak"></p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html style="width: 8.5in;height: 11in;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ReportTemplate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="content">
+    <div id="pageFooter"></div>
+    <div id="TitlePage">
+        <br/><br/><br/><br/>
+        <br/><br/><br/><br/>
+        <br/><br/><br/><br/>
+        <h2 id="TestReport">Test Report</h2>
+        <br/>
+        <h3 id="">LoPar Technologies</h3>
+        <h3 id="">September 20, 2018</h3>
+    </div>
+    <p class="PageBreak"></p>
+    <!DOCTYPE html>
+    <html>
+    <head lang="en">
+        <meta charset="utf-8"/>
+        <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+                type="text/javascript">
+        </script>
+        <link href="ReportCSS.css" rel="stylesheet" type="text/css"/>
+        <title></title>
+    </head>
+    <body>
+    <p class="PageBreak"></p>
+    <h2>Table of Contents</h2>
+    <br/>
+    <div class="TableOfContents">
+        <a href="#DescriptiveStatistics">
+            Descriptive Statistics
+        </a>
+        <br/>
+        <ul>
+            <li>
+                <a href="#DescriptiveStatistics.Mean">
+                    Mean
+                </a>
+            </li>
+            <br/>
+            <ul>
+                <li>
+                    <a href="#DescriptiveStatistics.Mean.Definition">
+                        Definition
+                    </a>
+                    <br/>
+                </li>
+            </ul>
+            <li>
+                <a href="#DescriptiveStatistics.Median">
+                    Median
+                </a>
+            </li>
+            <br/>
+            <ul>
+                <li>
+                    <a href="#DescriptiveStatistics.Median.Definition">
+                        Definition
+                    </a>
+                    <br/>
+                </li>
+            </ul>
+            <li>
+                <a href="#DescriptiveStatistics.Mode">
+                    Mode
+                </a>
+            </li>
+            <br/>
+            <ul>
+                <li>
+                    <a href="#DescriptiveStatistics.Mode.Definition">
+                        Definition
+                    </a>
+                    <br/>
+                </li>
+            </ul>
+            <li>
+                <a href="#DescriptiveStatistics.Skew">
+                    Skew
+                </a>
+            </li>
+            <br/>
+            <ul>
+                <li>
+                    <a href="#DescriptiveStatistics.Skew.Definition">
+                        Definition
+                    </a>
+                    <br/>
+                </li>
+            </ul>
+            <li>
+                <a href="#DescriptiveStatistics.Kurtosis">
+                    Kurtosis
+                </a>
+            </li>
+            <br/>
+            <ul>
+                <li>
+                    <a href="#DescriptiveStatistics.Kurtosis.Definition">
+                        Definition
+                    </a>
+                    <br/>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    </body>
+    </html>
+    <a href="#ErrorMetrics">
+        Error Metrics
+    </a><br/>
+    <ul>
+        <li>
+            <a href="#ErrorMetrics.MeanAbsoluteError">
+                Mean Absolute Error
+            </a>
+        </li>
+        <br/>
+        <ul>
+            <li>
+                <a href="#ErrorMetrics.MeanAbsoluteError.Definition">
+                    Definition
+                </a>
+                <br/>
+            </li>
+            <li>
+                <a href="#ErrorMetrics.MeanAbsoluteError.Example">
+                    Example
+                </a>
+                <br/>
+            </li>
+        </ul>
+        <li>
+            <a href="#ErrorMetrics.MeanBiasError">
+                Mean Bias Error
+            </a>
+        </li>
+        <br/>
+        <ul>
+            <li>
+                <a href="#ErrorMetrics.MeanBiasError.Definition">
+                    Definition
+                </a>
+                <br/>
+            </li>
+            <li>
+                <a href="#ErrorMetrics.MeanBiasError.Example">
+                    Example
+                </a>
+                <br/>
+            </li>
+        </ul>
+        <li>
+            <a href="#ErrorMetrics.MeanSquaredError">
+                Mean Squared Error
+            </a>
+        </li>
+        <br/>
+        <ul>
+            <li>
+                <a href="#ErrorMetrics.MeanSquaredError.Definition">
+                    Definition
+                </a>
+                <br/>
+            </li>
+            <li>
+                <a href="#ErrorMetrics.MeanSquaredError.Example">
+                    Example
+                </a>
+                <br/>
+            </li>
+        </ul>
+        <li>
+            <a href="#ErrorMetrics.RootMeanSquaredError">
+                Root Mean Squared Error
+            </a>
+        </li>
+        <br/>
+        <ul>
+            <li>
+                <a href="#ErrorMetrics.RootMeanSquaredError.Definition">
+                    Definition
+                </a>
+                <br/>
+            </li>
+            <li>
+                <a href="#ErrorMetrics.RootMeanSquaredError.Example">
+                    Example
+                </a>
+                <br/>
+            </li>
+        </ul>
+    </ul>
+
+
+    <body>
+    <p class="PageBreak"></p>
+    <div id="DescriptiveStatistics">
+        <h2 id="DescriptiveStatistics">Descriptive Statistics</h2>
+        <p>
+        </p>
+        <h3 id="Descriptive Statistics.Mean">Mean</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <h4 id="Descriptive Statistics.Mean.Definition">Definition</h4>
+            <p class="CenterP">
+
+                The Mean is the average of all data points within the
+                data set and is sometime called the Arithmetic Mean.
+
+                The mean is calculated by adding up all the data points
+                and dividing by the total number of data points.
+
+                Often with larger data sets it may be easier to define
+                the data set by a single number, known as the Central Tendency.
+                Calculating the Mean is one way to find this number.
+
+            </p>
+            <p class="CenterP">
+
+
+                Mean is calculated using the following formula:
+                \begin{equation*}y = \frac{\sum_{i=0}^{n} x_{i}}{n}\end{equation*}
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+        </div>
+        <div class="CenterColumn">
+        </div>
+        <h3 id="Descriptive Statistics.Median">Median</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <h4 id="Descriptive Statistics.Median.Definition">Definition</h4>
+            <p class="CenterP">
+
+                The midpoint of the data set is known as the Median. The Median is
+                used to represent the center of your data set.
+
+                Lay out the data set from least to greatest and locate
+                the middle value.
+
+                When the data set has an even number of data points the Mean of the
+                two most center points will be taken and that will be known as the
+                median of the data set.
+                \begin{equation*}y = \begin{cases} e^{n + \frac{1}{n}} &amp; \text{for}\: n = odd \\\frac{1}{2} \cdot
+                e^{\frac{n}{2} + \frac{n}{2} + 1} &amp; \text{otherwise} \end{cases}\end{equation*}
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+        </div>
+        <div class="CenterColumn">
+        </div>
+        <p class="PageBreak"></p>
+        <h3 id="Descriptive Statistics.Mode">Mode</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <h4 id="Descriptive Statistics.Mode.Definition">Definition</h4>
+            <p class="CenterP">
+
+                When a data set contains a value that occurs more than
+                once it is known as the Mode. This is the Value most likely
+                to be picked fro the data set
+
+                One you have found the Median look for the value that
+                is most recurring this the Mode
+
+                Often a data set may contain more than one recurring value.
+                In such cases the data set is referred to as bimodal
+
+                When the data set has three recurring values it is Trimodal
+
+                A multi modal set is a dataset that contains multiple recurring values
+
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+        </div>
+        <div class="CenterColumn">
+        </div>
+        <h3 id="Descriptive Statistics.Skew">Skew</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <h4 id="Descriptive Statistics.Skew.Definition">Definition</h4>
+            <p class="CenterP">
+
+
+                When the tail of the data lays to the right of the curve.
+                The data has a positive skew. In a positive skew the Mean is
+                greater than the median and both are to the right of the mode.
+
+                If the left side of the data has a tail end.
+                The data is negatively skewed.
+                The mean is less than the median and the Mode.
+
+                When the data does not contain a tail it is a bell curve.
+                In a bell curve the data is symmetrical.
+
+                The Skew is calculated as follows:
+                \begin{equation*}y = \frac{\sum_{i=1}^{n} \frac{(x-\mu)^{3}}{n}}{\sigma^{3}}\end{equation*}
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+        </div>
+        <div class="CenterColumn">
+        </div>
+        <h3 id="Descriptive Statistics.Kurtosis">Kurtosis</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <h4 id="Descriptive Statistics.Kurtosis.Definition">Definition</h4>
+            <p class="CenterP">
+
+                Kurtosis is the measure of the shape of the distribution.
+                A measure of Kurtosis can either be a 0, a negative, or a positive number
+
+                When the measure of Kurtosis is a positive distribution it will
+                have a extended peak. This is known as Mesokurtic.
+
+                When the measure of Kurtosis has a negative distribution it
+                will have a flatter lower curve this curve is known as Platykurtic.
+
+                A positive kurtosis is called Leptokurtic.
+                In a Leptokurtic distribution the data has a sharp peak
+
+                Kurtosis is calculated as follows:
+                \begin{equation*}y = \frac{1}{\sigma^{4}} \cdot \sum_{i=1}^{n} \left(\frac{(x-\mu)^{4}}{n} -
+                3\right)\end{equation*}
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+        </div>
+        <div class="CenterColumn">
+        </div>
+    </div>
+    <p class="PageBreak"></p>
+    <!DOCTYPE html>
+
+    <html>
+    <head lang="en">
+        <meta charset="utf-8"/>
+        <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+                type="text/javascript">
+        </script>
+        <link href="ReportCSS.css" rel="stylesheet" type="text/css"/>
+        <title></title>
+    </head>
+    <body>
+    <p class="PageBreak"></p>
+    <div id="ErrorMetrics">
+        <h2 id="ErrorMetrics">Error Metrics</h2>
+        <p>
+            Error metrics are used to quantify the uncertainty or "error" in the regression analysis
+            by comparing the regression analysis with respect to the data.
+            This report includes all of the following error metrics.
+        </p>
+        <h3 id="Error Metrics.MeanAbsoluteError">Mean Absolute Error</h3>
+        <p></p>
+        <div class="LeftColumn">
+            <h4 id="Error Metrics.Mean Absolute Error.Definition">Definition</h4>
+            <p class="LeftP">
+
+                MAE of a data set is the average distance between
+                each data value and the mean of a data set.
+                It describes the variation and dispersion in a data set.
+
+                It is the average magnitude
+                of the errors in a set of predictions. Therefore, direction is not considered.
+
+                ####
+                It�s the average over the test sample of the absolute
+                differences between prediction and actual observation where
+                all individual differences have equal weight.
+
+            </p>
+            <p class="LeftP">
+
+                ###
+                MAE is more appropriate if being off by 00 is just twice as bad as being off by 4, then .
+
+                MAE is calculated using the following formula:
+                \begin{equation*}y = \frac{1}{n} \cdot \sum_{i=0}^{n} \left|{y_i-\hat y_i}\right|\end{equation*}
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+        </div>
+        <div class="RightColumn">
+            <h4 id="Error Metrics.Mean Absolute Error.Example">Example</h4>
+            <p class="RightP">
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <p class="PageBreak"></p>
+        <h3 id="Error Metrics.MeanBiasError">Mean Bias Error</h3>
+        <p></p>
+        <div class="LeftColumn">
+            <h4 id="Error Metrics.Mean Bias Error.Definition">Definition</h4>
+            <p class="LeftP">
+
+                ####
+                If the absolute value is not taken (the signs of the errors are not removed),
+                the average error becomes the Mean Bias Error (MBE) and is
+                usually intended to measure average model bias.
+                MBE can convey useful information, but should be interpreted cautiously
+                because positive and negative errors will cancel out.
+                ####
+                \begin{equation*}y = \frac{1}{n} \cdot \sum_{i=0}^{n} (y_i-\hat y_i)\end{equation*}
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+        </div>
+        <div class="RightColumn">
+            <h4 id="Error Metrics.Mean Bias Error.Example">Example</h4>
+            <p class="RightP">
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <p class="PageBreak"></p>
+        <h3 id="Error Metrics.MeanSquaredError">Mean Squared Error</h3>
+        <p></p>
+        <div class="LeftColumn">
+            <h4 id="Error Metrics.Mean Squared Error.Definition">Definition</h4>
+            <p class="LeftP">
+
+                The mean squared error is calculated using the following formula:
+                \begin{equation*}y = \frac{1}{n} \cdot \sum_{i=0}^{n} (y_i-\hat y_i)^{2}\end{equation*}
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+        </div>
+        <div class="RightColumn">
+            <h4 id="Error Metrics.Mean Squared Error.Example">Example</h4>
+            <p class="RightP">
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <p class="PageBreak"></p>
+        <h3 id="Error Metrics.RootMeanSquaredError">Root Mean Squared Error</h3>
+        <p></p>
+        <div class="LeftColumn">
+            <h4 id="Error Metrics.Root Mean Squared Error.Definition">Definition</h4>
+            <p class="LeftP">
+
+                ####
+                RMSE is a quadratic scoring rule that also measures the average magnitude of the error.
+                It�s the square root of the average of squared differences between prediction and actual observation.
+                ###
+
+                RMSE does not necessarily increase with the variance of the errors.
+                RMSE is proportional to the variance of the error magnitude frequency distribution.
+                However, it is not necessarily proporional to the error variance.
+
+            </p>
+            <p class="LeftP">
+
+                RMSE can be appropriate when large errors should be penalized more than smaller errors.
+                The penalty of the error changes in a non-linear way.
+
+                The root mean square error is calculated as follows:
+                \begin{equation*}y = \sqrt{\frac{1}{n} \cdot \sum_{i=0}^{n} (y_i-\hat y_i)^{2}}\end{equation*}
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+        </div>
+        <div class="RightColumn">
+            <h4 id="Error Metrics.Root Mean Squared Error.Example">Example</h4>
+            <p class="RightP">
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <p class="PageBreak"></p>
+    </div>
+    <p class="PageBreak"></p>
+    </body>
+    </html>
+    <!DOCTYPE html>
+
+    <html>
+    <head lang="en">
+        <meta charset="utf-8"/>
+        <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+                type="text/javascript">
+        </script>
+        <link href="ReportCSS.css" rel="stylesheet" type="text/css"/>
+        <title></title>
+    </head>
+    <body>
+    <p class="PageBreak"></p>
+    <div id="Analysis">
+        <h2 id="Analysis">Analysis</h2>
+        <p></p>
+        <h3 id="Analysis.StaticCDM1">StaticCDM1</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\Scatter\StaticCDM1.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 1:</var> Scatter plot and regression fit of <var>StaticCDM1</var>.
+
+            </p>
+            <p class="CenterP">
+                <var>StaticCDM1</var> is best approximated by the following function: $$StaticCDM_{1} = - 1800
+                \sin{\left (2.5 x + 0.001 \right )} + 1600$$ The <em>mean squared error</em> of this fit is
+                <em>3605000</em>. The <em>R squared</em> of this fit is <em>0.311</em>. The <em>root mean squared
+                error</em> of this fit is <em>1899</em>. The <em>mean absolute error</em> of this fit is <em>1420</em>.
+                The regression also has a <em>Chi Squared</em> value of <em>32.3</em> and a <em>Reduced Chi Squared</em>
+                value of <em>5.383</em>. Further, the <em>Standard Error</em> of the regression is <em>2451</em> and the
+                <em>Sum of Residuals</em> is <em>-4.533</em>.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 1:</var> Scatter plot and regression fit of <var>StaticCDM1</var>.
+
+            </p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\RegressionError\StaticCDM1.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+            <p class="PageNumber">
+                8
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="LeftColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\Distribution\StaticCDM1.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 2:</var> Histogram of <var>StaticCDM1</var>.
+
+            </p>
+            <p class="LeftP">
+                This plot shows the frequency distribution of the data. The rug at the bottom of the plot denotes the
+                regions where StaticCDM1 is concentrated.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 2:</var> Histogram of <var>StaticCDM1</var>.
+
+            </p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\CentralTendencies\StaticCDM1.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="RightColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="RightImage" src="StaticPlots\DistributionFit\StaticCDM1.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 3:</var> Distribution fit of <var>StaticCDM1</var>.
+
+            </p>
+            <p class="RightP">
+                Of the distributions that were fit to the data, the following was the best fitting:$$\textbf{Folded
+                Cauchy:}$$$$PDF = \frac{1}{\pi \left(\left(x + 0.0005845\right)^{2} + 1\right)} + \frac{1}{\pi
+                \left(\left(x + 0.0005845\right)^{2} + 1\right)}$$With <var>Folded Cauchy</var> having a <em>sum of
+                squared errors</em> of 9.479e-08.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 3:</var> Distribution fit of <var>StaticCDM1</var>.
+
+            </p>
+            <p>
+                <img class="RightImage" src="StaticPlots\DistributionError\StaticCDM1.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+                9
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="LeftColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\Box\StaticCDM1.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 4:</var> Box plot of <var>StaticCDM1</var>.
+
+            </p>
+            <p class="LeftP">
+                The minimum value found in <var>StaticCDM1</var> is <em>22</em>. The maximum is 7756. The first quartile
+                is 95.75 and the third quartile is 2272. The interquartile range is therefore 2176. The lower limit of
+                the interquartile range is -3168. and the upper limit is 5536. The maximum value is above this. There
+                are no outliers below the lower bound. There are 1 outliers above the upper bound.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 4:</var> Box plot of <var>StaticCDM1</var>.
+
+            </p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\IQR\StaticCDM1.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="RightColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="RightImage" src="StaticPlots\Violin\StaticCDM1.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 5:</var> Violin plot of <var>StaticCDM1</var>.
+
+            </p>
+            <p class="RightP">
+                The distribution of <var>StaticCDM1</var> has a <em>mean</em> of 1611. The <em>median</em> is 494.5. The
+                <em>mean</em> is 3.258 times, or 69.27 % greater than the <em>median</em>. This distribution has a <em>standard
+                deviation</em> of 2387. Therefore, the <em>variance</em> is 5696000. The <em>skew</em> of the
+                distribution is 2.208, which indicates that the data is concentrated highly below the mean with a longer
+                tail above the mean. The <em>kurtosis</em> of 5.429 means that the data is a tightly concentrated <em>leptokurtic</em>
+                distribution. Therefore, the tails of the distribution are relatively short, broad, and less prone to
+                contain outliers.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 5:</var> Violin plot of <var>StaticCDM1</var>.
+
+            </p>
+            <p>
+                <img class="RightImage" src="StaticPlots\Dispersion\StaticCDM1.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+                10
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <p class="PageBreak"></p>
+        <h3 id="Analysis.StaticCDM2">StaticCDM2</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\Scatter\StaticCDM2.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 6:</var> Scatter plot and regression fit of <var>StaticCDM2</var>.
+
+            </p>
+            <p class="CenterP">
+                Through a regression analysis, the function$$StaticCDM_{2} = - 2100 \sin{\left (2.4 x + 0.74 \right )} +
+                1900$$ was found to best fit <var>StaticCDM2</var>. The <em>mean squared error</em> of this fit is <em>1028000</em>.
+                The <em>R squared</em> of this fit is <em>0.6676</em>. The <em>root mean squared error</em> of this fit
+                is <em>1014</em>. The <em>mean absolute error</em> of this fit is <em>753</em>. The regression also has
+                a <em>Chi Squared</em> value of <em>9.267</em> and a <em>Reduced Chi Squared</em> value of
+                <em>1.544</em>. Further, the <em>Standard Error</em> of the regression is <em>1309</em> and the <em>Sum
+                of Residuals</em> is <em>355.5</em>.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 6:</var> Scatter plot and regression fit of <var>StaticCDM2</var>.
+
+            </p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\RegressionError\StaticCDM2.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+            <p class="PageNumber">
+                11
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="LeftColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\Distribution\StaticCDM2.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 7:</var> Histogram of <var>StaticCDM2</var>.
+
+            </p>
+            <p class="LeftP">
+                This plot shows the frequency distribution of the data. The rug at the bottom of the plot denotes the
+                regions where StaticCDM2 is concentrated.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 7:</var> Histogram of <var>StaticCDM2</var>.
+
+            </p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\CentralTendencies\StaticCDM2.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="RightColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="RightImage" src="StaticPlots\DistributionFit\StaticCDM2.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 8:</var> Distribution fit of <var>StaticCDM2</var>.
+
+            </p>
+            <p class="RightP">
+                Of the distributions that were fit to the data, the following was the best fitting:$$\textbf{Double
+                Gamma:}$$$$PDF = e^{- \left|{x}\right|} \frac{1}{2 \gamma(0.1273) \left|{x}\right|^{0.8727}}$$With <var>Double
+                Gamma</var> having a <em>sum of squared errors</em> of 2.86e-07.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 8:</var> Distribution fit of <var>StaticCDM2</var>.
+
+            </p>
+            <p>
+                <img class="RightImage" src="StaticPlots\DistributionError\StaticCDM2.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+                12
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="LeftColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\Box\StaticCDM2.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 9:</var> Box plot of <var>StaticCDM2</var>.
+
+            </p>
+            <p class="LeftP">
+                The minimum value found in <var>StaticCDM2</var> is <em>54</em>. The maximum is 6348. The first quartile
+                is 809.2 and the third quartile is 2202. The interquartile range is therefore 1393. The lower limit of
+                the interquartile range is -1280. and the upper limit is 4292. The maximum value is above this. There
+                are no outliers below the lower bound. There are 1 outliers above the upper bound.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 9:</var> Box plot of <var>StaticCDM2</var>.
+
+            </p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\IQR\StaticCDM2.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="RightColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="RightImage" src="StaticPlots\Violin\StaticCDM2.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 10:</var> Violin plot of <var>StaticCDM2</var>.
+
+            </p>
+            <p class="RightP">
+                <var>StaticCDM2</var> has a distribution with a mean of <em>2054</em>. The <em>median</em> is 2202. The
+                <em>mean</em> is 1.072 times, or 7.205 % smaller than the <em>median</em>. This distribution has a <em>standard
+                deviation</em> of 1787. Therefore, the <em>variance</em> is 3194000. The <em>skew</em> of the
+                distribution is 1.48, which indicates that the data is concentrated highly below the mean with a longer
+                tail above the mean. The <em>kurtosis</em> of 3.663 means that the data is a tightly concentrated <em>leptokurtic</em>
+                distribution. Therefore, the tails of the distribution are relatively short, broad, and less prone to
+                contain outliers.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 10:</var> Violin plot of <var>StaticCDM2</var>.
+
+            </p>
+            <p>
+                <img class="RightImage" src="StaticPlots\Dispersion\StaticCDM2.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+                13
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <p class="PageBreak"></p>
+        <h3 id="Analysis.StaticCDM3">StaticCDM3</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\Scatter\StaticCDM3.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 11:</var> Scatter plot and regression fit of <var>StaticCDM3</var>.
+
+            </p>
+            <p class="CenterP">
+                Using curve fitting procedures, <var>StaticCDM3</var> was found to be best described by $$StaticCDM_{3}
+                = - 880 \sin{\left (0.64 x - 0.42 \right )} + 1800$$The <em>mean squared error</em> of this fit is <em>477800</em>.
+                The <em>R squared</em> of this fit is <em>0.4482</em>. The <em>root mean squared error</em> of this fit
+                is <em>691.3</em>. The <em>mean absolute error</em> of this fit is <em>605.9</em>. The regression also
+                has a <em>Chi Squared</em> value of <em>3.261</em> and a <em>Reduced Chi Squared</em> value of <em>0.5435</em>.
+                Further, the <em>Standard Error</em> of the regression is <em>892.4</em> and the <em>Sum of
+                Residuals</em> is <em>360.2</em>.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 11:</var> Scatter plot and regression fit of <var>StaticCDM3</var>.
+
+            </p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\RegressionError\StaticCDM3.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+            <p class="PageNumber">
+                14
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="LeftColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\Distribution\StaticCDM3.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 12:</var> Histogram of <var>StaticCDM3</var>.
+
+            </p>
+            <p class="LeftP">
+                This plot shows the frequency distribution of the data. The rug at the bottom of the plot indicates the
+                concentration of the data.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 12:</var> Histogram of <var>StaticCDM3</var>.
+
+            </p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\CentralTendencies\StaticCDM3.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="RightColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="RightImage" src="StaticPlots\DistributionFit\StaticCDM3.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 13:</var> Distribution fit of <var>StaticCDM3</var>.
+
+            </p>
+            <p class="RightP">
+                Of the distributions that were fit to the data, the following was the best fitting:$$\textbf{Folded
+                Cauchy:}$$$$PDF = \frac{1}{\pi \left(\left(x + 19.65\right)^{2} + 1\right)} + \frac{1}{\pi \left(\left(x
+                + 19.65\right)^{2} + 1\right)}$$With <var>Folded Cauchy</var> having a <em>sum of squared errors</em> of
+                9.312e-07.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 13:</var> Distribution fit of <var>StaticCDM3</var>.
+
+            </p>
+            <p>
+                <img class="RightImage" src="StaticPlots\DistributionError\StaticCDM3.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+                15
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="LeftColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\Box\StaticCDM3.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 14:</var> Box plot of <var>StaticCDM3</var>.
+
+            </p>
+            <p class="LeftP">
+                The minimum value found in <var>StaticCDM3</var> is <em>212</em>. The maximum is 2756. The first and
+                third quartiles are 1090 and 2412, respectively. The interquartile range is therefore 1322. The lower
+                limit of the interquartile range is -893. and the upper limit is 4395. This is above the maximum value
+                in the data. There are no outliers below the lower bound. There are no outliers above the upper bound.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 14:</var> Box plot of <var>StaticCDM3</var>.
+
+            </p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\IQR\StaticCDM3.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="RightColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="RightImage" src="StaticPlots\Violin\StaticCDM3.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 15:</var> Violin plot of <var>StaticCDM3</var>.
+
+            </p>
+            <p class="RightP">
+                The distribution of <var>StaticCDM3</var> has a <em>mean</em> of 1837. The <em>median</em> is 2412. The
+                <em>mean</em> is 1.313 times, or 31.3 % smaller than the <em>median</em>. This distribution has a <em>standard
+                deviation</em> of 971.8. Therefore, the <em>variance</em> is 944400. The <em>skew</em> of the
+                distribution is -1.001, which indicates that the data is concentrated highly above the mean with a
+                longer tail below the mean. The <em>kurtosis</em> of -0.9641 means that the data is a very spread out
+                <em>platykurtic</em> distribution. Therefore, the tails of the distribution are relatively long,
+                slender, and more prone to contain outliers.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 15:</var> Violin plot of <var>StaticCDM3</var>.
+
+            </p>
+            <p>
+                <img class="RightImage" src="StaticPlots\Dispersion\StaticCDM3.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+                16
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <p class="PageBreak"></p>
+        <h3 id="Analysis.StaticCDM4">StaticCDM4</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\Scatter\StaticCDM4.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 16:</var> Scatter plot and regression fit of <var>StaticCDM4</var>.
+
+            </p>
+            <p class="CenterP">
+                <var>StaticCDM4</var> is best approximated by the following function: $$StaticCDM_{4} = 1000 \sin{\left
+                (2.8 x - 1.4 \right )} + 1300$$ The <em>mean squared error</em> of this fit is <em>504500</em>. The <em>R
+                squared</em> of this fit is <em>0.5105</em>. The <em>root mean squared error</em> of this fit is <em>710.3</em>.
+                The <em>mean absolute error</em> of this fit is <em>522.9</em>. The regression also has a <em>Chi
+                Squared</em> value of <em>4.815</em> and a <em>Reduced Chi Squared</em> value of <em>0.8024</em>.
+                Further, the <em>Standard Error</em> of the regression is <em>917</em> and the <em>Sum of Residuals</em>
+                is <em>-36.79</em>.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 16:</var> Scatter plot and regression fit of <var>StaticCDM4</var>.
+
+            </p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\RegressionError\StaticCDM4.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+            <p class="PageNumber">
+                17
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="LeftColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\Distribution\StaticCDM4.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 17:</var> Histogram of <var>StaticCDM4</var>.
+
+            </p>
+            <p class="LeftP">
+                This plot shows the frequency distribution of the data. The rug at the bottom of the plot denotes the
+                concentration of the data.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 17:</var> Histogram of <var>StaticCDM4</var>.
+
+            </p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\CentralTendencies\StaticCDM4.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="RightColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="RightImage" src="StaticPlots\DistributionFit\StaticCDM4.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 18:</var> Distribution fit of <var>StaticCDM4</var>.
+
+            </p>
+            <p class="RightP">
+                This distribution of this data is best approximated by the following function:$$\textbf{Double
+                Gamma:}$$$$PDF = e^{- \left|{x}\right|} \frac{\left|{x}\right|^{110.3}}{2 \gamma(111.3)}$$With <var>Double
+                Gamma</var> having a <em>sum of squared errors</em> of 1.11e-06.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 18:</var> Distribution fit of <var>StaticCDM4</var>.
+
+            </p>
+            <p>
+                <img class="RightImage" src="StaticPlots\DistributionError\StaticCDM4.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+                18
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="LeftColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\Box\StaticCDM4.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 19:</var> Box plot of <var>StaticCDM4</var>.
+
+            </p>
+            <p class="LeftP">
+                The minimum value found in <var>StaticCDM4</var> is <em>27</em>. The maximum is 2287. The first and
+                third quartiles are 242 and 2287, respectively. The interquartile range is therefore 2045. The lower
+                limit of the interquartile range is -2826. and the upper limit is 5354. This is above the maximum value
+                in the data. There are no outliers below the lower bound. There are no outliers above the upper bound.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 19:</var> Box plot of <var>StaticCDM4</var>.
+
+            </p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\IQR\StaticCDM4.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="RightColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="RightImage" src="StaticPlots\Violin\StaticCDM4.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 20:</var> Violin plot of <var>StaticCDM4</var>.
+
+            </p>
+            <p class="RightP">
+                <var>StaticCDM4</var> has a distribution with a mean of <em>1396</em>. The <em>median</em> is 2096. The
+                <em>mean</em> is 1.502 times, or 50.14 % smaller than the <em>median</em>. This distribution has a <em>standard
+                deviation</em> of 1073. Therefore, the <em>variance</em> is 1151000. The <em>skew</em> of the
+                distribution is -0.4831, which indicates that the data is concentrated slightly above the mean with a
+                longer tail below the mean. The <em>kurtosis</em> of -2.214 means that the data is a very spread out
+                <em>platykurtic</em> distribution. Therefore, the tails of the distribution are relatively long,
+                slender, and more prone to contain outliers.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 20:</var> Violin plot of <var>StaticCDM4</var>.
+
+            </p>
+            <p>
+                <img class="RightImage" src="StaticPlots\Dispersion\StaticCDM4.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+                19
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <p class="PageBreak"></p>
+        <h3 id="Analysis.StaticCDM5">StaticCDM5</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\Scatter\StaticCDM5.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 21:</var> Scatter plot and regression fit of <var>StaticCDM5</var>.
+
+            </p>
+            <p class="CenterP">
+                Using curve fitting procedures, <var>StaticCDM5</var> was found to be best described by $$StaticCDM_{5}
+                = - 910 \sin{\left (2.0 x - 0.53 \right )} + 1500$$The <em>mean squared error</em> of this fit is <em>542700</em>.
+                The <em>R squared</em> of this fit is <em>0.4458</em>. The <em>root mean squared error</em> of this fit
+                is <em>736.7</em>. The <em>mean absolute error</em> of this fit is <em>583.9</em>. The regression also
+                has a <em>Chi Squared</em> value of <em>2.437</em> and a <em>Reduced Chi Squared</em> value of <em>0.4061</em>.
+                Further, the <em>Standard Error</em> of the regression is <em>951</em> and the <em>Sum of Residuals</em>
+                is <em>99.92</em>.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 21:</var> Scatter plot and regression fit of <var>StaticCDM5</var>.
+
+            </p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\RegressionError\StaticCDM5.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+            <p class="PageNumber">
+                20
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="LeftColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\Distribution\StaticCDM5.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 22:</var> Histogram of <var>StaticCDM5</var>.
+
+            </p>
+            <p class="LeftP">
+                This plot shows the frequency distribution of the data. The rug at the bottom of the plot denotes the
+                concentration of the data.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 22:</var> Histogram of <var>StaticCDM5</var>.
+
+            </p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\CentralTendencies\StaticCDM5.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="RightColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="RightImage" src="StaticPlots\DistributionFit\StaticCDM5.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 23:</var> Distribution fit of <var>StaticCDM5</var>.
+
+            </p>
+            <p class="RightP">
+                Of the distributions that were fit to the data, the following was the best fitting:$$\textbf{Double
+                Gamma:}$$$$PDF = e^{- \left|{x}\right|} \frac{1}{2 \gamma(0.3168) \left|{x}\right|^{0.6832}}$$With <var>Double
+                Gamma</var> having a <em>sum of squared errors</em> of 8.416e-07.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 23:</var> Distribution fit of <var>StaticCDM5</var>.
+
+            </p>
+            <p>
+                <img class="RightImage" src="StaticPlots\DistributionError\StaticCDM5.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+                21
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="LeftColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\Box\StaticCDM5.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 24:</var> Box plot of <var>StaticCDM5</var>.
+
+            </p>
+            <p class="LeftP">
+                The minimum value found in <var>StaticCDM5</var> is <em>175</em>. The maximum is 3576. The first
+                quartile is 1047 and the third quartile is 1966. The interquartile range is therefore 919. The lower
+                limit of the interquartile range is -331.5. and the upper limit is 3344. The maximum value is above
+                this. There are no outliers below the lower bound. There are 1 outliers above the upper bound.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 24:</var> Box plot of <var>StaticCDM5</var>.
+
+            </p>
+            <p>
+                <img class="LeftImage" src="StaticPlots\IQR\StaticCDM5.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="LeftP">
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <div class="RightColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="RightImage" src="StaticPlots\Violin\StaticCDM5.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 25:</var> Violin plot of <var>StaticCDM5</var>.
+
+            </p>
+            <p class="RightP">
+                The distribution of <var>StaticCDM5</var> has a <em>mean</em> of 1459. The <em>median</em> is 1231. The
+                <em>mean</em> is 1.185 times, or 15.63 % greater than the <em>median</em>. This distribution has a <em>standard
+                deviation</em> of 1038. Therefore, the <em>variance</em> is 1077000. The <em>skew</em> of the
+                distribution is 0.8545, which indicates that the data is concentrated moderately below the mean with a
+                longer tail above the mean. The <em>kurtosis</em> of 0.66 means that the data is a tightly concentrated
+                <em>leptokurtic</em> distribution. Therefore, the tails of the distribution are relatively short, broad,
+                and less prone to contain outliers.
+            </p>
+            <p><br/><br/></p>
+            <p class="ImageCaption">
+                <var>Table 25:</var> Violin plot of <var>StaticCDM5</var>.
+
+            </p>
+            <p>
+                <img class="RightImage" src="StaticPlots\Dispersion\StaticCDM5.png"/>
+            </p>
+            <p><br/><br/></p>
+            <p class="RightP">
+            </p>
+            <p class="PageNumber">
+                22
+            </p>
+            <p class="PageBreak"></p>
+            <p class="PageBreak"></p>
+        </div>
+        <p class="PageBreak"></p>
+        <h3 id="Analysis.Correlation">Correlation</h3>
+        <p></p>
+        <div class="CenterColumn">
+            <p><br/><br/></p>
+            <p>
+                <img class="CenterImage" src="StaticPlots\Heatmap\Correlation.png"/>
+            </p>
+            <p class="ImageCaption">
+                <var>Figure 26:</var> Correlation heatmap.
+
+            </p>
+            <p class="CenterP">
+                This is the correlation matrix of the data plotted as a heatmap.
+            </p>
+            <p><br/><br/></p>
+            <p class="CenterP">
+            </p>
+        </div>
+    </div>
+    <p class="PageBreak"></p>
+</div>
+</body>
+</html></body></body>
+<body>
+<p class="rh">LoPar Technologies</p>
+<article>
+    <h1 class="text-center title">Analysis Chapter</h1>
+    <div class="row">
+        <div class="col column-left">
+            <p class="text-justify">Ut ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                enimadminimveniamquisnostrudexercitationullamcolaborisnisiutaliquipnostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum.
+                <br>
+                <br>
+                <br>
+            </p>
+            <p class="caption">Table 1: This is a caption for a table. Table captions go above a table.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br>
+                <br>
+            </p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+                <br>
+            </p>
+        </div>
+        <div class="col column-right">
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum.
+                <br>
+                <br>
+            </p>
+            <p class="caption">Figure 1 This is another caption. A caption for a graph goes underneath the graph.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+        </div>
+    </div>
+</article>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html style="width: 8.5in;height: 11in;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ReportTemplate</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/caption.css">
+    <link rel="stylesheet" href="assets/css/column.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/image.css">
+    <link rel="stylesheet" href="assets/css/paragraph.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/title.css">
+</head>
+
+<body style="height: 11in;width: 8.5in;/*margin-top: 0;*/margin-right: 1in;/*margin-bottom: 0;*/margin-left: 1in;">
+<article style="width: 8.5in;height: 11in;margin-top: 0;margin-right: 0;margin-bottom: 0;margin-left: 0;">
+    <header class="header">
+        <div class="row">
+            <div class="col">
+                <p class="text-left">LoPar Technologies</p>
+            </div>
+            <div class="col">
+                <p class="text-right">Job Name</p>
+            </div>
+        </div>
+    </header>
+    <h1 class="text-center title">Analysis Chapter</h1>
+    <div class="row" style="margin-right: 0;margin-left: 0;">
+        <div class="col column-left">
+            <p class="text-justify">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.<br><br><br></p>
+            <p class="caption">Table 1: This is a caption for a table. Table captions go above a table.</p><img
+                src="assets/img/StaticCDM1.png" class="table">
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.<br><br></p><img src="assets/img/StaticCDM1-1.png"
+                                         class="figure">
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.<br></p>
+        </div>
+        <div class="col column-right">
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.<br><br></p><img src="assets/img/StaticCDM1-1.png"
+                                         class="figure">
+            <p class="caption">Figure 1 This is another caption. A caption for a graph goes underneath the graph.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.&nbsp;Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum
+                dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.<br><br><br><br></p>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center footer">1</p>
+    </footer>
+</article>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>Scientific math paper</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+          }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <script>
+        window.PagedConfig = {
+            auto: false
+        };
+    </script>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+    <script>
+        MathJax.Hub.Queue(function () {
+            window.PagedPolyfill.preview();
+        });
+    </script>
+
+
+    <!-- <link rel="stylesheet" href="fonts/ibm-plex-sans/stylesheet.css" /> -->
+    <!-- <link rel="stylesheet" href="fonts/ibm-plex-serif/stylesheet.css" /> -->
+    <link rel="stylesheet" href="fonts/spectral/stylesheet.css"/>
+
+    <link rel="stylesheet" href="style.css"/>
+
+
+</head>
+
+<body>
+
+<h1>An explicit formula for a weight enumerator of linear-congruence codes</h1>
+<p id="authors">Taro Sakurai</p>
+
+<p class="abstract">An explicit formula for a weight enumerator of linear-congruence codes is provided. This extends the
+    work of Bibak and Milenkovic [IEEE ISIT (2018) 431�435] addressing the binary case to the non-binary case.
+    Furthermore, the extension simplifies their proof and provides a complete solution to a problem posed by them.</p>
+<p class="keywords">weight enumerator, code size, linear-congruence code, exponential sum</p>
+<p class="date">August 29, 2018.</p>
+<p class="math-class">2010 Mathematics Subject Classification: <span>94B60 (05A15, 11L15)</span></p>
+<p class="source">Source: <span>https://arxiv.org/abs/1808.09365v1</span></p>
+
+<h2 id="introduction" class="unnumbered unnumbered">Introduction</h2>
+<p> Throughout this article, <span class="math inline"><em>n</em></span> and <span class="math inline"><em>m</em></span>
+    denote positive integers, <span class="math inline"><em>b</em></span> denotes an integer and <span
+            class="math inline">$\mathbb{Z}_q &#x2254; \{0, 1, \dotsc, q-1\} \subset \mathbb{Z}$</span> for a positive
+    integer <span class="math inline"><em>q</em></span>. We will use <span class="math inline"><em>n</em></span> for a
+    code length, <span class="math inline"><em>m</em></span> for a modulus, <span class="math inline"><em>b</em></span>
+    for a defining parameter of a code and <span class="math inline">Z<sub><em>q</em></sub></span> for a code alphabet.
+</p>
+<h3>Definition</h3>
+<p>Let <span class="math inline">$a = (a_1, \dotsc, a_n) \in \mathbb{Z}^n$</span> and <span
+        class="math inline"><em>b</em> ? Z</span>. The set <span class="math inline"><em>C</em></span> of all the
+    solutions <span class="math inline">$x = (x_1, \dotsc, x_n) \in \mathbb{Z}_q^n$</span> for a linear congruence
+    equation <span class="math display num">$$\label{eq: ax = b}
+        a\cdot x \equiv b \pmod m$$</span> is said to be a <em>linear-congruence code</em> where <span
+            class="math inline">$a\cdot x &#x2254; a_1x_1 + \dotsb + a_nx_n$</span>. A linear-congruence code <span
+            class="math inline"><em>C</em></span> is called <em>binary</em> when <span class="math inline"><em>q</em> = 2</span>.
+</p>
+
+<p>Several deletion-correcting codes which have been studied are linear-congruence codes; the Varshamov-Tenengol�ts
+    codes�<span class="citation" data-cites="VT65"></span>, the Levenshtein codes�<span class="citation"
+                                                                                        data-cites="Lev66"></span>, the
+    Helberg codes�<span class="citation" data-cites="HF02"></span>, the Le-Nguyen codes�<span class="citation"
+                                                                                              data-cites="LN16"></span>,
+    the construction <span class="math inline"><em>C</em>'</span> of Hagiwara�<span class="citation"
+                                                                                    data-cites="Hag17"></span> (for some
+    parameters), the consecutively systematic encodable codes and the ternary integer codes in�<span class="citation"
+                                                                                                     data-cites="Hag16"></span>
+    fall into this category (Table).</p>
+
+<table>
+    <caption>Examples of linear-congruence codes</caption>
+    <thead>
+    <tr class="header">
+        <th style="text-align: left;">Linear-congruence code</th>
+        <th style="text-align: right;"><span class="math inline"><em>q</em></span></th>
+        <th style="text-align: right;"><span class="math inline">$(a_1, \dotsc, a_n)$</span></th>
+        <th style="text-align: right;"><span class="math inline"><em>m</em></span></th>
+        <th style="text-align: left;">Constraints</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td style="text-align: left;">Varshamov-Tenengol�ts code</td>
+        <td style="text-align: right;"><span class="math inline">2</span></td>
+        <td style="text-align: right;"><span class="math inline">$(  1, \dotsc,   n)$</span></td>
+        <td style="text-align: right;"><span class="math inline"><em>n</em> + 1</span></td>
+        <td style="text-align: left;"></td>
+    </tr>
+    <tr class="even">
+        <td style="text-align: left;">Levenshtein code</td>
+        <td style="text-align: right;"><span class="math inline">2</span></td>
+        <td style="text-align: right;"><span class="math inline">$(  1, \dotsc,   n)$</span></td>
+        <td style="text-align: right;"><span class="math inline"><em>m</em></span></td>
+        <td style="text-align: left;"><span class="math inline"><em>m</em> = <em>n</em> + 1</span></td>
+    </tr>
+    <tr class="odd">
+        <td style="text-align: left;">Helberg code</td>
+        <td style="text-align: right;"><span class="math inline">2</span></td>
+        <td style="text-align: right;"><span class="math inline">$(v_1, \dotsc, v_n)$</span></td>
+        <td style="text-align: right;"><span class="math inline"><em>v</em><sub><em>n</em> + 1</sub></span></td>
+        <td style="text-align: left;"><span class="math inline"><em>s</em> ? Z<sub> &gt; 0</sub></span></td>
+    </tr>
+    <tr class="even">
+        <td style="text-align: left;">Le-Nguyen code</td>
+        <td style="text-align: right;"><span class="math inline"><em>q</em></span></td>
+        <td style="text-align: right;"><span class="math inline">$(w_1, \dotsc, w_n)$</span></td>
+        <td style="text-align: right;"><span class="math inline"><em>m</em></span></td>
+        <td style="text-align: left;"><span class="math inline"><em>m</em> = <em>w</em><sub><em>n</em> + 1</sub></span>,
+            <span class="math inline"><em>s</em> ? Z<sub> &gt; 0</sub></span></td>
+    </tr>
+    <tr class="odd">
+        <td style="text-align: left;">Construction <span class="math inline"><em>C</em>'</span></td>
+        <td style="text-align: right;"><span class="math inline">2</span></td>
+        <td style="text-align: right;"><span class="math inline">$(c_1, \dotsc, c_n)$</span></td>
+        <td style="text-align: right;"><span class="math inline"><em>n</em></span></td>
+        <td style="text-align: left;"><span class="math inline">$b \not\equiv 0, n(n+1)/2 \pmod n$</span></td>
+    </tr>
+    <tr class="even">
+        <td style="text-align: left;">Consecutively systematic encodable codes</td>
+        <td style="text-align: right;"><span class="math inline">2</span></td>
+        <td style="text-align: right;"><span class="math inline">$(b_1, \dotsc, b_n)$</span></td>
+        <td style="text-align: right;"><span class="math inline">2<sup><em>s</em> + 1</sup></span></td>
+        <td style="text-align: left;"><span class="math inline"><em>b</em> = 0</span>, <span
+                class="math inline"><em>s</em> ? Z<sub> &gt; 0</sub></span>, <span class="math inline">0 &lt; <em>n</em> - <em>s</em> &lt; 2<sup><em>s</em> - 1</sup></span>
+        </td>
+    </tr>
+    <tr class="odd">
+        <td style="text-align: left;">Ternary integer code</td>
+        <td style="text-align: right;"><span class="math inline">3</span></td>
+        <td style="text-align: right;"><span class="math inline">$(t_1, \dotsc, t_n)$</span></td>
+        <td style="text-align: right;"><span class="math inline">2<sup><em>n</em> + 1</sup> - 1</span></td>
+        <td style="text-align: left;"></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<p>The following problem concerning the size of a linear-congruence code�the number of solutions for a linear congruence
+    equation <a href="#eq: ax = b" data-reference-type="eqref" data-reference="eq: ax = b">[eq: ax = b]</a>�is posed by
+    Bibak and Milenkovic.</p>
+
+<h3>Problem</h3>
+
+<p>Give an explicit formula for the size of a linear-congruence code.</p>
+<p>Finding an explicit formula would be a first step toward understanding the asymptotic behavior of the size of a
+    linear-congruence code. Bibak and Milenkovic provide a solution to the problem for the binary case. In this article,
+    we provide a complete solution to the problem with a simple proof, which improves the argument of Bibak and
+    Milenkovic. Actually, what we will show is how the Hamming weights of the solutions for a linear congruence equation
+    distribute. This immediately gives an expression of the size of a linear-congruence code involving exponential
+    sums�Weyl sums of degree one.</p>
+<p>To state the main theorem we need notation which will be standard.</p>
+
+<h3>Definition</h3>
+<p>For a code <span class="math inline"><em>C</em> ? Z<sub><em>q</em></sub><sup><em>n</em></sup></span>, we define a
+    polynomial <span class="math inline"><em>W</em><sub><em>C</em></sub>(<em>z</em>)</span> by <!--<br />--><span
+            class="math display">$$W_C(z)
+        = \sum_{x \in C} z^{wt(x)}
+        = \sum_{i=0}^n A_i(C) z^i,$$</span><!--<br />--> where <span class="math inline">$wt(x)$</span> denotes the
+    Hamming weight and <!--<br />--><span class="math display">$$A_i(C) &#x2254; |{ x \in C : wt(x) = i }\rvert \qquad (0 \leq i \leq n).$$</span>
+    <!--<br />--> The polynomial <span class="math inline"><em>W</em><sub><em>C</em></sub>(<em>z</em>)</span> is said to
+    be the (non-homogeneous) <em>weight enumerator</em> of the code <span class="math inline"><em>C</em></span>.</p>
+<p>Following custom due to Vinogradov in additive number theory, <span class="math inline"><em>e</em>(<em>a</em>)</span>
+    denotes <span class="math inline">$e^{2\pi\alpha\sqrt{-1}}$</span> for <span
+            class="math inline"><em>a</em> ? R</span>. Now we are in position to state our main theorem.</p>
+<h3 class="break-before">Theorem</h3>
+<p>Let <span class="math inline">$a = (a_1, \dotsc, a_n) \in \mathbb{Z}^n$</span> and <span
+        class="math inline"><em>b</em> ? Z</span>. Then the weight enumerator <span
+        class="math inline"><em>W</em><sub><em>C</em></sub>(<em>z</em>)</span> of the linear-congruence code <span
+        class="math display num">$$\label{eq: LCC}
+        C = { x \in \mathbb{Z}_q^n : a\cdot x \equiv b \pmod m }$$</span><!--<br />--> is given by <span
+        class="num math display">$$W_C(z) =
+        \frac{1}{m}\sum_{j=1}^m e\left(-\frac{jb}{m}\right)
+            \prod_{i=1}^n\left(1 + ze\left(\frac{ja_i}{m}\right) + \dotsb + ze\left(\frac{ja_i(q-1)}{m}\right)\right).$$</span>
+    <!--<br />--></p>
+<p>With the same notation as above, the size of the code <span class="math inline"><em>C</em></span> is given by
+    <!--<br />--><span class="math display">$$\lvert C\rvert =
+        \frac{1}{m}\sum_{j=1}^m e\left(-\frac{jb}{m}\right)
+            \prod_{i=1}^n\left(1 + e\left(\frac{ja_i}{m}\right) + \dotsb + e\left(\frac{ja_i(q-1)}{m}\right)\right).$$</span>
+    <!--<br />--></p>
+<h2 id="proof-of-theorem" class="unnumbered unnumbered">Proof of Theorem</h2>
+<p>The only lemma we need to prove the main theorem is the following trivial one.</p>
+<p><!--<br />--><span class="math display">$$\frac{1}{m}\sum_{j=1}^m e\left(\frac{jb}{m}\right)
+        = \begin{cases}
+            1 &amp; \mathrm{if   } \ b     \equiv 0 \pmod m  \\
+            0 &amp; \mathrm{if  } \ b \not\equiv 0 \pmod m .
+        \end{cases}$$</span><!--<br />--></p>
+<p>The proof is straightforward: <!--<br />--><span class="math display">$$\begin{aligned}
+        &amp;\frac{1}{m}\sum_{j=1}^m e\left(-\frac{jb}{m}\right)
+            \prod_{i=1}^n\left(1 + ze\left(\frac{ja_i}{m}\right) + \dotsb + ze\left(\frac{ja_i(q-1)}{m}\right)\right) \\
+        &amp;\qquad=
+        \frac{1}{m}\sum_{j=1}^m e\left(-\frac{jb}{m}\right)
+            \prod_{i=1}^n \sum_{x_i \in \mathbb{Z}_q} z^{wt(x_i)}e\left(\frac{ja_ix_i}{m}\right) \\
+        &amp;\qquad=
+        \frac{1}{m}\sum_{j=1}^m e\left(-\frac{jb}{m}\right)
+            \sum_{(x_1, \dotsc, x_n) \in \mathbb{Z}_q^n} \prod_{i=1}^n z^{wt(x_i)}e\left(\frac{ja_i x_i}{m}\right) \\
+        &amp;\qquad=
+        \frac{1}{m}\sum_{j=1}^m e\left(-\frac{jb}{m}\right)
+            \sum_{x \in \mathbb{Z}_q^n} z^{wt(x)}e\left(\frac{ja\cdot x}{m}\right) \\
+        &amp;\qquad=
+        \sum_{x \in \mathbb{Z}_q^n}
+            \left(\frac{1}{m}\sum_{j=1}^m
+                e\left(\frac{j(a\cdot x - b)}{m}\right) \right)
+                     z^{wt(x)} \\
+        &amp;\qquad=
+        \sum_{x \in C}z^{wt(x)} \qquad (\text{By Lemma.}) \\
+        &amp;\qquad= W_C(z).
+
+    \end{aligned}$$</span><br/></p>
+<h3>Remark</h3>
+<p>The original proof by Bibak and Milenkovic�<span class="citation" data-cites="BM18"></span> for the binary case uses
+    a theorem of Lehmer�<span class="citation" data-cites="Leh23"></span>, which states a linear congruence equation
+    <!--<br />--><span class="math display">$$a\cdot x \equiv b \pmod m$$</span><!--<br />--> defined by <span
+            class="math inline">$a = (a_1, \dotsc, a_n) \in \mathbb{Z}^n$</span> and <span
+            class="math inline"><em>b</em> ? Z</span> has a solution <span
+            class="math inline"><em>x</em> ? Z<sub><em>m</em></sub><sup><em>n</em></sup></span> if and only if <span
+            class="math inline">$\gcd(a_1, \dotsc, a_n, m)$</span> divides <span class="math inline"><em>b</em></span>.
+    Consequently, their result is stated depending on whether <span
+            class="math inline">$\gcd(a_1, \dotsc, a_n, m)$</span> divides <span class="math inline"><em>b</em></span>
+    or not. By contrast, our result does not refer to <span class="math inline">$\gcd(a_1, \dotsc, a_n, m)$</span>
+    because our proof does not rely on the Lehmer theorem.</p>
+<h2 id="acknowledgments" class="unnumbered unnumbered">Acknowledgments</h2>
+<p>The author thanks Professor Manabu Hagiwara for drawing the author�s attention to the work of Bibak and Milenkovic
+    and his invaluable help during the preparation of this article. This work is partially supported by KAKENHI(B)
+    18H01435, 16K12391 and 16K06336.</p>
+
+<section id="references">
+    <h2 class="unnumbered unnumbered">References</h2>
+
+    <p>K.�Bibak and O.�Milenkovic, Weight enumerators of some classes of deletion correcting codes, <em>IEEE ISIT</em>
+        (2018) 431�435, doi:<a href="https://doi.org/10.1109/ISIT.2018.8437121">10.1109/ISIT.2018.8437121</a>.</p>
+
+
+    <p>M.�Hagiwara, On ordered syndromes for multi insertion/deletion error-correcting codes, <em>IEEE ISIT</em> (2016)
+        625�629, doi:<a href="https://doi.org/10.1109/ISIT.2016.7541374">10.1109/ISIT.2016.7541374</a>.</p>
+
+    <p>Perfect codes for single balanced adjacent deletions, <em>IEEE ISIT</em> (2017) 1938�1942, doi:<a
+            href="https://doi.org/10.1109/ISIT.2017.8006867">10.1109/ISIT.2017.8006867</a>.</p>
+
+    <p>A.�S.�J.�Helberg and H.�C.�Ferreira, On multiple insertion/deletion correcting codes, <em>IEEE Trans. Inf.
+        Theory</em> <strong>48</strong> (2002) 305�308, doi:<a href="https://doi.org/10.1109/18.971760">10.1109/18.971760</a>.
+        MR <a href="http://www.ams.org/mathscinet-getitem?mr=1872185">1872185</a> Zbl <a
+                href="https://zbmath.org/?q=an:1059.94040">1059.94040</a></p>
+
+    <p>T.�A.�Le and H.�D.�Nguyen, New multiple insertion/deletion correcting codes for non-binary alphabets, <em>IEEE
+        Trans. Inform. Theory</em> <strong>62</strong> (2016), 2682�2693, doi:<a
+            href="https://doi.org/10.1109/TIT.2016.2541139">10.1109/TIT.2016.2541139</a>. MR <a
+            href="http://www.ams.org/mathscinet-getitem?mr=3493869">3493869</a> Zbl <a
+            href="https://zbmath.org/?q=an:1359.94714">1359.94714</a></p>
+
+    <p>D.�N.�Lehmer, Certain theorems in the theory of quadratic residues, <em>Amer. Math. Monthly</em>
+        <strong>20</strong> (1913) 151�157, doi:<a href="https://doi.org/10.2307/2972413">10.2307/2972413</a>. MR <a
+                href="http://www.ams.org/mathscinet-getitem?mr=1517830">1517830</a> Zbl <a
+                href="https://zbmath.org/?q=an:44.0248.09">44.0248.09</a></p>
+
+    <p>V.�I.�Levenshtein, <a href="https://nymity.ch/sybilhunting/pdf/Levenshtein1966a.pdf">Binary codes capable of
+        correcting deletions, insertions, and reversals</a>, <em>Soviet Physics Dokl.</em> <strong>10</strong> (1966)
+        707�710. MR <a href="http://www.ams.org/mathscinet-getitem?mr=189928">189928</a> Zbl <a
+                href="https://zbmath.org/?q=an:0149.15905">0149.15905</a></p>
+
+    <p>R.�R.�Varshamov and G.�M.�Tenengol�ts, <a href="http://mi.mathnet.ru/eng/at11293">Code correcting single
+        asymmetric errors</a>, <em>Avtomat. i Telemeh.</em> <strong>26</strong> (1965) 288�292. MR <a
+            href="http://www.ams.org/mathscinet-getitem?mr=172738">172738</a></p>
+</section>
+
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <link rel="stylesheet" type="text/css" href="ReportCSS.css">
+    <title></title>
+</head>
+
+<body>
+<p class="PageBreak"></p>
+<div id="">
+    <h2 id=""></h2>
+
+
+</div>
+<p class="PageBreak"></p>
+</body>
+</html>

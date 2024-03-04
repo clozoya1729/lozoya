@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+            type="text/javascript">
+    </script>
+    <link href="ReportCSS.css" rel="stylesheet" type="text/css">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h2>Table of Contents</h2>
+<div class="navigator">
+    {% for header in headersDict %}
+    <a href="#{{ headersDict[header]['id'] }}">{{ headersDict[header]['name'] }}</a>
+    <ul>
+        {% for subheader in headersDict[header]['subheaders'] %}
+        <li><a href="#{{ subheader['id'] }}">{{ subheader['name'] }}</a></li>
+        <ul>{% for subSubheader in subheader['subheaders'] %}
+            <li><a href="#{{ subSubheader['id'] }}">{{ subSubheader['name'] }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</div>
+</body>
+</html>

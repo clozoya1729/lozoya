@@ -1,0 +1,92 @@
+.wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.functionString {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 25%;
+}
+
+h1, h2, h3, h4, pre, p, ImageCaption {
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28pt;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24pt;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18pt;
+}
+
+h4 {
+    text-align: center;
+    font-size: 14pt;
+}
+
+p, pre {
+    font-size: 12pt;
+    text-align: justify;
+    margin: 0 auto;
+    width: 49em;
+    /*padding: 10px;*/
+    line-height: 1.5;
+    text-indent: 2.0em;
+}
+
+
+.ImageCaption {
+    font-size: 10pt;
+}
+
+var {
+    font-weight: bold;
+}
+
+
+.grid {
+    position: relative;
+}
+
+.item {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.item.muuri-item-dragging {
+    z-index: 3;
+}
+
+.item.muuri-item-releasing {
+    z-index: 2;
+}
+
+.item.muuri-item-hidden {
+    z-index: 0;
+}
+
+.item-content {
+    position: relative;
+    cursor: pointer;
+}
+
+.item.muuri-item-dragging .item-content {
+    background: #8993a2;
+}
+
+.item.muuri-item-releasing .item-content {
+    background: #152c43;
+}

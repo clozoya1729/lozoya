@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="ReportCSS.css">
+<body><h2>Error Metrics</h2><p>Error metrics compare the regression analysis to the data and are used to quantify the uncertainty or "error" in the regression analysis.The following are all of the error metrics included in this report.</p>
+<h3>
+Mean Absolute Error (MAE)
+</h3>
+
+<p>
+MAE of a data set measures the average distance between 
+each data value and the mean of a data set. 
+It describes the variation and dispersion in a data set.
+</p>
+
+<p>
+Without their direction being considered, MAE averages the magnitude 
+of the errors in a set of predictions.
+</p>
+
+####
+<p>
+It�s the average over the test sample of the absolute 
+differences between prediction and actual observation where 
+all individual differences have equal weight.
+</p>
+
+<p>
+###
+MAE is more appropriate if being off by 10 is just twice as bad as being off by 5, then .
+</p>
+
+'<p>
+MAE is calculated using the following formula:
+</p>
+
+<img src = "Z:/Family/LoPar Technologies/LoParPlotGenerator/ExpressionStrings\Mean Absolute Error.png" class="functionString">
+
+<h3>
+Mean Bias Error (MBE)
+</h3>
+
+<p>
+####
+If the absolute value is not taken (the signs of the errors are not removed), 
+the average error becomes the Mean Bias Error (MBE) and is 
+usually intended to measure average model bias. 
+MBE can convey useful information, but should be interpreted cautiously 
+because positive and negative errors will cancel out.
+####
+</p>
+
+<img src = "Z:/Family/LoPar Technologies/LoParPlotGenerator/ExpressionStrings\Mean Bias Error.png" class="functionString">
+
+<h3>
+Mean Squared Error (MSE)
+</h3>
+<p>
+The mean squared error is calculated using the following formula:
+</p>
+
+<img src = "Z:/Family/LoPar Technologies/LoParPlotGenerator/ExpressionStrings\Mean Squared Error.png" class="functionString">
+
+<h3>
+Root Mean Squared Error (RMSE)
+</h3>
+
+#### 
+<p>
+RMSE is a quadratic scoring rule that also measures the average magnitude of the error. 
+It�s the square root of the average of squared differences between prediction and actual observation.
+</p>
+###
+
+<p>
+RMSE does not necessarily increase with the variance of the errors. 
+RMSE is proportional to the variance of the error magnitude frequency distribution.
+However, it is not necessarily proporional to the error variance.
+</p>
+
+<p>
+RMSE can be appropriate when large errors should be penalized more than smaller errors.
+The penalty of the error changes in a non-linear way.
+</p>
+
+<p>
+The root mean square error is calculated as follows:
+</p>
+
+<img src = "Z:/Family/LoPar Technologies/LoParPlotGenerator/ExpressionStrings\Root Mean Squared Error.png" class="functionString">
+</body>
+</html>
