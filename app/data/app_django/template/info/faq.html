@@ -1,0 +1,56 @@
+{% extends 'base/general/article.html' %}
+{% load static %}
+{% block title %}
+    Frequently Asked Questions
+{% endblock %}
+{% block text %}
+    <!-- Start: body-faq -->
+    <section id="faq" style="padding: 2px;margin: 11px;">
+        <hr class="star-dark mb-5">
+        <div class="container">
+            <div role="tablist" id="accordion-1">
+                <div class="card">
+                    <div class="card-header" role="tab">
+                        <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false"
+                                            aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1"
+                                            class="page-heading">Are private servers faster?</a></h5>
+                    </div>
+                    <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
+                        <div class="card-body">
+                            <p class="card-text">Yes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab">
+                        <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true"
+                                            aria-controls="accordion-1 .item-2" href="#accordion-1 .item-2">What
+                            about the public server?</a></h5>
+                    </div>
+                    <div class="collapse show item-2" role="tabpanel" data-parent="#accordion-1">
+                        <div class="card-body">
+                            <p class="card-text">Your analysis will be queued. Analyses are performed in the order
+                                they are received. The public server configuration cannot be customized. Leaving an
+                                analysis dashboard on the public server will remove all data and settings
+                                on the dashboard. Data and settings are only preserved private server.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab">
+                        <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false"
+                                            aria-controls="accordion-1 .item-3" href="#accordion-1 .item-3">How much
+                            data can I use?</a></h5>
+                    </div>
+                    <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
+                        <div class="card-body">
+                            <p class="card-text">The public server allows up to 0.1 GB of data to be uploaded. There
+                                are no storage limits on a private server.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: body-faq -->
+{% endblock %}

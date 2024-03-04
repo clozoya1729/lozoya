@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="feat_1">
+        <Placemark id="feat_2">
+            <name>LAT_016: 65.144
+Name: Favors
+LONG_017: -152.2
+</name>
+            <Point id="geom_0">
+                <coordinates>-152.2,65.144,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

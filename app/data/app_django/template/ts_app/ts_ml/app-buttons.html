@@ -1,0 +1,33 @@
+<div class="btn-group app-btn-group"
+     role="group">
+    <a href="#"
+       class="btn btn-primary btn-toolbar-btn open-sidebar"
+       id="btn_settings_{{ n }}"
+       onclick="populate_sidebar('ml', '{{ objectType }}', {{ n }})
+               update_controls('{{ objectType }}', {{ n }})">
+        <span class="glyphicon glyphicon-cog">
+            Settings
+        </span>
+        <br>
+    </a>
+    <a href="#"
+       class="btn btn-secondary btn-toolbar-btn"
+       id="btn_fit_{{ n }}"
+       onclick="fit_model('app-{{ n }}');">
+        <span class="glyphicon glyphicon-play">
+            Fit
+        </span>
+        <br>
+
+    </a>
+    <a href="#"
+       class="btn btn-secondary btn-toolbar-btn"
+       id="btn_download_{{ n }}"
+       onclick="download_button();">
+        <span class="glyphicon glyphicon-download-alt">
+            Download
+        </span>
+        <br>
+    </a>
+</div>
+

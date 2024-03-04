@@ -1,0 +1,70 @@
+.article-clean {
+}
+
+.article-clean h1 {
+    color: inherit;
+}
+
+.article-clean .intro p a {
+    color: #333;
+    text-transform: uppercase;
+    padding-left: 3px;
+}
+
+.article-clean .intro img {
+    margin: auto;
+    max-width: 350px;
+}
+
+.article-clean h2 {
+    margin-top: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.article-clean .text figure {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.article-clean .text figure img {
+    margin-bottom: 12px;
+    max-width: 100%;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: rgb(255, 255, 255);
+}
+
+.col-md-3.col-sm-4.item {
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .col-md-3.col-sm-4.item {
+        width: 100%;
+    }
+}
+
+.text-right.footer a:hover {
+    color: var(--primary-orange);
+}
+
+.text-right.footer a {
+    color: Black;
+}
+
+.success-body {
+    background-image: url("rope_metal.jpg");
+}
+
+.sarici.message {
+    height: 165px;
+}
+

@@ -1,0 +1,48 @@
+:root {
+    --primary-paragraph-font-style: normal;
+    --primary-paragraph-font-variant: normal;
+    --primary-paragraph-font-weight: normal;
+    --primary-paragraph-font-size: calc(var(--font-size-largest) / 2.25);
+    --primary-paragraph-line-height: calc(var(--font-size-largest) / 2.25);
+    --primary-paragraph-font-family: Roboto, sans-serif;
+    --primary-paragraph-letter-spacing: calc(var(--letter-spacing-largest) / 15);
+    --primary-paragraph-padding-top: 0rem;
+    --primary-paragraph-padding-right: 0rem;
+    --primary-paragraph-padding-bottom: var(--font-size-largest);
+    --primary-paragraph-padding-left: 0rem;
+    --primary-paragraph-padding: var(--primary-paragraph-padding-top) var(--primary-paragraph-padding-right) var(--primary-paragraph-padding-bottom) var(--primary-paragraph-padding-left);
+    --primary-paragraph-font: var(--primary-paragraph-font-style) var(--primary-paragraph-font-variant) var(--primary-paragraph-font-weight) var(--primary-paragraph-font-size)/var(--primary-paragraph-line-height) var(--primary-paragraph-font-family);
+}
+
+:root {
+    --secondary-paragraph-font-style: normal;
+    --secondary-paragraph-font-variant: normal;
+    --secondary-paragraph-font-weight: normal;
+    --secondary-paragraph-font-size: calc(var(--font-size-largest) / 2.5);
+    --secondary-paragraph-line-height: calc(var(--font-size-largest) / 2.5);
+    --secondary-paragraph-font-family: 'Lora', serif;
+    --secondary-paragraph-letter-spacing: calc(var(--letter-spacing-largest) / 25);
+    --secondary-paragraph-padding-top: 0rem;
+    --secondary-paragraph-padding-right: 0rem;
+    --secondary-paragraph-padding-bottom: var(--font-size-largest);
+    --secondary-paragraph-padding-left: 0rem;
+    --secondary-paragraph-padding: var(--secondary-paragraph-padding-top) var(--secondary-paragraph-padding-right) var(--secondary-paragraph-padding-bottom) var(--secondary-paragraph-padding-left);
+    --secondary-paragraph-font: var(--secondary-paragraph-font-style) var(--secondary-paragraph-font-variant) var(--secondary-paragraph-font-weight) var(--secondary-paragraph-font-size)/var(--secondary-paragraph-line-height) var(--secondary-paragraph-font-family);
+}
+
+:root {
+    --tertiary-paragraph-font-style: normal;
+    --tertiary-paragraph-font-variant: normal;
+    --tertiary-paragraph-font-weight: normal;
+    --tertiary-paragraph-font-size: calc(var(--font-size-largest) / 3);
+    --tertiary-paragraph-line-height: calc(var(--font-size-largest) / 2.5);
+    --tertiary-paragraph-font-family: 'Lora', serif;
+    --tertiary-paragraph-letter-spacing: calc(var(--letter-spacing-largest) / 25);
+    --tertiary-paragraph-padding-top: 0rem;
+    --tertiary-paragraph-padding-right: 0rem;
+    --tertiary-paragraph-padding-bottom: var(--font-size-largest);
+    --tertiary-paragraph-padding-left: 0rem;
+    --tertiary-paragraph-padding: var(--tertiary-paragraph-padding-top) var(--tertiary-paragraph-padding-right) var(--tertiary-paragraph-padding-bottom) var(--tertiary-paragraph-padding-left);
+    --tertiary-paragraph-font: var(--tertiary-paragraph-font-style) var(--tertiary-paragraph-font-variant) var(--tertiary-paragraph-font-weight) var(--tertiary-paragraph-font-size)/var(--tertiary-paragraph-line-height) var(--tertiary-paragraph-font-family);
+}
+

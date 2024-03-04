@@ -1,0 +1,56 @@
+:root {
+  --navbar-bg-color: var(--primary-bg-color);
+  --navbar-primary-font-color: var(--primary-font-color);
+  --navbar-secondary-font-color: var(--secondary-font-color);
+  --navbar-btn-bg-color: var(--secondary-bg-color);
+  --navbar-btn-font-color: white;
+  --navbar-primary-font-hover: white;
+  --navbar-secondary-font-hover: rgb(230,230,230);
+  --navbar-height: 44px;
+}
+
+.ts-navbar {
+  background-color: var(--navbar-bg-color);
+  height: var(--navbar-height);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.ts-navbar .navbar-brand {
+  color: var(--navbar-primary-font-color);
+}
+
+.ts-navbar .nav-link {
+  color: var(--navbar-secondary-font-color) !important;
+}
+
+.ts-navbar .btn {
+  background-color: var(--navbar-btn-bg-color);
+  color: var(--navbar-btn-font-color);
+}
+
+.ts-navbar .navbar-brand:hover {
+  color: var(--navbar-primary-font-hover);
+  text-shadow: 1px 1px rgba(255,255,255,0.25);
+}
+
+.ts-navbar .nav-link:hover {
+  color: var(--navbar-secondary-font-hover) !important;
+}
+
+#dashboard-name {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding-top: 20px;
+}
+
+body {
+  padding-top: var(--navbar-height);
+}
+

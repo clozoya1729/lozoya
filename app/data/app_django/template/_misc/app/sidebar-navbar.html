@@ -1,0 +1,20 @@
+{% load static %}
+<ul class="nav nav-tabs">
+    {% for option in options %}
+        <li class="nav-item">
+            {% if forloop.counter0 == 0 %}
+                <a id="{{ groupID }}_{{ n }}_{{ forloop.counter0 }}"
+                   class="py-0 nav-link btn-sidebar-navbar active-tab"
+                   onclick="update_sidebar_navbar('{{ groupID }}_{{ n }}', '{{ groupID }}_{{ n }}_{{ forloop.counter0 }}'); {{ option.onclick }}">
+                    {{ option.text }}
+                </a>
+            {% else %}
+                <a id="{{ groupID }}_{{ n }}_{{ forloop.counter0 }}"
+                   class="py-0 nav-link btn-sidebar-navbar"
+                   onclick="update_sidebar_navbar('{{ groupID }}_{{ n }}', '{{ groupID }}_{{ n }}_{{ forloop.counter0 }}'); {{ option.onclick }}">
+                    {{ option.text }}
+                </a>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,288 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux</title>
+        <meta name="description" content="Step Into The Manifold">
+        {% include 'css.html' %}
+    </head>
+    <body>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="../info/home.html"><img class="logo"
+                                                                                                   src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'js.html' %}
+    </body>
+    </html>
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux</title>
+        <meta name="description" content="Step Into The Manifold">
+        {% include 'css.html' %}
+    </head>
+    <body>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="../info/home2.html"><img class="logo"
+                                                                                                    src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'js.html' %}
+    </body>
+    </html>
+{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>footer</title>
+    {% include 'css.html' %}
+</head>
+<body style="background-color: rgb(248,248,248);">
+<div id="footer" class="footer-2"
+     style="background-color: rgb(242,241,241);color: rgb(0,0,0);position: fixed; left: 0; bottom: 0; width: 100%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-8">
+                <p class="text-left" style="margin-top:5%;margin-bottom:3%;">© 2018 Vectorflux. All Rights Reserved</p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <p class="text-right" style="margin-top:5%;margin-bottom:8%%;font-size:1em;">Privacy Stament | Terms of
+                    &nbsp;Use&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'js.html' %}
+</body>
+</html>
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>VectorFlux8</title>
+    {% include 'css.html' %}
+</head>
+<body>
+<div id="id_footer"
+     style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+    <div class="footer"
+         style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-8">
+                    <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                            src="{% static 'assets/img/logo-no-text.png' %}" style="width: 200px;"></a></p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p class="text-right footer"
+                       style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                        <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="info0/faq0.html">FAQ</a></p>
+                </div>
+                <div class="col-md-12 col-sm-11 col-xs-11"><img
+                        src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                        alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p class="text-right footer-text"
+                       style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                        <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="info0/terms0.html">Terms of
+                        Service</a>&nbsp;| <a href="../info/credits0.html">Credits</a></p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-7">
+                    <p class="text-left"
+                       style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                        © 2019 VectorFlux. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'js.html' %}
+</body>
+</html>
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux</title>
+        <meta name="description" content="Step Into The Manifold">
+        {% include 'css.html' %}
+    </head>
+    <body>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="home0.html"><img class="logo"
+                                                                                            src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'js.html' %}
+    </body>
+    </html>
+{% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>navbar</title>
+    {% include 'css.html' %}
+</head>
+<body>
+<div id="id_footer">
+    <div class="footer"
+         style="background-color: rgb(242,241,241);color: rgb(0,0,0);padding-bottom: 15px;padding-top: 15px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-8">
+                    <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                            src="{% static 'assets/img/logo-black-text.png' %}"></a></p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p class="text-right" style="margin-top:5%;margin-bottom:8%%;font-size:1em;"><a
+                            href="{% url 'info:contact-us' %}">Contact Us</a> | FAQ</p>
+                </div>
+                <div class="col-md-12 col-sm-11 col-xs-11"><img
+                        src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                        alt="Pay with PayPal, PayPal Credit or any major credit card."></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-2" style="background-color: rgb(200,200,200);color: rgb(255,255,255);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-7">
+                    <p class="text-left" style="margin-top: 5%;margin-bottom: 3%;">© 2018 Vectorflux. All Rights
+                        Reserved</p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p class="text-right" style="margin-top:5%;margin-bottom:8%%;font-size:1em;"><a
+                            href="{% url 'info:privacy' %}">Privacy Stament</a> | <a href="{% url 'info:terms' %}">Terms
+                        of Service</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'js.html' %}
+</body>
+</html>

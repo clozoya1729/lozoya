@@ -1,0 +1,20 @@
+<head>
+    {% load static %}
+    {% include "css.html" %}
+    <title>vectorflux</title>
+</head>
+<body style="min-height:400px; margin-bottom: 100px; clear: both;">
+<div>
+    {% include "navbar.html" %}
+</div>
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+{% include "footer.html" %}
+{% include "js.html" %}
+</body>

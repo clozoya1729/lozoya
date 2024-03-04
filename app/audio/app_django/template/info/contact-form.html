@@ -1,0 +1,373 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Contact Us</title>
+        <meta name="description" content="We appreciate your feedback!">
+        {% include 'css.html' %}
+    </head>
+    <body style="background-size: contain;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="contact-form-background-div" class="register-photo">
+        <div id="contact-form-bgcolor-div" class="background-div">
+            <div class="form-container">
+                <div id="contact-form-image-holder-div" class="image-holder"></div>
+                <form data-bss-recipient="63ea040be94e33fbc2d24aed060e8d3b"
+                      style="background-color: rgba(186,186,186,0);background-size: cover;">
+                    <div class="text-center illustration"><img src="{% static 'assets/img/logo-no-text.png' %}"
+                                                               class="logo-img"></div>
+                    <h2 class="text-center arabesque-heading"
+                        style="color: rgb(255,255,255);text-shadow: 1px 1px rgb(194,108,65);"><strong>Contact
+                        Us</strong></h2>
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="sarici email"><label class="control-label form-field-label">Email</label><input
+                                    class="form-control input-sm" type="text" name="Email" required=""
+                                    placeholder="(example@email.com)" maxlength="100" inputmode="email" id="giris">
+                            </div>
+                            <div
+                                    class="sarici orderid"><label class="control-label form-field-label">Order
+                                ID</label><input class="form-control" type="text" name="Order" placeholder="(optional)"
+                                                 maxlength="50" id="order-giris"></div>
+                            <div class="sarici message"><label
+                                    class="control-label form-field-label">Message</label><textarea class="form-control"
+                                                                                                    rows="4" cols="50"
+                                                                                                    name="message"
+                                                                                                    required=""
+                                                                                                    placeholder="(500 max)"
+                                                                                                    maxlength="500"
+                                                                                                    id="message-giris"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="submit" id="contact-form-sendbtn-button">Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'js.html' %}
+    </body>
+    </html>
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Contact Us</title>
+        <meta name="description" content="We appreciate your feedback!">
+        {% include 'css.html' %}
+    </head>
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="contact-form-background-div" class="register-photo">
+        <div id="contact-form-background-color-div" class="background-div">
+            <div class="form-container">
+                <div id="contact-form-image-holder-div" class="image-holder"></div>
+                <form id="contact-form-info-holder-form" data-bss-recipient="63ea040be94e33fbc2d24aed060e8d3b">
+                    <div class="text-center illustration"><img src="{% static 'assets/img/logo-no-text.png' %}"
+                                                               class="logo-img"></div>
+                    <h2 class="text-center arabesque-heading" id="contact-form-arabesque-heading-h2"><strong>Contact
+                        Us</strong></h2>
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="sarici email"><label class="control-label form-field-label">Email</label><input
+                                    class="form-control input-sm form-input" type="text" name="Email" required=""
+                                    placeholder="(example@email.com)" maxlength="100" inputmode="email" id="giris">
+                            </div>
+                            <div
+                                    class="sarici orderid"><label class="control-label form-field-label">Order
+                                ID</label><input class="form-control form-input" type="text" name="Order"
+                                                 placeholder="(optional)" maxlength="50" id="order-giris"></div>
+                            <div class="sarici message"><label
+                                    class="control-label form-field-label">Message</label><textarea
+                                    class="form-control form-input" rows="4" cols="50" name="message" required=""
+                                    placeholder="(500 max)" maxlength="500"
+                                    id="contact-form-messagebox-textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="submit" id="contact-form-sendbtn-button">Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'js.html' %}
+    </body>
+    </html>
+{% endblock %}{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Contact Us</title>
+        <meta name="description" content="We appreciate your feedback!">
+        {% include 'css.html' %}
+    </head>
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="contact-form-background-div" class="register-photo">
+        <div id="contact-form-background-color-div" class="background-div">
+            <div class="form-container">
+                <div id="contact-form-image-holder-div" class="image-holder"></div>
+                <form id="contact-form-info-holder-form" data-bss-recipient="63ea040be94e33fbc2d24aed060e8d3b"
+                      style="background-color: transparent;">
+                    <div class="text-center illustration"><img class="logo" src="{% static 'img/logo-no-text.png' %}">
+                    </div>
+                    <h2 class="text-center primary-heading" id="contact-form-arabesque-heading-h2"><strong>Contact
+                        Us</strong></h2>
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="sarici email"><label class="control-label form-field-label">Email</label><input
+                                    class="form-control input-sm form-input" type="text" id="giris" name="Email"
+                                    required="" placeholder="(example@email.com)" maxlength="100" inputmode="email">
+                            </div>
+                            <div
+                                    class="sarici orderid"><label class="control-label form-field-label">Order
+                                ID</label><input class="form-control form-input" type="text" id="order-giris"
+                                                 name="Order" placeholder="(optional)" maxlength="50"></div>
+                            <div class="sarici message"><label
+                                    class="control-label form-field-label">Message</label><textarea
+                                    class="form-control form-input" id="contact-form-messagebox-textarea" name="message"
+                                    required="" placeholder="(500 max)" maxlength="500" rows="4" cols="50"></textarea>
+                            </div>
+                            <button
+                                    class="btn btn-primary btn-block" id="contact-form-sendbtn-button" type="submit">
+                                Send
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="home2.html"><img class="logo"
+                                                                                            src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'js.html' %}
+    </body>
+    </html>
+{% endblock %}

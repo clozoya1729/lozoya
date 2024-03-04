@@ -1,0 +1,11 @@
+{% if buttons %}
+    {{ buttons |safe }}
+    <div>
+    </div>
+{% endif %}
+{% if settings %}
+    {{ settings |safe }}
+    <div>
+    </div>
+{% endif %}
+{{ body |safe }}

@@ -1,0 +1,11 @@
+{% extends 'template/base/general/base.html' %}
+{% load static %}
+{% block body %}
+    {% include 'dashboard/dashboard-header.html' %}
+    {% include 'dashboard/sidebar/sidebar.html' %}
+    <div class="container" id="app_page" style="width: 100%;">
+        {% for app in apps %}
+            {{ app |safe }}
+        {% endfor %}
+    </div>
+{% endblock %}

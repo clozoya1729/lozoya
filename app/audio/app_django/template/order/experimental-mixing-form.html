@@ -1,0 +1,277 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        {% include 'css.html' %}
+    </head>
+    <body style="background-image: url(&quot;rocks_birds_eye.jpg&quot;);background-size: cover;background-repeat: no-repeat;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" id="id_notification" style="text-align: center;color: grey;display: none;">
+        <h1 style="font-size: 36px;">Please wait while your files are uploaded.<br>Leaving this page will cancel your
+            order.</h1>
+    </div>
+    <div id="id_order_form_container"
+         style="color: rgb(228,222,215);background-color: rgba(49,49,49,0.88);padding-top: 40px;padding-bottom: 30px;">
+        <div class="container">
+            <div class="intro">
+                <h2 style="color: rgb(193,187,183);">Place Order</h2>
+                <p style="color: #e6ded9;">One order per project.</p>
+            </div>
+            <div>
+                <form id="id_order_form" method="post" enctype="multipart/form-data">{% csrf_token %}
+                    <div class="form-group"><label class="control-label">Services</label>
+                        <div class="checkbox"><label class="control-label"><input type="checkbox">Repair</label></div>
+                        <div class="checkbox text-right"><label class="control-label"><input type="checkbox">Correction</label>
+                        </div>
+                        <div class="checkbox"><label class="control-label"><input type="checkbox">Mixing</label></div>
+                        <div class="checkbox"><label class="control-label"><input type="checkbox" id="id_master"
+                                                                                  name="master">Mastering</label></div>
+                    </div>
+                    <div class="form-group"><label class="control-label">Files</label><input type="file" required=""
+                                                                                             id="id_files"
+                                                                                             class="form-control"
+                                                                                             accept="audio" name="files"
+                                                                                             multiple=""></div>
+                    <div class="form-group"><label class="control-label">Project Name</label><input
+                            class="form-control form-control" type="text" id="id_project_name" style="width: 100%;"
+                            name="project_name" placeholder="e.g. Artist name - Song Title" maxlength="100"></div>
+                    <div
+                            class="form-group"><label class="control-label">Details</label><textarea
+                            class="form-control form-control" id="id_details" style="width: 100%;height: 150px;"
+                            cols="40" maxlength="500" name="details"
+                            placeholder="Request specific procedures for your song. (500 character limit)"
+                            rows="10"></textarea></div>
+                    <div class="form-group"><label class="control-label">Reference</label><input
+                            class="form-control form-control" type="text" id="id_reference" style="width: 100%;"
+                            name="reference" placeholder="List artists/songs to reference." maxlength="100"></div>
+                    <div class="form-group"><label class="control-label">Email</label><input
+                            class="form-control form-control" type="text" required="" id="id_email" style="width: 100%;"
+                            name="email" placeholder="example@email.com"></div>
+                    <div class="form-group"><label class="control-label">Date due</label><input
+                            class="form-control datepicker" type="text" readonly="" id="id_date_due"
+                            default="01/05/2019" name="date_due" placeholder="01/05/2019"></div>
+                    <div class="form-group"><label class="control-label">Services</label>
+                        <div class="checkbox"><label class="control-label"><input type="checkbox" id="id_terms"
+                                                                                  name="terms">I agree to the terms of
+                            service.</label></div>
+                    </div>
+                    <button class="btn btn-default" type="submit">Button</button>
+                    <div class="form-group"><input class="form-control" type="text" readonly="" id="id_price"
+                                                   default="$0.00" maxlength="10" name="price" placeholder="$0.00">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <body style="background-image: url(&quot;rocks_birds_eye.jpg&quot;);background-size: cover;background-repeat: no-repeat;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" id="id_notification" style="text-align: center;color: grey;display: none;">
+        <h1 style="font-size: 36px;">Please wait while your files are uploaded.<br>Leaving this page will cancel your
+            order.</h1>
+    </div>
+    <div id="id_order_form_container"
+         style="color: rgb(228,222,215);background-color: rgba(49,49,49,0.88);padding-top: 40px;padding-bottom: 30px;">
+        <div class="container">
+            <div class="intro">
+                <h2 style="color: rgb(193,187,183);">Place Order</h2>
+                <p style="color: #e6ded9;">One order per project.</p>
+            </div>
+            <div>
+                <form id="id_order_form" method="post" enctype="multipart/form-data">{% csrf_token %}
+                    <div class="form-group"><label class="control-label">Services</label>
+                        <div class="checkbox"><label class="control-label"><input type="checkbox">Repair</label></div>
+                        <div class="checkbox text-right"><label class="control-label"><input type="checkbox">Correction</label>
+                        </div>
+                        <div class="checkbox"><label class="control-label"><input type="checkbox">Mixing</label></div>
+                        <div class="checkbox"><label class="control-label"><input type="checkbox" id="id_master"
+                                                                                  name="master">Mastering</label></div>
+                    </div>
+                    <div class="form-group"><label class="control-label">Files</label><input type="file" required=""
+                                                                                             id="id_files"
+                                                                                             class="form-control"
+                                                                                             accept="audio" name="files"
+                                                                                             multiple=""></div>
+                    <div class="form-group"><label class="control-label">Project Name</label><input
+                            class="form-control form-control" type="text" id="id_project_name" style="width: 100%;"
+                            name="project_name" placeholder="e.g. Artist name - Song Title" maxlength="100"></div>
+                    <div
+                            class="form-group"><label class="control-label">Details</label><textarea
+                            class="form-control form-control" id="id_details" style="width: 100%;height: 150px;"
+                            cols="40" maxlength="500" name="details"
+                            placeholder="Request specific procedures for your song. (500 character limit)"
+                            rows="10"></textarea></div>
+                    <div class="form-group"><label class="control-label">Reference</label><input
+                            class="form-control form-control" type="text" id="id_reference" style="width: 100%;"
+                            name="reference" placeholder="List artists/songs to reference." maxlength="100"></div>
+                    <div class="form-group"><label class="control-label">Email</label><input
+                            class="form-control form-control" type="text" required="" id="id_email" style="width: 100%;"
+                            name="email" placeholder="example@email.com"></div>
+                    <div class="form-group"><label class="control-label">Date due</label><input
+                            class="form-control datepicker" type="text" readonly="" id="id_date_due"
+                            default="01/05/2019" name="date_due" placeholder="01/05/2019"></div>
+                    <div class="form-group"><label class="control-label">Services</label>
+                        <div class="checkbox"><label class="control-label"><input type="checkbox" id="id_terms"
+                                                                                  name="terms">I agree to the terms of
+                            service.</label></div>
+                    </div>
+                    <button class="btn btn-default" type="submit">Button</button>
+                    <div class="form-group"><input class="form-control" type="text" readonly="" id="id_price"
+                                                   default="$0.00" maxlength="10" name="price" placeholder="$0.00">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    {% include 'js.html' %}
+    </html>
+{% endblock %}

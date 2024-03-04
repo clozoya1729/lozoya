@@ -1,0 +1,27 @@
+:root {
+  --footer-background-color: var(--primary-bg-color);
+  --footer-font-color: var(--secondary-font-color);
+  --footer-height: 15vh;
+}
+
+#general-footer {
+  background-color: var(--footer-background-color);
+}
+
+#general-footer a {
+  color: var(--footer-font-color);
+}
+
+#general-footer p {
+  color: var(--footer-font-color);
+}
+
+#general-footer li {
+  color: white;
+}
+
+#general-footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+

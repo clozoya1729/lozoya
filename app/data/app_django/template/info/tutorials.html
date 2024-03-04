@@ -1,0 +1,56 @@
+{% extends 'base/general/article.html' %}
+{% load static %}
+{% block title %}
+    Tutorials
+{% endblock %}
+{% block text %}
+    <div class="article-list">
+        <div class="container">
+            <div class="intro">
+                <p class="text-center">
+                    Below are tutorials of how to use this application.
+                </p>
+            </div>
+            <div class="row articles">
+                <a href="#">
+                    <img class="img-fluid" src={% static "img/screen-content-phone.jpg" %}>
+                </a>
+                <h3 class="name">Editing Regression Hyperparameters</h3>
+                <p class="description">
+                    This tutorial shows how to edit the hyperparameters of a regression
+                    model.
+                </p>
+                <a class="action" href="#">
+                    <i class="fa fa-arrow-circle-right">
+                    </i>
+                </a>
+                <a href="#">
+                    <img class="img-fluid" src={% static "img/screen-content-phone.jpg" %}>
+                </a>
+                <h3 class="name">
+                    Modify Plot Settings
+                </h3>
+                <p class="description">
+                    This tutorial shows how to modify the plot settings to customize a plot.
+                </p>
+                <a class="action" href="#">
+                    <i class="fa fa-arrow-circle-right">
+                    </i>
+                </a>
+                <a href="#">
+                    <img class="img-fluid" src={% static "img/screen-content-phone.jpg" %}>
+                </a>
+                <h3 class="name">
+                    Regression With Multiple Input Features
+                </h3>
+                <p class="description">
+                    This tutorial shows how to fit a regression model with multiple input variables.
+                </p>
+                <a class="action" href="#">
+                    <i class="fa fa-arrow-circle-right">
+                    </i>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

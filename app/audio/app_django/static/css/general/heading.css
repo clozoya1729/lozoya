@@ -1,0 +1,66 @@
+:root {
+    --primary-heading-color: white;
+    --primary-heading-font-style: normal;
+    --primary-heading-font-variant: normal;
+    --primary-heading-font-weight: 400;
+    --primary-heading-font-size: calc(var(--font-size-largest) / 1.1);
+    --primary-heading-line-height: calc(var(--font-size-largest) / 1.1);
+    --primary-heading-font-family: "Titillium Web", sans-serif;
+    --primary-heading-letter-spacing: var(--letter-spacing-largest);
+    --primary-heading-margin-top: 0px;
+    --primary-heading-margin-right: 0px;
+    --primary-heading-margin-bottom: 10px;
+    --primary-heading-margin-left: 0px;
+    --primary-heading-margin: var(--primary-heading-margin-top) var(--primary-heading-margin-right) var(--primary-heading-margin-bottom) var(--primary-heading-margin-left);
+    --primary-heading-padding-top: 0rem;
+    --primary-heading-padding-right: 0rem;
+    --primary-heading-padding-bottom: calc(var(--font-size-largest) / 2);
+    --primary-heading-padding-left: 0rem;
+    --primary-heading-padding: var(--primary-heading-padding-top) var(--primary-heading-padding-right) var(--primary-heading-padding-bottom) var(--primary-heading-padding-left);
+    --primary-heading-font: var(--primary-heading-font-style) var(--primary-heading-font-variant) var(--primary-heading-font-weight) var(--primary-heading-font-size)/var(--primary-heading-line-height) var(--primary-heading-font-family);
+}
+
+:root {
+    --secondary-heading-color: black;
+    --secondary-heading-font-style: normal;
+    --secondary-heading-font-variant: normal;
+    --secondary-heading-font-weight: 200;
+    --secondary-heading-font-size: calc(var(--font-size-largest) / 1.5);
+    --secondary-heading-line-height: calc(var(--font-size-largest) / 1.5);
+    --secondary-heading-font-family: "Titillium Web", sans-serif;
+    --secondary-heading-letter-spacing: calc(var(--letter-spacing-largest) / 5);
+    --secondary-heading-margin-top: 0px;
+    --secondary-heading-margin-right: 0px;
+    --secondary-heading-margin-bottom: 10px;
+    --secondary-heading-margin-left: 0px;
+    --secondary-heading-margin: var(--secondary-heading-padding-top) var(--secondary-heading-padding-right) var(--secondary-heading-padding-bottom) var(--secondary-heading-padding-left);
+    --secondary-heading-padding-top: 0rem;
+    --secondary-heading-padding-right: 0rem;
+    --secondary-heading-padding-bottom: calc(var(--font-size-largest) / 4);
+    --secondary-heading-padding-left: 0rem;
+    --secondary-heading-padding: var(--secondary-heading-padding-top) var(--secondary-heading-padding-right) var(--secondary-heading-padding-bottom) var(--secondary-heading-padding-left);
+    --secondary-heading-font: var(--secondary-heading-font-style) var(--secondary-heading-font-variant) var(--secondary-heading-font-weight) var(--secondary-heading-font-size)/var(--secondary-heading-line-height) var(--secondary-heading-font-family);
+}
+
+:root {
+    --tertiary-heading-color: black;
+    --tertiary-heading-font-style: normal;
+    --tertiary-heading-font-variant: normal;
+    --tertiary-heading-font-weight: 200;
+    --tertiary-heading-font-size: calc(var(--font-size-largest) / 2);
+    --tertiary-heading-line-height: calc(var(--font-size-largest) / 2);
+    --tertiary-heading-font-family: "Titillium Web", sans-serif;
+    --tertiary-heading-letter-spacing: calc(var(--letter-spacing-largest) / 10);
+    --tertiary-heading-margin-top: 0px;
+    --tertiary-heading-margin-right: 0px;
+    --tertiary-heading-margin-bottom: 10px;
+    --tertiary-heading-margin-left: 0px;
+    --tertiary-heading-margin: var(--tertiary-heading-padding-top) var(--tertiary-heading-padding-right) var(--tertiary-heading-padding-bottom) var(--tertiary-heading-padding-left);
+    --tertiary-heading-padding-top: 0rem;
+    --tertiary-heading-padding-right: 0rem;
+    --tertiary-heading-padding-bottom: calc(var(--font-size-largest) / 10);
+    --tertiary-heading-padding-left: 0rem;
+    --tertiary-heading-padding: var(--tertiary-heading-padding-top) var(--tertiary-heading-padding-right) var(--tertiary-heading-padding-bottom) var(--tertiary-heading-padding-left);
+    --tertiary-heading-font: var(--tertiary-heading-font-style) var(--tertiary-heading-font-variant) var(--tertiary-heading-font-weight) var(--tertiary-heading-font-size)/var(--tertiary-heading-line-height) var(--tertiary-heading-font-family);
+}
+

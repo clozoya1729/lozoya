@@ -1,0 +1,23 @@
+{% extends 'base/general/body.html' %}
+{% load static %}
+{% block body %}
+    <div class="article-clean">
+        <div class="intro">
+            <h1 class="text-center page-heading">
+                {% block title %}
+                {% endblock %}
+            </h1>
+            <p class="text-center">
+                <span class="date">
+                {% block subtitle %}
+                {% endblock %}
+            </span></p>
+        </div>
+        <div class="text">
+            <p>
+                {% block text %}
+                {% endblock %}
+            </p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,45 @@
+/*.plotly-graph-div {*/
+/*    width: 100% !important;*/
+/*    height: 100% !important;*/
+/*}*/
+
+/*.model-plot {*/
+/*    width: 100% !important;*/
+/*    height: 100% !important;*/
+/*}*/
+
+/*.svg-container {*/
+/*    width: 100% !important;*/
+/*    height: 100% !important;*/
+/*}*/
+
+/*.main-svg {*/
+/*    width: 100% !important;*/
+/*    height: 100% !important;*/
+/*}*/
+
+/*.xy {*/
+/*    height: 100%*/
+/*}*/
+
+.model-plot-container {
+    min-height: 60vh;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #d5d6d7;
+    margin: 10px;
+    margin-left: 0;
+}
+
+
+.model-plot-content {
+    margin-left: 5px;
+    padding: 0;
+}
+
+.plotly-graph-div {
+
+}
+
+/*.model-plot-content {*/
+/*    height: 100%;*/
+/*}*/

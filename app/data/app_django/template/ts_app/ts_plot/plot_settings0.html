@@ -1,0 +1,35 @@
+<div class="sidebar" id="sidebar-%n%">
+    <div class="sidebar-header">
+        <div class="close-sidebar"
+             onclick="close_sidebar('sidebar-%n%');">
+            <i class="glyphicon glyphicon-chevron-left">
+            </i>
+            Close
+        </div>
+        <h4 class="sidebar-title">
+            App %n% Settings
+        </h4>
+    </div>
+    <hr>
+    <form>
+        <div id="id_model_settings_select">
+            Cellar
+        </div>
+        <fieldset>
+            <legend id='model_settings_legend'>
+            </legend>
+            <div id="id_model_settings">
+                Cello
+            </div>
+        </fieldset>
+    </form>
+    <hr>
+</div>
+
+<button class="btn btn-success open-sidebar settings"
+        type="button"
+        role="group"
+        onclick="open_sidebar('sidebar-%n%');">
+    <i class="icon ion-ios-settings-strong open-sidebar">
+    </i>
+</button>

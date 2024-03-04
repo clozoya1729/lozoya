@@ -1,0 +1,15 @@
+<div class="menubar">
+    <div class="btn-group">
+        {{ fileSidebar|safe }}
+        <button class="btn btn-primary flowchart-button"
+                type="button"
+                role="group"
+                data-toggle="modal"
+                data-target="#exampleModal">
+            <i class="icon glyphicon glyphicon-road">
+            </i>
+            Flowchart
+        </button>
+        {% include 'apps/insert_app_button.html' %}
+    </div>
+</div>

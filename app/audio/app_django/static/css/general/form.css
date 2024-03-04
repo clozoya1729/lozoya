@@ -1,0 +1,83 @@
+#contact h2 {
+    font-family: 'Raleway';
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#contact p {
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 23px;
+    color: #7d8285;
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 0px;
+    background-color: #f3f3f3;
+    font-family: 'Raleway';
+}
+
+button.btn.btn-success.btn-send {
+    background-color: #6e9a76;
+    border-color: #6e9a76;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+div#contact {
+    background-color: #313131;
+}
+
+#contact .intro {
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+form#contact-form {
+    margin-bottom: 20px;
+}
+
+.arabesque-div {
+    background-size: cover;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.arabesque-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.article-title {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.article-subheading {
+    font-size: 24px;
+}
+
+#contact-form-messagebox-textarea {
+    height: 105px;
+    max-height: 105px;
+    max-width: 522.5px;
+}
+
+.sarici {
+    width: 100%;
+    padding: 10px 4px;
+    height: 100px;
+}
+

@@ -1,0 +1,10 @@
+a:focus {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-orange);
+    text-shadow: -10px -5px 6px rgba(255, 255, 255, 0.6), 10px 3px 5px rgba(255, 255, 255, 0.76), 1px 1px rgba(255, 255, 255, 0.3), -1px 0px rgba(255, 255, 255, 0.39);
+    text-decoration: none;
+}
+

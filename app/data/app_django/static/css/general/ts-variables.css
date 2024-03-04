@@ -1,0 +1,43 @@
+:root {
+    --primary-bg-color: rgb(35, 25, 25);
+    --secondary-bg-color: rgb(70, 70, 70);
+    --tertiary-bg-color: rgb(40, 40, 40);
+    --primary-font-color: rgb(220, 220, 220);
+    --secondary-font-color: rgb(180, 180, 180);
+    --input-font-color: var(--primary-font-color);
+    --input-font-color-hover: rgb(255, 255, 255);
+    --input-bg-color: rgb(30, 40, 30);
+    --input-bg-color-hover: rgb(30, 60, 30);
+    --input-border-hover: 2px solid rgb(150, 200, 150);
+    --input-width: 100px;
+}
+
+:root {
+    --tab-bg-selected: #007bff;
+    --tab-border-selected: 1px solid #00afff;
+    --tab-border-bottom-selected: 1px solid #d5d6d7;
+    --tab-color-selected: white;
+
+    --tab-bg: white;
+    --tab-border: 1px solid #d5d6d7;
+    --tab-border-bottom: 1px solid #d5d6d7;
+    --tab-color: black;
+
+    --tab-bg-hover: white;
+    --tab-border-hover: 1px solid rgb(50, 200, 200);
+    --tab-border-bottom-hover: 1px solid #d5d6d7;
+    --tab-color-hover: black;
+
+    --tab-padding: 0 10px 0 10px;
+    --tab-font-size: 9pt;
+
+    --app-settings-btn-bg: #007bff;
+    --app-btn-padding: 0 10px 0 10px;
+    --app-btn-bg: slategrey;
+    --app-btn-font-size: 9pt;
+    --app-btn-border: 1px solid rgb(50, 50, 50);
+    --app-btn-border-hover: 1px solid rgb(50, 200, 200);
+    --app-btn-margin-bottom: 4px;
+
+    --app-panel-heading-hover: 1px solid rgb(50, 200, 200);
+}

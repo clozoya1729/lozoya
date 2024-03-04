@@ -1,0 +1,32 @@
+<h6>
+    Regression Settings
+</h6>
+<hr>
+<div class="model-settings-form"
+     id="id_model_settings_{{ n }}"
+     name="model_settings_form_{{ n }}">
+    <div class="model-settings-form-content"
+         id="ts-model-x-container-{{ n }}">
+        <table>
+            {{ modelX.as_table }}
+        </table>
+    </div>
+    <div class="model-settings-form-content"
+         id="ts-model-y-container-{{ n }}">
+        <table>
+            {{ modelY.as_table }}
+        </table>
+    </div>
+    <div class="model-settings-form-content"
+         id="ts-model-scaler-container-{{ n }}">
+        <table>
+            {{ modelScaler.as_table }}
+        </table>
+    </div>
+    <div class="model-settings-form-content"
+         id="ts-model-select-container-{{ n }}">
+        <table>
+            {{ modelSelect.as_table }}
+        </table>
+    </div>
+</div>

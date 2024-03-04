@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>TensorStone | {{ analysisType }} Analysis</title>
+        <meta name="description" content="Place an order for our sound design services.">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    </head>
+    <body style="background-image: url(&quot;{% static 'img/jumbotron/jumbotron-22.jpg' %}&quot;);background-size: cover;background-repeat: no-repeat;">
+    <div class="jumbotron" id="id_notification" style="text-align: center;color: grey;display: none;">
+        <h1 style="font-size: 36px;">Please wait while your files are uploaded.<br>Leaving this page will cancel your
+            order.</h1>
+    </div>
+    <div id="id_order_form_container"
+         style="color: rgb(228,222,215);background-color: rgba(115,108,139,0.86);padding-top: 40px;padding-bottom: 30px;background-size: cover;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center arabesque-heading"
+                    style="color: white;text-shadow: 1px 1px rgb(194,108,65);padding-top: 20px;">{{ analysisType }}
+                    Analysis</h2>
+            </div>
+            <div>
+                <form id="id_order_form" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Files</label>
+                                <div>
+                                    {% if analysisType == 'Regression' %}
+                                        {{ form.trainDataFile.label }}
+                                        {{ form.trainDataFile }}
+                                        {{ form.testDataFile.label }}
+                                        {{ form.testDataFile }}
+                                    {% else %}
+                                        {{ form.file }}
+                                    {% endif %}
+                                </div>
+                                <div>
+                                    {{ form.terms }}
+                                </div>
+                                <div>
+                                    <button type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% csrf_token %}
+                    {% if errs or form.errors %}
+                        <div class="alert alert-danger"><strong>
+                            {% for err in errs %}
+                                &#8226; {{ err }}<br>
+                            {% endfor %}
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    &#8226;
+                                    {% if error == 'This field is required.' and field.name == 'terms' %}
+                                        You must read and agree to the
+                                        <a href="{% url 'legal:terms' %}">
+                                            Terms of Service
+                                        </a>
+                                        before placing an order.
+                                    {% elif error == 'This field is required.' and field.name == 'file' %}
+                                        No file has been selected.
+                                    {% else %}
+                                        {{ error|escape }} {{ field.name|escape }}
+                                    {% endif %}
+                                    <br>
+                                {% endfor %}
+                                {% for error in form.non_field_errors %}
+                                    &#8226; {{ error|escape }}<br>
+                                {% endfor %}
+                            {% endfor %}
+                        </strong></div>
+                    {% endif %}
+                    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{% static '/js/smart-forms.min.js' %}"></script>
+    <script src="{% static '/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static '/js/Music-Widget.js' %}"></script>
+    <script src="{% static '/js/order/calculate-price.js' %}"></script>
+    <script src="{% static '/js/order/coupon-display.js' %}"></script>
+    <script src="{% static '/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static '/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static '/js/order/coupon.js' %}"></script>
+    <script src="{% static '/js/order/validate.js' %}"></script>
+    <script src="{% static '/js/playlisttest.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}

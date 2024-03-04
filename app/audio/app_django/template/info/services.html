@@ -1,0 +1,1137 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>navbar</title>
+        <link rel="stylesheet" href="{% static 'assets/bootstrap2/css/bootstrap2.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/fonts/ionicons.min.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="{% static 'assets/css/Article-Clean.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Article-List.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Features-Blue.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Header-Blue.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/Lightbox-Gallery.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Login-Form-Clean.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order-form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/slider.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Team-Grid.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Testimonials.css' %}">
+    </head>
+
+    <body>
+    <div class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Lightbox Gallery</h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh
+                    erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row photos">
+                <div class="col-lg-3 col-md-4 col-sm-6 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img
+                        class="img-responsive" src="{% static 'assets/img/desk.jpg' %}"></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 item"><a href="assets/img/building.jpg"
+                                                                data-lightbox="photos"><img class="img-responsive"
+                                                                                            src="{% static 'assets/img/building.jpg' %}"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 item"><a href="assets/img/loft.jpg" data-lightbox="photos"><img
+                        class="img-responsive" src="{% static 'assets/img/loft.jpg' %}"></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 item"><a href="assets/img/building.jpg"
+                                                                data-lightbox="photos"><img class="img-responsive"
+                                                                                            src="{% static 'assets/img/building.jpg' %}"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 item"><a href="assets/img/loft.jpg" data-lightbox="photos"><img
+                        class="img-responsive" src="{% static 'assets/img/loft.jpg' %}"></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img
+                        class="img-responsive" src="{% static 'assets/img/desk.jpg' %}"></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="features-blue">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Features</h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh
+                    erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row features">
+                <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-map-marker icon"></i>
+                    <h3 class="name">Works everywhere</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
+                        aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-time icon"></i>
+                    <h3 class="name">Always available</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
+                        aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-list-alt icon"></i>
+                    <h3 class="name">Customizable</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
+                        aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-leaf icon"></i>
+                    <h3 class="name">Organic</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
+                        aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-plane icon"></i>
+                    <h3 class="name">Fast</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
+                        aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-phone icon"></i>
+                    <h3 class="name">Mobile-first</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
+                        aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="simple-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="testimonials-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Testimonials </h2>
+                <p class="text-center">Our customers love us! Read what they have to say below. Aliquam sed justo
+                    ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box">
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                            Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                    </div>
+                    <div class="author"><img class="img-circle" src="{% static 'assets/img/1.jpg' %}">
+                        <h5 class="name">Ben Johnson</h5>
+                        <p class="title">CEO of Company Inc.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box">
+                        <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et
+                            interdum justo suscipit id.</p>
+                    </div>
+                    <div class="author"><img class="img-circle" src="{% static 'assets/img/3.jpg' %}">
+                        <h5 class="name">Carl Kent</h5>
+                        <p class="title">Founder of Style Co.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box">
+                        <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis
+                            leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                    </div>
+                    <div class="author"><img class="img-circle" src="{% static 'assets/img/2.jpg' %}">
+                        <h5 class="name">Emily Clark</h5>
+                        <p class="title">Owner of Creative Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap2/js/bootstrap2.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static 'assets/js/Simple-Slider.js' %}"></script>
+    <script src="{% static 'assets/js/validate_order_form.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Services</title>
+        <meta name="description"
+              content="VectorFlux offers Mixing and Mastering services along with Performance Correction and Repair of noisy recordings.">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static '/css/general/button.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/color.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/footer.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/heading.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/image.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/link.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/list.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/misc.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/navbar.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/paragraph.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/text.css' %}">
+        <link rel="stylesheet" href="{% static '/css/home/home.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static '/css/info/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static '/css/info/services.css' %}">
+        <link rel="stylesheet" href="{% static '/css/legal/policy.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard-1.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/music-widget.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/player.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    </head>
+
+    <body id="info-services-background-body">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="info-services-background-1-div" class="features-blue">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center primary-heading" id="info-services-paragraph-1-p">Services</h2>
+                <p class="text-center primary-paragraph" id="info-services-paragraph-1-p">Nunc luctus in metus eget
+                    fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row features">
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-scale icon"></i>
+                    <h3 class="secondary-heading">Mixing</h3>
+                    <p class="secondary-paragraph">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-cd icon"></i>
+                    <h3 class="secondary-heading">Mastering</h3>
+                    <p class="secondary-paragraph">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-headphones icon"></i>
+                    <h3 class="secondary-heading">Audio Repair</h3>
+                    <p class="secondary-paragraph">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-volume-up icon"></i>
+                    <h3 id="info-services-container" class="secondary-heading">Perfomance Correction</h3>
+                    <p class="secondary-paragraph">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arabesque-block">
+        <div id="info-services-background-2-div" class="arabesque-div">
+            <div class="container text-right container-padding" id="info-services-container">
+                <h2 data-aos="fade-up" data-aos-duration="1000" id="info-services-arabesque-heading-2-h2"
+                    class="primary-heading">Mixing</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-2-p"
+                   class="primary-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                    data-aos-duration="3000" id="info-services-button-1-a" href="{% url 'order:form' %}">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div id="info-services-background-3-div" class="arabesque-block">
+        <div id="info-services-background-3-color-div" class="arabesque-div">
+            <div class="container text-left hero container-padding">
+                <h2 class="text-left primary-heading" data-aos="fade-up" data-aos-duration="1000"
+                    id="info-services-arabesque-heading-3-h2">Mastering</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-3-p"
+                   class="primary-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                    data-aos-duration="3000" id="info-services-button-2-a" href="{% url 'order:form' %}">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="arabesque-block">
+        <div id="info-services-background-4-div" class="arabesque-div">
+            <div class="container text-left hero container-padding">
+                <h2 class="text-left primary-heading" data-aos="fade-up" data-aos-duration="1000"
+                    id="info-services-arabesque-heading-4-h2">Performance Correction</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-4-p"
+                   class="primary-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                    data-aos-duration="3000" id="info-services-button-3-a" href="{% url 'order:form' %}">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div id="info-services-background-5-div" class="arabesque-block">
+        <div id="info-services-background-5-color-div" class="arabesque-div">
+            <div class="container text-right container-padding">
+                <h2 data-aos="fade-up" data-aos-duration="1000" id="info-services-arabesque-heading-5-h2"
+                    class="primary-heading">Repair</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-5-p"
+                   class="primary-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                    data-aos-duration="3000" id="info-services-button-4-a" href="{% url 'order:form' %}">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="home2.html"><img class="logo"
+                                                                                            src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{% static '/js/smart-forms.min.js' %}"></script>
+    <script src="{% static '/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static '/js/Music-Widget.js' %}"></script>
+    <script src="{% static '/js/order/calculate-price.js' %}"></script>
+    <script src="{% static '/js/order/coupon-display.js' %}"></script>
+    <script src="{% static '/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static '/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static '/js/order/coupon.js' %}"></script>
+    <script src="{% static '/js/order/validate.js' %}"></script>
+    <script src="{% static '/js/playlisttest.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Services</title>
+        <meta name="description"
+              content="VectorFlux offers Mixing and Mastering services along with Performance Correction and Repair of noisy recordings.">
+        <link rel="stylesheet" href="{% static 'assets/bootstrap2/css/bootstrap2.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static 'assets/css/Article-Clean.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Header-Blue.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/home/Features-Boxed.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/Registration-Form-with-Photo.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/services/services-jumbotron.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/playlisttest.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    </head>
+
+    <body id="info-services-background-body">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="info-services-background-1-div" class="features-blue">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center arabesque-heading" id="info-services-arabesque-heading-1-h2">Services</h2>
+                <p class="text-center" id="info-services-paragraph-1-p">Nunc luctus in metus eget fringilla. Aliquam sed
+                    justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row features">
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-scale icon"></i>
+                    <h3 class="name heading-h3">Mixing</h3>
+                    <p class="description description-p">Aenean tortor est, vulputate quis leo in, vehicula rhoncus
+                        lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-cd icon"></i>
+                    <h3 class="name heading-h3">Mastering</h3>
+                    <p class="description description-p">Aenean tortor est, vulputate quis leo in, vehicula rhoncus
+                        lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-headphones icon"></i>
+                    <h3 class="name heading-h3">Audio Repair</h3>
+                    <p class="description description-p">Aenean tortor est, vulputate quis leo in, vehicula rhoncus
+                        lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-volume-up icon"></i>
+                    <h3 class="name heading-h3">Perfomance Correction</h3>
+                    <p class="description description-p">Aenean tortor est, vulputate quis leo in, vehicula rhoncus
+                        lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arabesque-block">
+        <div id="info-services-background-2-div" class="arabesque-div">
+            <div class="container text-right container-padding" id="info-services-container">
+                <h2 data-aos="fade-up" data-aos-duration="1000" id="info-services-arabesque-heading-2-h2"
+                    class="arabesque-heading">Mixing</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-2-p"
+                   class="arabesque-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg arabesque-button" role="button" href="{% url 'order:form' %}"
+                    data-aos="fade-up" data-aos-duration="3000" id="info-services-button-1-a">Learn More</a></div>
+        </div>
+    </div>
+    <div id="info-services-background-3-div" class="arabesque-block">
+        <div id="info-services-background-3-color-div" class="arabesque-div">
+            <div class="container text-left hero container-padding">
+                <h2 class="text-left arabesque-heading" data-aos="fade-up" data-aos-duration="1000"
+                    id="info-services-arabesque-heading-3-h2">Mastering</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-3-p"
+                   class="arabesque-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg arabesque-button" role="button" href="{% url 'order:form' %}"
+                    data-aos="fade-up" data-aos-duration="3000" id="info-services-button-2-a">Learn More</a></div>
+        </div>
+    </div>
+    <div class="arabesque-block">
+        <div id="info-services-background-4-div" class="arabesque-div">
+            <div class="container text-left hero container-padding">
+                <h2 class="text-left arabesque-heading" data-aos="fade-up" data-aos-duration="1000"
+                    id="info-services-arabesque-heading-4-h2">Performance Correction</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-4-p"
+                   class="arabesque-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg arabesque-button" role="button" href="{% url 'order:form' %}"
+                    data-aos="fade-up" data-aos-duration="3000" id="info-services-button-3-a">Learn More</a></div>
+        </div>
+    </div>
+    <div id="info-services-background-5-div" class="arabesque-block">
+        <div id="info-services-background-5-color-div" class="arabesque-div">
+            <div class="container text-right container-padding">
+                <h2 data-aos="fade-up" data-aos-duration="1000" id="info-services-arabesque-heading-5-h2"
+                    class="arabesque-heading">Repair</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-5-p"
+                   class="arabesque-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg arabesque-button" role="button" href="{% url 'order:form' %}"
+                    data-aos="fade-up" data-aos-duration="3000" id="info-services-button-4-a">Learn More</a></div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap2/js/bootstrap2.min.js' %}"></script>
+    <script src="{% static 'assets/js/smart-forms.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static 'assets/js/MUSA_form-wizard.js' %}"></script>
+    <script src="{% static 'assets/js/Music-Widget.js' %}"></script>
+    <script src="{% static 'assets/js/order/calculate-price.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-display.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon.js' %}"></script>
+    <script src="{% static 'assets/js/order/validate.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/playlisttest.js' %}"></script>
+    <script src="{% static 'assets/js/Simple-Slider.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class='jumbotron'>
+        <h1>
+            What are you running from?
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sagittis dolor. Sed convallis turpis sed
+            lacinia finibus. Sed dictum urna ut metus tristique fringilla. Aenean sit amet luctus sapien. Morbi
+            imperdiet iincd vhiul dmti iigvda.speieticdun,ru uricespsdapbs,ioi cnsttr us, titqe rs ia trisDT LRIE URIS
+            RICOSCTTRFCLSI RI E AU FLILST OMOD.SBUU AE SERI MLST OBRTG T UI.LM T ME LIE FLISOIIDIGRDAITAE N LER selupi,
+            cus mtefedrons eatmsspat sne cni psu et n .llaiutdi iaetronrr,n odae or usISM DORSTAME ONCTURIPSCIT ne
+            enatsdcum aa ui gvdaape mttisLATDM ETIUU OO,A PARAPRUSEUIMDITAE.DTISIUEUTAPNIIAUI. MA RSIQ ISU. DTITE FLS T
+            ONSOLA,RISDLRMNUUGUE CTMR USEET AEC NELACOEM, RILNULFGIIT RSSDETU ARI. QAMTISIUETPRPUU, E LCN ELUIEDITUT
+            QEUTCS ACUMN MARS,N OTALCS LIUM.SENQU R, SEP S MTIMRDEVIA, CNASE IUA VMU NT SAN,RVD QIS NREITNNOGEU NM CSS Q
+            GE IA NEDM.IMI MEI IMT TRO VEILMLLSSTAT TIE.NSELRQUEPRSVITAE VARIUS ELEIFEND,DOLO ENA, NIS VE ONAE LACRE,NI
+            LSOALES USCU E TE I B EICIR EEAI FLS E CIS UIS IIU E E ALSAA LTP LESQEVECOGE EU IQETMUS LIVSIMBANT TCINT IL
+            UTPCRA CTS AERUMM D H IBU SFACIOLTRSEFCITURUI I,ENR VLJTOG, RID CUSCS.aet cdetu ari i velte.c aisnaouentbue
+            masds ruie oe acerrdiuu u. coienm nime uipscmodo letqqisrae l, a gts leolael ro,paet stmetn,dusfacbstelu
+            haatss lae diums.rbtralsierot umsepe icrslglaaret lvnr auma ut,vtaelefnd iprtqis lcorperli, acisi pue. QAMEA
+            VLPA. IAMEAT PT. NANXTLU,FEITQISDI C ONREFNIBUPRU.S UTICIS ELTATPOUR LOET AU ACSCNSTEU UR ELRUMGAAUU NN O.
+            UTUAPEAUAMACS VE UTMNIIEEETM SEDISASTMR INCIrabtrisups aiiss e laitn uru s ae ieo c qis upisqisrsusscpt
+            oesi. e x i e potacsett.cns elnesquecoalirtum cietminmitroncs.doreuu i ae dabumlls ropu,ulacrpeeuormnn,
+            nntsutr o EN LSDA RSEVLTPSLLCTDIN NMFEISUACRE MS EDLTISTOTOMAN UIAG. b e urs m
+            uiplertegtmetseefedticdut.lntsu uamop,oe teo oa nirssfugatc aiqu dujso va ro. a rr lo ndi prit aqu. S
+            UTUIQUEA LIA. IFACBU FACILISIS RHONC ERA ATNI ENS ORT U TIB HERA MOSIE IIMEIEsENMAC EI PLINRBADTSITAMTU U.
+            et tmo lu. NS LR AE.RIUR LI MSAPLINA BENT UTIE IT immss r,das uis etblmnn li u rss n e nmhedi veloio cvli
+            ritqu. AENDIBSU OOE OAE.Dnececincun igl.sens epo ravaelt, cogurm lq e. seliacsmt,ias mntu lu upt gt.
+            neiltri, cdimtmin ase,mxiu u mr uisehi lori anitru rim. otrjst,auto iiun o,cog o ibr tiutsscii s,se uriis
+            ltusru ee. nasuiitiqis gst lefeneenaeetvirrdiqi vsblu to.s ceiqu ets ia axiumsssq veimdnun.psue es et ib
+            inss,ttemo acsiacLASI MTLTE EOSUMAIUS letesaiatmri trsie cts e ts mlsdfms atupeta. rsilcts qsda cals fuiu.
+            lm etus vsiume um a, rcisefcu veli. i lmetu vimts,actmu orem ve ut lau ae fcli obois. SELS AESADA RE N,STAM
+            RGL U ETSA.S ATNTTCIOCSUA LTRTRQETPRCNBA SRA PRICETS MEAO.CNSVRA U NOEFN PLIN CODMNU PLIARME LNT. EE T INBS
+            D. ABITA TINIUNTPUU. NCGAVDARSERT ICNE AUS ANQUS.M ACIB,LEUSPLINA SME APIU ETDU LORI AUSE EEMNMOIOANE I SELS
+            AIUSLCU NNPOEEFEMNUM FEIRAVER AT,VTEELMETMSAPIE LIBERO. Nam augue tortor, aliquam eu justo at, elementum
+            tincidunt felis. Donec ultricies euismod lorem et gravida. Etiam nec bibendum ipsum.Ut mattis mattis eimd
+            CABIUR SD IERIE ELUS.tblum ua loem.sibum lsad aet di, a fermtm mssainterum oltat ULIAR,DORQUISVEIUL ULIAR,
+            EI ELI LRIS APEN UCOMENTEGT EN. AEN GERHNUSSPE, V PIM ELIT. A BLAl inibuspelequ, sdlcu u dcum st e.N
+            OMOOOLTA GA M NRET UCPTLENIMOER OLTA.LNEU CERSEA E UM LRCI, TNIUN LIRURU IM V PUM LIE MEU OTRSD,
+            HNRRITI.TUUMAN PUPRMII AUIS RCLCUST LTCSPOURCULI RETBU TUC C ULLUTSPRTT CST M IS EGR USO,NIIE RSIEITRUM
+            ELIULPTJUTO S AE ISQELIERA EUS.E CTMT.TEEULT EL USAUMCON. TENIMURU TSIQ EEU,USOEL. BII EA NC LU EMER
+            LESD.TILM S E ALQU ENEISLOBRISI LCIIAANIH sqecnimnu umutspencmanseaucr ets rnu.siblm etu or,veeatii di t, o
+            omoodu.iais atou eatbueagsdspatrtmots aseu riul us SIUMSCLERQE UERSTQUEJSOCOEUTPLVNRASEU SEERSE ARSSTAT PU
+            FUGTDL. EFITRDIQ LAEIIT ITMTAURSTQE,PSUR NS VL VVRANULC OSEUA RT VRA NIDTPEDS S EEMEMVEI. AITU EO SIE,MLETE
+            GT EMSQIS EPRNO DM A US LLSNCUCOVA ICU A V RA.CFINL POUREDPBU. HRERAOAE NM,U ENEILORTMP QI.M I AETAISVET BNU
+            NS.D VTEPRLORT,ALUJST I ONGEMAS.AMIT DORICIDUT,RAR NEQE,COMM. U LLRE SMermosi iotconsectetucumsntrs
+            nitrdmiset iaul.sbluneipsmii nfaiscucue urcepour cii re; e itu lculetsulbri frgi rcs isam inun ain NC TVUP
+            RA ENLGL LIT, GRAMO CNQE Peletequ ncusa r LAUTEELCTU ERU EAESDAFASA NIP RMIFUU.TEE ODMNTETS CINUSSDA,LGU IUA
+            ERISQUSADGNSIRC PRS AIS. AET GT DIFIGLL, INLASAVEICLABDI UU. RI LO RS LAVLIB E IHVHICABIBENULL. LENEU RU
+            OAESISA FCTR U ULRICE USUI NEQAMDGISM LMETM IB E CS AE LACII.A ULIA AI PS, IE NEULCUSE. LM MTLEO
+            IMTVEICLSOAE.EA BEOEEDNC S U,ULCRE RVDA O.NONBHIAES LEET FACILISIS AT RPISAMETNIUT DRS PR SI MTLARPRFIBU
+            LOELE HNCSM,NE UCRQA IULNONDO.qai etsrtrm alspuus,rut nlasqeeets,ani rtraiti,esuc aim imn ser
+            otorapesliiuinlrm dn nqeutiis,vneai lreno liqa uu lnesqain mb tstuencue euse alsaa aea upseess.isq auli are
+            od i onli.alu edvlte ilulacreroll ollcti mvmssi me nu r.iqe bdm niu t, iamtur etdpbs t.mssci ati uvi.ll
+            ails.ai priu edr bbndmt mede,tlusege giss ulae doerttindutage,se rocsui ocivitpr.ecm t rtumvta ape
+            eetpotltunrsus que d iiudnua, frnumorm. r ag aoetutsdasa,lre u ns.sibu cliss nietmols ru, t
+            fispransinecsitstoornileuse alqaliuaeetrru one e qmeusm arsban utu nb ria b feis ih rn i omoe, inismste st.
+            mnc aneescngeora. ase tui masa. qsent e.sa oto vl netnciuthedert pnss uupsiut coneq iuis sscitisu.bimleuda
+            lliidi ipu,gissale nl dmi.A AE IBENU TELUEE MPR ROR ENATI T ETELT,BLDIA NRERT SMP UMSS.AELU ESLOR EMNT
+            TNIIUTTRCSIGNI I.STIUL AN IS PI NFUCBSOILUTU ULRC PORCUI E LATMPR CLIBROU AITI. I GETS RIS CLRIQU.N
+            CUSEPRVLUT. PEDSEVVEAVLTNONMAS UTICS,IEDE SLESQ OIO ETILU.ECVAUSSGIT A.N ISI EI DI NNULRISNS OUTA
+            IAM.VMSFRENU EET FCUS. ASAUS O, ETI EEEMEEE,AIUM ETELL EENSCNSEEUMAIS R ARI,ACEEIEDUN ELNTSUE IMN ETU T
+            QUEVHIUVOUA I ATA LACUS. IEMVEHICA,VTA IQE AC SL. nluna COSQA NVALALQT CMODO ED SGII EXLNTESQUE N LLA E
+            VUPAT AC,E VSIBUM NAI FCIBLECTSFS,I TSTIQUDAT AIUVLUPT O NL NFIIULE OBRIA.PNDIE MRU LGAQI ONMEUM.MURM,UN
+            IAEULMCPRMLTE U ETUCOGEIS,A ECIU IER NS E URU.TIUU NT PU RIMSNFUCIU RLUTS EULRCESSRCBI AAITRPSE OTRN
+            TEIMDLLAFRENMAC.AURUSSHNRRTCMMO. URU IALS LCREIS TA ECTST. L OTTR NU ECMLSAD URU,URANU FCIRNUC S OETE RIS
+            EITNOL.E RTET PRTTITOR QUIS TELLUS AT, FACILISIS PLACERAT LACUS. Duis ut facilisis tellus.Proin mattis ante
+            eu iaculis tempor. Suspendisse auctor in ligula eu maximus. Etiam diamle tcidu pacrt uiqus lo.inac s
+            utloempharsiitat elefn et. ntesquhbtan orbi iqec e tu tmlsuda fes tps egets inaruipsm titiuevemlste sd acis
+            ui uc.erdme aeud aesa nt su pmi fcbs. lntsu i ndeitri ulre om bani.ea tro stamtlausoaesprtt. sel
+            paertsodesnqu,utmxiusm ortiorpaera ivhulaeretumpeim rbband tismidpoto dximus libero temN ex oue edet.rbtur
+            plt nisioictudi.in lnmais nsectiert at odmetum b et sagtisma, c oraoioi vsiblm,eo t oseteulbrts,nlcu
+            fuitda,noriglanb trise i.NCLOETNS ERNUMURNELINDCRSQE.cemttitumnqu. slu peemanncvhcuavetbulu. raitrnnlcu iri
+            mr eci.vhic nc xu l EER OTRIBROACMNA GSAT IENMAM.IM IERIT LERO OTO UTMULLOPECEMURS DUALUAM CU EVIESAIN
+            VTBLUPORITCOSQA.ONLECUSVEL, ACIS OIINULAMCRP IERARC.SELU GSS GT X NNVESIBU.CEASU EUE RI I SDOO N
+            EISRTUMVNNTI A TA GA SCEDIFILLA HCUA CPLENQE TUC RP L, TLU IDSAGTTSE,NRRTE E.LELRSQ AIUSAPE DEEMEUM C ARI
+            NOEPNAIUSETMAISDS TREN MT,NAETRRICLS U.TUUMNN OAE UI. SILORI,OICITACUE,NSQA IBSUN. SNN EPO I,SD TEDM U. AIU
+            IND IERIN MMGN ARU T.NENACTRRATA USMDEGTTA E. S TFITAT,MMAEUA U. A PEOUT RA GSS E TPOETS IIU.B IN SCELERMD
+            SCELRSUUAMOP.IUM HOS EN ITAE FIGADIGSI,UUSM ULIR IH NULACRE I ISUTACU.NCCIA
+            MALRMTICDNT,USCCMANNBHULACRE.SACIPMNMURIRUTRTI. MLIEVLI DICUT EP.RBTU OLSIELE LEO VTEIPEDETR SLTU LOALUTCISS
+            US RNGLA IIB E
+        </p>
+    </div>
+
+{% endblock %}
+
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Services</title>
+        <meta name="description"
+              content="VectorFlux offers Mixing and Mastering services along with Performance Correction and Repair of noisy recordings.">
+        <link rel="stylesheet" href="{% static 'assets/bootstrap2/css/bootstrap2.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static 'assets/css/Article-Clean.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Header-Blue.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/home/Features-Boxed.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/Registration-Form-with-Photo.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/services/services-jumbotron.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/playlisttest.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    </head>
+
+    <body style="background-size: contain;background-repeat: repeat;background-image: url(&quot;{% static 'assets/img/jumbotron-1.jpg' %}&quot;);background-attachment: fixed;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="features-blue"
+         style="background-image: url(&quot;{% static 'assets/img/jumbotron-10.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center arabesque-heading" id="arabesque-heading-info-services-1">Services</h2>
+                <p class="text-center" style="font-family: Roboto, sans-serif;">Nunc luctus in metus eget fringilla.
+                    Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row features">
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-scale icon"></i>
+                    <h3 class="name" style="font-family: 'Titillium Web', sans-serif;">Mixing</h3>
+                    <p class="description" style="font-family: Raleway, sans-serif;">Aenean tortor est, vulputate quis
+                        leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
+                        est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-cd icon"></i>
+                    <h3 class="name" style="font-family: 'Titillium Web', sans-serif;">Mastering</h3>
+                    <p class="description" style="font-family: Raleway, sans-serif;">Aenean tortor est, vulputate quis
+                        leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
+                        est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-headphones icon"></i>
+                    <h3 class="name" style="font-family: 'Titillium Web', sans-serif;">Audio Repair</h3>
+                    <p class="description" style="font-family: Raleway, sans-serif;">Aenean tortor est, vulputate quis
+                        leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
+                        est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-volume-up icon"></i>
+                    <h3 class="name" style="font-family: 'Titillium Web', sans-serif;">Perfomance Correction</h3>
+                    <p class="description" style="font-family: Raleway, sans-serif;">Aenean tortor est, vulputate quis
+                        leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
+                        est.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arabesque-block">
+        <div class="arabesque-div"
+             style="background: linear-gradient(135deg, rgba(31,40,28,0.97), rgba(87,99,63,0.92));height: 100%;width: 100%;">
+            <div class="container text-right hero" style="padding-top: 100px;">
+                <h1 data-aos="fade-up" data-aos-duration="1000" id="arabesque-heading-info-services-2"
+                    class="arabesque-heading" style="margin-top: 50px;">Mixing</h1>
+                <p data-aos="fade-up" data-aos-duration="1500" class="arabesque-paragraph"
+                   style="color: rgb(255,255,255);font-family: 'Nanum Gothic', sans-serif;">The online music production
+                    revolution is here.</p><a class="btn btn-default btn-lg arabesque-button" role="button"
+                                              href="{% url 'order:form' %}" data-aos="fade-up" data-aos-duration="3000">Learn
+                More</a></div>
+        </div>
+    </div>
+    <div class="arabesque-block"
+         style="background: linear-gradient(180deg, rgb(215,215,215), rgba(228,107,20,0.94));background-image: url(&quot;{% static 'assets/img/jumbotron-18.jpg' %}&quot;);background-size: auto;background-position: 64% 10%;">
+        <div class="arabesque-div"
+             style="background: linear-gradient(135deg, #342f2c, rgba(92,76,56,0.82));height: 100%;width: 100%;">
+            <div class="container text-left hero" style="padding-top: 100px;">
+                <h1 class="text-left arabesque-heading" data-aos="fade-up" data-aos-duration="1000"
+                    id="arabesque-heading-info-services-3" style="margin-top: 50px;">Mastering</h1>
+                <p data-aos="fade-up" data-aos-duration="1500" class="arabesque-paragraph"
+                   style="color: rgb(255,255,255);font-family: 'Nanum Gothic', sans-serif;">The online music production
+                    revolution is here.</p><a class="btn btn-default btn-lg arabesque-button" role="button"
+                                              href="{% url 'order:form' %}" data-aos="fade-up" data-aos-duration="3000">Learn
+                More</a></div>
+        </div>
+    </div>
+    <div class="arabesque-block"
+         style="background: linear-gradient(180deg, rgb(215,215,215), rgba(228,107,20,0.94));background-size: cover;background-image: url(&quot;none&quot;);">
+        <div class="arabesque-div"
+             style="background: linear-gradient(135deg, rgba(47,32,32,0.83), rgba(198,184,157,0.93));background-size: cover;height: 100%;width: 100%;">
+            <div class="container text-left hero" style="padding-top: 100px;">
+                <h1 class="text-left arabesque-heading" data-aos="fade-up" data-aos-duration="1000"
+                    id="arabesque-heading-info-services-4" style="margin-top: 50px;">Performance Correction</h1>
+                <p data-aos="fade-up" data-aos-duration="1500" class="arabesque-paragraph"
+                   style="color: rgb(255,255,255);font-family: 'Nanum Gothic', sans-serif;">The online music production
+                    revolution is here.</p><a class="btn btn-default btn-lg arabesque-button" role="button"
+                                              href="{% url 'order:form' %}" data-aos="fade-up" data-aos-duration="3000">Learn
+                More</a></div>
+        </div>
+    </div>
+    <div class="arabesque-block"
+         style="background: linear-gradient(180deg, rgb(215,215,215), rgba(228,107,20,0.94));background-image: url(&quot;{% static 'assets/img/jumbotron-17.jpg' %}&quot;);background-size: auto;background-position: 70% 100%;">
+        <div class="arabesque-div"
+             style="/*background: linear-gradient(135deg, #4a4a4a, rgba(228,107,20,0.94));*/background-size: cover;height: 100%;background-color: rgba(41,24,3,0.75);width: 100%;">
+            <div class="container text-right" style="padding-top: 100px;">
+                <h1 data-aos="fade-up" data-aos-duration="1000" id="arabesque-heading-info-services-5"
+                    class="arabesque-heading" style="margin-top: 50px;">Repair</h1>
+                <p data-aos="fade-up" data-aos-duration="1500" class="arabesque-paragraph"
+                   style="color: rgb(255,255,255);font-family: 'Nanum Gothic', sans-serif;">The online music production
+                    revolution is here.</p><a class="btn btn-default btn-lg arabesque-button" role="button"
+                                              href="{% url 'order:form' %}" data-aos="fade-up" data-aos-duration="3000">Learn
+                More</a></div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap2/js/bootstrap2.min.js' %}"></script>
+    <script src="{% static 'assets/js/smart-forms.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static 'assets/js/MUSA_form-wizard.js' %}"></script>
+    <script src="{% static 'assets/js/Music-Widget.js' %}"></script>
+    <script src="{% static 'assets/js/order/calculate-price.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-display.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon.js' %}"></script>
+    <script src="{% static 'assets/js/order/validate.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/playlisttest.js' %}"></script>
+    <script src="{% static 'assets/js/Simple-Slider.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Services</title>
+        <meta name="description"
+              content="VectorFlux offers Mixing and Mastering services along with Performance Correction and Repair of noisy recordings.">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static '/css/general/button.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/color.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/components.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/heading.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/image.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/link.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/list.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/misc.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/navbar.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/paragraph.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/text.css' %}">
+        <link rel="stylesheet" href="{% static '/css/home/home.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static '/css/info/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static '/css/info/services.css' %}">
+        <link rel="stylesheet" href="{% static '/css/legal/policy.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/music-widget.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/player.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    </head>
+
+    <body id="info-services-background-body">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="info-services-background-1-div" class="features-blue">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center primary-heading" id="info-services-paragraph-1-p">Services</h2>
+                <p class="text-center primary-paragraph" id="info-services-paragraph-1-p">Nunc luctus in metus eget
+                    fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row features">
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-scale icon"></i>
+                    <h3 class="secondary-heading">Mixing</h3>
+                    <p class="secondary-paragraph">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-cd icon"></i>
+                    <h3 class="secondary-heading">Mastering</h3>
+                    <p class="secondary-paragraph">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-headphones icon"></i>
+                    <h3 class="secondary-heading">Audio Repair</h3>
+                    <p class="secondary-paragraph">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-volume-up icon"></i>
+                    <h3 id="info-services-container" class="secondary-heading">Perfomance Correction</h3>
+                    <p class="secondary-paragraph">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arabesque-block">
+        <div id="info-services-background-2-div" class="arabesque-div">
+            <div class="container text-right container-padding" id="info-services-container">
+                <h2 data-aos="fade-up" data-aos-duration="1000" id="info-services-arabesque-heading-2-h2"
+                    class="primary-heading">Mixing</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-2-p"
+                   class="primary-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                    data-aos-duration="3000" id="info-services-button-1-a" href="{% url 'order:form' %}">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div id="info-services-background-3-div" class="arabesque-block">
+        <div id="info-services-background-3-color-div" class="arabesque-div">
+            <div class="container text-left hero container-padding">
+                <h2 class="text-left primary-heading" data-aos="fade-up" data-aos-duration="1000"
+                    id="info-services-arabesque-heading-3-h2">Mastering</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-3-p"
+                   class="primary-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                    data-aos-duration="3000" id="info-services-button-2-a" href="{% url 'order:form' %}">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="arabesque-block">
+        <div id="info-services-background-4-div" class="arabesque-div">
+            <div class="container text-left hero container-padding">
+                <h2 class="text-left primary-heading" data-aos="fade-up" data-aos-duration="1000"
+                    id="info-services-arabesque-heading-4-h2">Performance Correction</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-4-p"
+                   class="primary-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                    data-aos-duration="3000" id="info-services-button-3-a" href="{% url 'order:form' %}">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div id="info-services-background-5-div" class="arabesque-block">
+        <div id="info-services-background-5-color-div" class="arabesque-div">
+            <div class="container text-right container-padding">
+                <h2 data-aos="fade-up" data-aos-duration="1000" id="info-services-arabesque-heading-5-h2"
+                    class="primary-heading">Repair</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" id="info-services-paragraph-5-p"
+                   class="primary-paragraph">The online music production revolution is here.</p><a
+                    class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                    data-aos-duration="3000" id="info-services-button-4-a" href="{% url 'order:form' %}">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="home.html"><img class="logo"
+                                                                                           src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{% static '/js/smart-forms.min.js' %}"></script>
+    <script src="{% static '/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static '/js/Music-Widget.js' %}"></script>
+    <script src="{% static '/js/order/calculate-price.js' %}"></script>
+    <script src="{% static '/js/order/coupon-display.js' %}"></script>
+    <script src="{% static '/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static '/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static '/js/order/coupon.js' %}"></script>
+    <script src="{% static '/js/order/validate.js' %}"></script>
+    <script src="{% static '/js/playlisttest.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}

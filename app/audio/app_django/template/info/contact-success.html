@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Message Received</title>
+        <meta name="description" content="We have received your message. Thank you!">
+        {% include 'css.html' %}
+    </head>
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="team-grid">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center primary-heading">YOUR MESSAGE HAS BEEN RECEIVED</h2>
+                <p class="text-center primary-paragraph">Your feedback is appreciated. Thank you!</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-3 col-sm-4 item">
+                    <div class="box" style="background-image: url(&quot;joel_filipe_6.jpg&quot;);">
+                        <div class="cover">
+                            <h3 class="name">Mixing</h3>
+                            <p class="title">LEARN MORE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 item">
+                    <div class="box" style="background-image: url(&quot;joel_filipe_5.jpg&quot;);">
+                        <div class="cover">
+                            <h3 class="name">Mastering</h3>
+                            <p class="title">LEARN MORE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 item">
+                    <div class="box" style="background-image: url(&quot;lurm_0.jpg&quot;);">
+                        <div class="cover">
+                            <h3 class="name">Noise Reduction</h3>
+                            <p class="title">LEARN MORE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 item">
+                    <div class="box" style="background-image: url(&quot;lurm_1.jpg&quot;);">
+                        <div class="cover">
+                            <h3 class="name">Performance Correction</h3>
+                            <p class="title">LEARN MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="home2.html"><img class="logo"
+                                                                                            src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'js.html' %}
+    </body>
+    </html>
+{% endblock %}

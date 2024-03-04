@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TensorStone | {{ filename }}</title>
+    <meta name="description" content="{{ filename }} Dashboard">
+    {% load static %}
+    {% include 'css/app-css.html' %}
+</head>
+
+<body id="analysis-app-background-body">
+<div class="container" id="info-faq-page-container" style="width: 100%;">
+    {% include 'general/dashboard-header.html' %}
+    {% include 'ml/ml-app.html' %}
+    {% include 'plot/scatter.html' %}
+    {% include 'plot/histogram.html' %}
+    {% include 'general/add-app.html' %}
+</div>
+{% include 'js/app-js.html' %}
+</body>
+
+</html>

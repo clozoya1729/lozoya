@@ -1,0 +1,443 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux11</title>
+        {% include 'css.html' %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux9</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+        <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="paypal-button-container"></div>
+    <div id="paypal-button-container"></div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script>
+        function isValid() {
+            checked = $('#id_terms').is(':checked');
+            files = get_file_list().length;
+            var email = $('#id_email').val();
+            email = (email.replace(/[^@]/g, '').length >= 1 && (email.replace(/[^.]/g, '').length >= 1));
+            var service = ($('#id_mix').is(':checked') || $('#id_master').is(':checked'));
+            return (checked && email && service && files > 0);
+        }
+
+        function grab(id) {
+            return document.querySelector(id);
+        }
+
+        function onChangeCheckbox(handler) {
+            grab('#id_terms').addEventListener('change', handler);
+            grab('#id_files').addEventListener('change', handler);
+            grab('#id_email').addEventListener('change', handler);
+            grab('#id_mix').addEventListener('change', handler);
+            grab('#id_master').addEventListener('change', handler);
+        }
+
+        function toggleValidationMessage() {
+            var message = '';
+            $('#msg').css('display', isValid() ? 'none' : 'block');
+
+            //VALIDATE TERMS
+            if (!$('#id_terms').is(':checked')) {
+                message += 'You must agree to the terms of service.\n';
+                $('#id_terms').css('boxShadow', colorShadowBad);
+                $('#id_terms').change(function () {
+                    if ($(this).is(':checked')) {
+                        $('#id_terms').css('boxShadow', 'none');
+                    } else {
+                        $('#id_terms').css('boxShadow', colorShadowBad);
+                    }
+                });
+            }
+            //VALIDATE EMAIL
+            var email = $('#id_email').val();
+            if (email.replace(/[^@]/g, '').length === 0 || (email.replace(/[^.]/g, '').length === 0)) {
+                message += 'Enter the email you want your results sent to.\n';
+                $('#id_email').css('boxShadow', colorShadowBad);
+            } else {
+                $('#id_email').css('boxShadow', 'none');
+            }
+            //VALIDATE FILES
+            var fileList = get_file_list();
+            var numFiles = fileList.length;
+            if (numFiles < 1) {
+                message += 'No files have been selected.\n';
+                $('#id_files').css('boxShadow', colorShadowBad);
+            } else {
+                $('#id_files').css('boxShadow', 'none');
+            }
+            //VALIDATE SERVICES
+            if (!$('#id_mix').is(':checked') && !$('#id_master').is(':checked')) {
+                message += 'No services have been selected.\n';
+                //$('#').css('boxShadow', colorShadowBad);
+            } else {
+                //$('#').css('boxShadow', 'none');
+            }
+            //DISPLAY MESSAGE
+            if (message != '') {
+                alert(message);
+            }
+        }
+
+        function toggleButton(actions) {
+            return isValid() ? actions.enable() : actions.disable();
+        }
+
+        paypal.Button.render({
+            env: 'sandbox', // sandbox | production
+            style: {
+                layout: 'vertical',  // horizontal | vertical
+                size: 'responsive',    // medium | large | responsive
+                shape: 'rect',      // pill | rect
+                color: 'silver'       // gold | blue | silver | black
+            },
+            // PayPal Client IDs - replace with your own
+            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+            client: {
+                sandbox: 'AbvXT8Hi3-WIzw3uBiND5LOR9wU12ld5n8dPPC19NlaFdgjpTnXhmo4GtIJtMdMxG95Fw1BVli2TPXCa',
+                production: 'Acf6v2S0gbUjeac2DzFJn5ihU5BYuwgbm7urN0DTMcd4XNDlZVDVSZAejVLk3ZqQUCNK4KGhWDsP1nM6'
+            },
+            // Show the buyer a 'Pay Now' button in the checkout flow
+            commit: true,
+            validate: function (actions) {
+                toggleButton(actions);
+                onChangeCheckbox(function () {
+                    toggleButton(actions);
+                });
+            },
+            onClick: function () {
+                toggleValidationMessage();
+            },
+            // payment() is called when the button is clicked
+            payment: function (data, actions) {
+                var price = remove_currency(get_final_price());
+                if (price < 0) {
+                    price = 0;
+                    var form = get_form();
+                    var container = $('#id_order_form_container');
+                    var notification = $('#id_notification');
+                    window.alert('Payment complete! Do not leave this page until your files have finished uploading.');
+                    form.css('display', 'none');
+                    container.css('display', 'none');
+                    notification.css('display', 'block');
+                    form.submit();
+                    return;
+                }
+                // Make a call to the REST api to create the payment
+                return actions.payment.create({
+                    payment: {
+                        transactions:
+                            [{amount: {total: price, currency: 'USD'}}]
+                    }
+                });
+            },
+            // onAuthorize() is called when the buyer approves the payment
+            onAuthorize: function (data, actions) {
+                // Make a call to the REST api to execute the payment
+                return actions.payment.execute().then(function () {
+                    window.alert('Payment complete! Do not leave this page until your files have finished uploading.');
+                    var form = get_form();
+                    var container = $('#id_order_form_container');
+                    var notification = $('#id_notification');
+                    form.css('display', 'none');
+                    container.css('display', 'none');
+                    notification.css('display', 'block');
+                    form.submit();
+                });
+            }
+        }, '#paypal-button-container');
+    </script>
+    <script>
+        function isValid() {
+            checked = $('#id_terms').is(':checked');
+            files = get_file_list().length;
+            var email = $('#id_email').val();
+            email = (email.replace(/[^@]/g, '').length >= 1 && (email.replace(/[^.]/g, '').length >= 1));
+            var service = ($('#id_mix').is(':checked') || $('#id_master').is(':checked'));
+            return (checked && email && service && files > 0);
+        }
+
+        function grab(id) {
+            return document.querySelector(id);
+        }
+
+        function onChangeCheckbox(handler) {
+            grab('#id_terms').addEventListener('change', handler);
+            grab('#id_files').addEventListener('change', handler);
+            grab('#id_email').addEventListener('change', handler);
+            grab('#id_mix').addEventListener('change', handler);
+            grab('#id_master').addEventListener('change', handler);
+        }
+
+        function toggleValidationMessage() {
+            var message = '';
+            $('#msg').css('display', isValid() ? 'none' : 'block');
+
+            //VALIDATE TERMS
+            if (!$('#id_terms').is(':checked')) {
+                message += 'You must agree to the terms of service.\n';
+                $('#id_terms').css('boxShadow', colorShadowBad);
+                $('#id_terms').change(function () {
+                    if ($(this).is(':checked')) {
+                        $('#id_terms').css('boxShadow', 'none');
+                    } else {
+                        $('#id_terms').css('boxShadow', colorShadowBad);
+                    }
+                });
+            }
+            //VALIDATE EMAIL
+            var email = $('#id_email').val();
+            if (email.replace(/[^@]/g, '').length === 0 || (email.replace(/[^.]/g, '').length === 0)) {
+                message += 'Enter the email you want your results sent to.\n';
+                $('#id_email').css('boxShadow', colorShadowBad);
+            } else {
+                $('#id_email').css('boxShadow', 'none');
+            }
+            //VALIDATE FILES
+            var fileList = get_file_list();
+            var numFiles = fileList.length;
+            if (numFiles < 1) {
+                message += 'No files have been selected.\n';
+                $('#id_files').css('boxShadow', colorShadowBad);
+            } else {
+                $('#id_files').css('boxShadow', 'none');
+            }
+            //VALIDATE SERVICES
+            if (!$('#id_mix').is(':checked') && !$('#id_master').is(':checked')) {
+                message += 'No services have been selected.\n';
+                //$('#').css('boxShadow', colorShadowBad);
+            } else {
+                //$('#').css('boxShadow', 'none');
+            }
+            //DISPLAY MESSAGE
+            if (message != '') {
+                alert(message);
+            }
+        }
+
+        function toggleButton(actions) {
+            return isValid() ? actions.enable() : actions.disable();
+        }
+
+        paypal.Button.render({
+            env: 'sandbox', // sandbox | production
+            style: {
+                layout: 'vertical',  // horizontal | vertical
+                size: 'responsive',    // medium | large | responsive
+                shape: 'rect',      // pill | rect
+                color: 'silver'       // gold | blue | silver | black
+            },
+            // PayPal Client IDs - replace with your own
+            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+            client: {
+                sandbox: 'AbvXT8Hi3-WIzw3uBiND5LOR9wU12ld5n8dPPC19NlaFdgjpTnXhmo4GtIJtMdMxG95Fw1BVli2TPXCa',
+                production: 'Acf6v2S0gbUjeac2DzFJn5ihU5BYuwgbm7urN0DTMcd4XNDlZVDVSZAejVLk3ZqQUCNK4KGhWDsP1nM6'
+            },
+            // Show the buyer a 'Pay Now' button in the checkout flow
+            commit: true,
+            validate: function (actions) {
+                toggleButton(actions);
+                onChangeCheckbox(function () {
+                    toggleButton(actions);
+                });
+            },
+            onClick: function () {
+                toggleValidationMessage();
+            },
+            // payment() is called when the button is clicked
+            payment: function (data, actions) {
+                var price = remove_currency(get_final_price());
+                if (price < 0) {
+                    price = 0;
+                    var form = get_form();
+                    var container = $('#id_order_form_container');
+                    var notification = $('#id_notification');
+                    window.alert('Payment complete! Do not leave this page until your files have finished uploading.');
+                    form.css('display', 'none');
+                    container.css('display', 'none');
+                    notification.css('display', 'block');
+                    form.submit();
+                    return;
+                }
+                // Make a call to the REST api to create the payment
+                return actions.payment.create({
+                    payment: {
+                        transactions:
+                            [{amount: {total: price, currency: 'USD'}}]
+                    }
+                });
+            },
+            // onAuthorize() is called when the buyer approves the payment
+            onAuthorize: function (data, actions) {
+                // Make a call to the REST api to execute the payment
+                return actions.payment.execute().then(function () {
+                    window.alert('Payment complete! Do not leave this page until your files have finished uploading.');
+                    var form = get_form();
+                    var container = $('#id_order_form_container');
+                    var notification = $('#id_notification');
+                    form.css('display', 'none');
+                    container.css('display', 'none');
+                    notification.css('display', 'block');
+                    form.submit();
+                });
+            }
+        }, '#paypal-button-container');
+    </script>
+    {% include 'js.html' %}
+    </html>
+{% endblock %}

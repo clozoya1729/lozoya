@@ -1,0 +1,64 @@
+.primary-button {
+    font: var(--primary-button-font);
+    letter-spacing: var(--primary-button-letter-spacing);
+    padding: var(--primary-button-padding);
+}
+
+.primary-button:hover {
+    box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.17);
+}
+
+@media (min-width: 991px) {
+    .btn.btn-primary.btn-block.text-center {
+        background-color: rgb(255, 120, 0);
+        width: 100%;
+        margin-top: 34px;
+        margin-left: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn.btn-primary.btn-block.text-center {
+        background-color: rgb(255, 120, 0);
+        /*width: 430px;*/
+        margin-top: 34px;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 780px) {
+    .btn.btn-primary.btn-block.text-center {
+        background-color: rgb(255, 120, 0);
+        width: 165px;
+        margin-top: 34px;
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 25%;
+    }
+}
+
+#footer-2 {
+    background-color: rgba(200, 200, 200, 0.5);
+    color: white;
+}
+
+:root {
+    --primary-button-font-style: normal;
+    --primary-button-font-variant: normal;
+    --primary-button-font-weight: normal;
+    --primary-button-font-size: calc(var(--font-size-largest) / 2);
+    --primary-button-line-height: calc(var(--font-size-largest) / 2);
+    --primary-button-font-family: Raleway, sans-serif;
+    --primary-button-letter-spacing: calc(var(--letter-spacing-largest) / 2.5);
+    --primary-button-padding: 15px 25px 15px 25px;
+    --primary-button-font: var(--primary-button-font-style) var(--primary-button-font-variant) var(--primary-button-font-weight) var(--primary-button-font-size)/var(--primary-button-line-height) var(--primary-button-font-family);
+}
+
+.col-md-12.accordion-label {
+    width: 20%;
+}
+
+.col-md-12.accordion-item {
+    width: 80%;
+}
+

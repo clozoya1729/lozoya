@@ -1,0 +1,141 @@
+Item	Item Name					Digits
+1	State Code					3
+2	Highway Agency District 			2
+3	County (Parish) Code				3
+4	Place Code					5
+5A	Record Type					1
+5B	Route Signing Prefix				1
+5C	Designated Level of Service			1
+5D	Route Number					5
+5E	Directional Suffix				1
+6A	Features Intersected				24
+6B	No Longer Coded (Blank)				1
+7	Facility Carried by Structure			18
+8	Structure Number				15
+9	Location					25
+10	Inventory Route, Minimum Clearance		4
+11	Kilometerpoint					7
+12	Base Highway Network				1
+13A	LRS Inventory Route				10
+13B	Subroute Number					2
+14	(Reserved)
+15	(Reserved)
+16	Latitude					8
+17	Longitude					9
+18	(Reserved)
+19	Bypass, Detour Length				3
+20	Toll						1
+21	Maintenance Responsibility			2
+22	Owner						2
+23	(Reserved)
+24	(Reserved)
+25	(Reserved)
+26	Functional Classification of Inventory Route	2
+27	Year Built					4
+28A	Lanes on the structure				2
+28B	Lanes under the structure			2
+29	Average Daily Traffic				6
+30	Year of Average Daily Traffic			4
+31	Design Load					1
+32	Approach Roadway Width				4
+33	Bridge Median					1
+34	Skew						2
+35	Structure Flared				1
+36A	Bridge railings					1
+36B	Transitions					1
+36C	Approach guardrail				1
+36D	Approach guardrail ends				1
+37	Historical Significance				1
+38	Navigation Control				1
+39	Navigation Vertical Clearance			4
+40	Navigation Horizontal Clearance			5
+41	Structure Open, Posted, or Closed to Traffic	1
+42A	Type of service on bridge			1
+42B	Type of service under bridge			1
+43A	Kind of material and/or design			1
+43B	Type of design and/or construction		2
+44A	Kind of material and/or design			1
+44B	Type of design and/or construction		2
+45	Number of Spans in Main Unit			3
+46	Number of Approach Spans			4
+47	Inventory Route, Total Horizontal Clearance	3
+48	Length of Maximum Span				5
+49	Structure Length				6
+50A	Left curb or sidewalk width			3
+50B	Right curb or sidewalk width			3
+51	Bridge Roadway Width, Curb-to-Curb		4
+52	Deck Width, Out-to-Out				4
+53	Minimum Vertical Clearance Over Bridge Roadway	4
+54A	Reference feature				1
+54B	Minimum Vertical Underclearance			4
+55A	Reference feature				1
+55B	Minimum Lateral Underclearance			3
+56	Minimum Lateral Underclearance on Left		3
+57	(Reserved)
+58	Deck						1
+59	Superstructure					1
+60	Substructure					1
+61	Channel and Channel Protection			1
+62	Culverts					1
+63	Method Used to Determine Operating Rating	1
+64	Operating Rating				3
+65	Method Used to Determine Inventory Rating	1
+66	Inventory Rating				3
+67	Structural Evaluation				1
+68	Deck Geometry					1
+69	Underclearances, Vertical and Horizontal	1
+70	Bridge Posting					1
+71	Waterway Adequacy				1
+72	Approach Roadway Alignment			1
+73	(Reserved)
+74	(Reserved)
+75A	Type of Work Proposed				2
+75B	Work Done by					1
+76	Length of Structure Improvement			6
+77	(Reserved)
+78	(Reserved)
+79	(Reserved)
+80	(Reserved)
+81	(Reserved)
+82	(Reserved)
+83	(Reserved)
+84	(Reserved)
+85	(Reserved)
+86	(Reserved)
+87	(Reserved)
+88	(Reserved)
+89	(Reserved)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

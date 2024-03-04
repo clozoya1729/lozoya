@@ -1,0 +1,119 @@
+{% extends 'template/base/general/base.html' %}
+{% load static %}
+{% block body %}
+    <!-- Start: body-create-public -->
+    <div class="register-photo">
+        <div class="login-clean form-container">
+            <!-- Start: Image -->
+            <div class="highlight-blue image-holder">
+                <div class="container">
+                    <!-- Start: Intro -->
+                    <div class="intro">
+                        <h2 class="text-center">Note</h2>
+                        <ul id="public-dashboard-info">
+                            <li>
+                                Public dashboards submit a model fitting request to the public server.
+                                <br>
+                                Requests are fit in the order they are received.
+                                <br>
+                            </li>
+                            <li>
+                                Public dashboards have a storage limited to 1 GB of storage, 1 GB of RAM, and 1 GB of
+                                transfer.
+                                <br>
+                            </li>
+                            <li>
+                                Public dashboards only allow one training data file and one testing data file.
+                                <br>
+                            </li>
+                            <li>
+                                Public dashboards are deleted when the page is closed.
+                            </li>
+                            <li>
+                                Consider creating a private server to create unlimited dashboards with unlimited files
+                                for your team.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End: Intro -->
+                    <!-- Start: Buttons -->
+                    <div class="buttons">
+                        <a class="btn btn-primary"
+                           role="button"
+                           href="{% url 'general:create-private' %}">
+                            Create Private Server
+                        </a>
+                    </div>
+                    <!-- End: Buttons -->
+                </div>
+            </div>
+            <!-- End: Image -->
+            <form method="post" enctype="multipart/form-data">
+                <!-- Start: heading -->
+                <section>
+                    <h2 class="text-uppercase text-center form-heading">
+                        Create Public Dashboard
+                    </h2>
+                </section>
+                <!-- End: heading -->
+                <!-- Start: logo -->
+                <div class="illustration">
+                    <i class="icon ion-ios-navigate">
+                    </i>
+                </div>
+                <!-- End: logo -->
+                <!-- Start: training-data-input -->
+                <div class="form-group">
+                    <label>
+                        Training Data
+                    </label>
+                    {{ form.trainDataFile }}
+                </div>
+                <!-- End: training-data-input -->
+                <!-- Start: testing-data-input -->
+                <div class="form-group">
+                    <label>
+                        Testing Data
+                    </label>
+                    {{ form.testDataFile }}
+                </div>
+                <!-- End: testing-data-input -->
+                <!-- Start: email-input -->
+                <div class="form-group">
+                    {{ form.email }}
+                </div>
+                <!-- End: email-input -->
+                <!-- Start: accept-terms-checkbox -->
+                <div class="form-group">
+                    <div class="form-check">
+                        {{ form.terms }}
+                        <label class="form-check-label" for="formCheck-1">
+                            I agree to the&nbsp;
+                            <a href="{% url 'general:terms' %}">
+                                terms of service
+                            </a>.
+                        </label>
+                    </div>
+                </div>
+                <!-- End: accept-terms-checkbox -->
+                <!-- Start: submit-button -->
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block"
+                            type="submit">
+                        Create
+                    </button>
+                </div>
+                <!-- End: submit-button -->
+                <!-- Start: forgot-password-link -->
+                <a class="forgot"
+                   href="{% url 'general:create-private' %}">
+                    Consider creating a private server for larger projects.
+                    <br>
+                </a>
+                <!-- End: forgot-password-link -->
+                {% csrf_token %}
+            </form>
+        </div>
+    </div>
+    <!-- End: body-create-public -->
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% include 'css.html' %}
+{% block body %}
+    <div class="container">
+        <h1>
+            Order
+        </h1>
+        <form method="post" enctype="multipart/form-data" id="id_order_form">
+            {% csrf_token %}
+            {% for field in form %}
+                {{ field.label }}
+                {% ifequal field.name 'terms' %}
+                    I have read and agree to the
+                    <a href="{% url 'info:terms' %}">
+                        Terms of Service
+                    </a>
+                {% endifequal %}
+                {{ field }}
+            {% endfor %}
+            {# include "order/paypal-button.html" #}
+            <button type="submit" onclick="validate_email()">
+                Submit
+            </button>
+        </form>
+        <label id="label_price" for="id_price">Price:</label>
+    </div>
+    <script src="{% static 'assets/js/validate_order_form.js' %}">
+        {% include 'js.html' %}
+    </script>
+    <div class="container">
+        <h1>
+            Order
+        </h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("id_file").onchange = function () {
+                doStuff();
+            };
+        };
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $(".datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "1900:2012",
+                // You can put more options here.
+
+            });
+        });
+    </script>
+{% endblock %}
+

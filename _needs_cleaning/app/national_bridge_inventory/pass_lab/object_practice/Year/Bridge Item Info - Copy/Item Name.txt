@@ -1,0 +1,138 @@
+State Code
+Highway Agency District
+County (Parish) Code
+Place Code
+Record Type
+Route Signing Prefix
+Designated Level of Service
+Route Number
+Directional Suffix
+Features Intersected
+No Longer Coded (Blank)
+Facility Carried By Structure
+Structure Number
+Location
+Inventory Route, Minimum Clearance
+Kilometerpoint
+Base Highway Network
+LRS Inventory Route
+Subroute Number
+(Reserved)
+(Reserved)
+Latitude
+Longitude
+(Reserved)
+Bypass, Detour Length
+Toll
+Maintenance Responsibility
+Owner
+(Reserved)
+(Reserved)
+(Reserved)
+Functional Classification of Inventory Route
+Year Built
+Lanes On The Structure
+Lanes Under The Structure
+Average Daily Traffic
+Year Of Average Daily Traffic
+Design Load
+Approach Roadway Width
+Bridge Median
+Skew
+Structure Flared
+Bridge Railings
+Transitions
+Approach Guardrail
+Approach Guardrail Ends
+Historical Significance
+Navigation Control
+Navigation Vertical Clearance
+Navigation Horizontal Clearance
+Structure Open, Posted, Or Closed To Traffic
+Type Of Service On Bridge
+Type Of Service Under Bridge
+Kind Of Material And/Or Design
+Type Of Design And/Or Construction
+Kind Of Material And/Or Design
+Type Of Design And/Or Construction
+Number Of Spans In Main Unit
+Number Of Approach Spans
+Inventory Route, Total Horizontal Clearance
+Length Of Maximum Span
+Structure Length
+Left Curb Or Sidewalk Width
+Right Curb Or Sidewalk Width
+Bridge Roadway Width, Curb-To-Curb
+Deck Width, Out-To-Out
+Minimum Vertical Clearance Over Bridge Roadway
+Reference Feature
+Minimum Vertical Underclearance
+Reference Feature
+Minimum Lateral Underclearance
+Minimum Lateral Underclearance On Left
+(Reserved)
+Deck
+Superstructure
+Substructure
+Channel And Channel Protection
+Culverts
+Method Used To Determine Operating Rating
+Operating Rating
+Method Used To Determine Inventory Rating
+Inventory Rating
+Structural Elevation
+Deck Geometry
+Underclearances, Vertical And Horizontal
+Bridge Posting
+Waterway Adequacy
+Approach Roadway Alignment
+(Reserved)
+(Reserved)
+Type Of Work Proposed
+Work Done By
+Length Of Structure Improvement
+(Reserved)
+(Reserved)
+(Reserved)
+(Reserved)
+(Reserved)
+(Reserved)
+(Reserved)
+(Reserved)
+(Reserved)
+(Reserved)
+(Reserved)
+(Reserved)
+(Reserved)
+Inspection Date
+Designated Inspection Frequency
+Fracture Critical Details
+Underwater Inspection
+Other Special Inspection
+Fracture Critical Details
+Underwater Inspection
+Other Special Inspection
+Bridge Improvement Cost
+Roadway Improvement Cost
+Total Project Cost
+Year Of Improvement Cost Estimate
+Neighboring State Code
+Percent Responsibility
+Border Bridge Structure number
+STRAHNET Highway Designation
+Parallel Structure Designation
+Direction Of Traffic
+Temporary Structure Designation
+Highway System Of The Inventory Route
+Federal Lands Highways
+Year Reconstructed
+Deck Structure Type
+Wearing Surface/Protective System
+Average Daily Truck Traffic
+Designated National Network
+Pier or Abutment Protection (for Navigation)
+NBIS Bridge Length
+Scour Critical Bridges
+Future Average Daily Traffic
+Year of Future Average Daily Traffic
+Minimum Navigation Vertical Clearance

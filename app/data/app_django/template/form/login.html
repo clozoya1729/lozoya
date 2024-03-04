@@ -1,0 +1,36 @@
+{% extends 'template/base/general/base.html' %}
+{% load static %}
+{% block body %}
+    <!-- Start: body-login -->
+    <div class="login-clean">
+        <form method="post">
+            <!-- Start: heading -->
+            <section>
+                <h2 class="text-uppercase text-center form-heading">Log In</h2>
+            </section>
+            <!-- End: heading -->
+            <!-- Start: logo -->
+            <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
+            <!-- End: logo -->
+            <!-- Start: email-input -->
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+            <!-- End: email-input -->
+            <!-- Start: password-input -->
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password">
+            </div>
+            <!-- End: password-input -->
+            <!-- Start: submit-button -->
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit">Log In</button>
+            </div>
+            <!-- End: submit-button -->
+            <!-- Start: forgot-password-link -->
+            <a class="forgot"
+               href="{% url 'ts_general:reset-password-request' %}">
+                Forgot your email or password?
+            </a>
+            <!-- End: forgot-password-link -->
+        </form>
+    </div>
+    <!-- End: body-login -->
+{% endblock %}

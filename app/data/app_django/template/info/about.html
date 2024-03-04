@@ -1,0 +1,277 @@
+{% extends 'base/general/body.html' %}
+{% load static %}
+{% block body %}
+    <!-- Start: body-about -->
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon">
+                            <i class="icon-screen-desktop m-auto text-primary"
+                               data-bs-hover-animate="pulse">
+                            </i>
+                        </div>
+                        <h3>
+                            Access On Any Device
+                        </h3>
+                        <p class="lead mb-0">
+                            Access your private server from any device.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon">
+                            <i class="icon-layers m-auto text-primary"
+                               data-bs-hover-animate="pulse">
+                            </i>
+                        </div>
+                        <h3>
+                            Customizable Server
+                        </h3>
+                        <p class="lead mb-0">
+                            Rent a private server to the specifications required by your project
+                            and storage for your data and results.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon">
+                            <i class="icon-check m-auto text-primary"
+                               data-bs-hover-animate="pulse">
+                            </i>
+                        </div>
+                        <h3>
+                            Team
+                        </h3>
+                        <p class="lead mb-0">
+                            Add users to your team for collaboration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                     style="background: url({% static 'img/bg-showcase-2.jpg' %});">
+                    <span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Run On Server</h2>
+                    <p class="lead mb-0">Calculations run on the server so you can run data analysis and machine
+                        learning on any device with an internet connection!</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 text-white showcase-img"
+                     style="background: url({% static 'img/bg-showcase-2.jpg' %});">
+                    <span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Plotting</h2>
+                    <p class="lead mb-0">Plot results of data analysis.</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                     style="background: url({% static 'img/bg-showcase-2.jpg' %});">
+                    <span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Easy to Use</h2>
+                    <p class="lead mb-0">The model hyperparameters are easily edited.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">Latest Tools</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0">
+                        <img class="rounded-circle img-fluid mb-3"
+                             src="{% static 'img/bg-showcase-2.jpg' %}">
+                        <h5>
+                            Regression
+                        </h5>
+                        <p class="font-weight-light mb-0">
+                            Fit regression models like random forest, support vector
+                            machine, and neural network.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0">
+                        <img class="rounded-circle img-fluid mb-3"
+                             src="{% static 'img/bg-showcase-2.jpg' %}">
+                        <h5>
+                            Scatter Plots
+                        </h5>
+                        <p class="font-weight-light mb-0">
+                            Scatter plots show the data as a scatter of data points
+                            and the regression fit as a line plot.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0">
+                        <img class="rounded-circle img-fluid mb-3"
+                             src="{% static 'img/bg-masthead.jpg' %}">
+                        <h5>
+                            Histograms
+                        </h5>
+                        <p class="font-weight-light mb-0">
+                            Histograms visualize frequency or probability distributions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="highlight-phone">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- Start: Intro -->
+                    <div class="intro">
+                        <h2 class="page-heading">About Us</h2>
+                        <p>
+                            tensorstone is dedicated to providing machine learning to everyone.
+                        </p>
+                        {#                        <a#}
+                        {#                                class="btn btn-primary"#}
+                        {#                                role="button"#}
+                        {#                                href="{% url 'ts_general:signup' %}">#}
+                        {#                            Sign Up#}
+                        {#                        </a>#}
+                    </div>
+                    <!-- End: Intro -->
+                </div>
+                <div class="col-sm-4">
+                    <!-- Start: Smartphone -->
+                    <div class="d-none d-md-block phone-mockup">
+                        <img class="device"
+                             src="{% static 'img/screen-content-hone.jpg' %}">
+                        <div class="screen"></div>
+                    </div>
+                    <!-- End: Smartphone -->
+                </div>
+            </div>
+        </div>
+        <!-- Start: features -->
+        <div class="features-boxed">
+            <div class="container">
+                <!-- Start: Intro -->
+                <div class="intro">
+                    <h2 class="text-center page-heading">
+                        Features
+                    </h2>
+                    <p class="text-center">
+                        tensorstone currently includes various regression algorithms and plotting
+                        scatter plots and histograms.
+                    </p>
+                </div>
+                <!-- End: Intro -->
+                <!-- Start: Features -->
+                <div class="row justify-content-center features">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="box"><i class="fa fa-map-marker icon"></i>
+                            <h3 class="name">Works everywhere</h3>
+                            <p class="description">tensorstone runs calculations on the cloud so you can perform your
+                                analyses on any device.</p>
+                            {% comment %}                            <a class="learn-more"
+                               href="{% url 'ts_general:tutorials' %}">
+                                Learn more »
+                            </a>{% endcomment %}
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="box"><i class="fa fa-list-alt icon"></i>
+                            <h3 class="name">Customizable </h3>
+                            <p class="description">
+                                Your private server configuration can be customized. RAM size,
+                                storage, and GPU settings can be modified to optimize your model training.
+                            </p>
+                            {% comment %}                            <a class="learn-more"
+                               href="{% url 'ts_general:tutorials' %}">
+                                Learn more »
+                            </a>{% endcomment %}
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="box"><i class="fa fa-leaf icon"></i>
+                            <h3 class="name">Train Models Online</h3>
+                            <p class="description">
+                                Train models on the cloud. Your private server can be customized to
+                                handle your machine learning requirements.
+                                <br><br>
+                            </p>
+                            {% comment %}                            <a class="learn-more"
+                               href="{% url 'ts_general:tutorials' %}">
+                                Learn more »
+                            </a>{% endcomment %}
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Features -->
+            </div>
+        </div>
+        <!-- End: features -->
+    </div>
+    <!-- End: body-about -->
+    <!-- Start: body-future -->
+    <div class="features-blue">
+        <div class="container">
+            <!-- Start: Intro -->
+            <div class="intro">
+                <h2 class="text-center page-heading">Future</h2>
+                <p class="text-center">The tensorstone team is working on new features that will be added to the online
+                    tensorstone app.</p>
+            </div>
+            <!-- End: Intro -->
+            <!-- Start: Features -->
+            <div class="row features">
+                <div class="col-sm-6 col-md-4 item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                         class="icon">
+                        <path d="M17 15H19V17H17V15Z" fill="currentColor"></path>
+                        <path d="M19 11H17V13H19V11Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M13 7H23V21H1V3H13V7ZM8 5H11V7H8V5ZM11 19V17H8V19H11ZM11 15V13H8V15H11ZM11 11V9H8V11H11ZM21 19V9H13V11H15V13H13V15H15V17H13V19H21ZM3 19V17H6V19H3ZM3 15H6V13H3V15ZM6 11V9H3V11H6ZM3 7H6V5H3V7Z"
+                              fill="currentColor"></path>
+                    </svg>
+                    <h3 class="name">Classification, Clustering, and Dimensionality Reduction<br></h3>
+                    <p class="description">Classification algorithms for supervised machine learning. Clustering
+                        algorithms for data mining and unsupervised learning. Dimensionality reduction for feature
+                        engineering.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="icon ion-network icon"></i>
+                    <h3 class="name">Deep Neural Network<br><br></h3>
+                    <p class="description">Specialized module for assembling deep neural networks.<br><br></p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="la la-connectdevelop icon"></i>
+                    <h3 class="name">Monte Carlo Simulation</h3>
+                    <p class="description">Monte Carlo simulation sampling from algorithms including Markov Chain and
+                        Latin Hypercube.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="fa fa-table icon"></i>
+                    <h3 class="name">Data Modification<br><br></h3>
+                    <p class="description">Modification of data from within the tensorstone app.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="icon-graph icon"></i>
+                    <h3 class="name">Statistical Analysis<br><br></h3>
+                    <p class="description">Parametric distribution and curve fitting.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="icon ion-pie-graph icon"></i>
+                    <h3 class="name">More Plots<br><br></h3>
+                    <p class="description">Increased variety of plots such as heatmaps, pie charts, and violin
+                        plots.</p>
+                </div>
+            </div>
+            <!-- End: Features -->
+        </div>
+    </div>
+    <!-- End: body-future -->
+{% endblock %}

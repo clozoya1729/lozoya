@@ -1,0 +1,40 @@
+<div class="jumbotron" style="padding: 10px;width: 80%;margin: auto;">
+    <div class="panel-group" role="tablist" aria-multiselectable="true" id="%accordionID%">
+        <div class="panel panel-default">
+            <div class="panel-heading text-left" role="tab" id="plot-accordion-heading-%n%"
+                 data-toggle="collapse" data-parent="#%accordionID%" aria-expanded="true"
+                 href="#%accordionID% .item-1">
+                <h4 class="panel-title">
+                    <i class="icon ion-ios-settings-strong">
+
+                    </i>
+                    <a role="button"
+                       data-toggle="collapse"
+                       aria-expanded="true"
+                       data-parent="#plot-accordion-%n%"
+                       href="#%accordionID% .item-1"
+                       id="plot-acordion-%n%">
+                        Plot %n%
+                    </a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse in item-1" role="tabpanel">
+                <div class="panel-body">
+                    <div class="col-md-9">
+                        <div class="ts-plot" name="%plotID%" id="%plotID%">
+                            %plot%
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="%dimArea%">
+                            %dimensions%
+                        </div>
+                        <div id="%axID%">
+                            %axes%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

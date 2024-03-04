@@ -1,0 +1,907 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Home</title>
+        <meta name="description" content="Welcome to VectorFlux Sound Design. We offer Mixing and Mastering Services. ">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static '/css/general/button.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/color.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/components.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/heading.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/image.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/link.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/list.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/misc.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/navbar.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/paragraph.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/text.css' %}">
+        <link rel="stylesheet" href="{% static '/css/home/home.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static '/css/info/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static '/css/info/services.css' %}">
+        <link rel="stylesheet" href="{% static '/css/legal/policy.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/music-widget.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/player.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    </head>
+
+    <body id="home-home-background-body">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <style>
+            body {
+                min-height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+        <div id="home-home-background-1-div">
+            <div id="home-home-background-color-div">
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container">
+                        <h1 data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-heading-1-h1"
+                            class="primary-heading">No More Quotes</h1>
+                        <p data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-paragraph-1-p"
+                           class="primary-paragraph">The entirety of human civilization has been leading up to this.<br>
+                        </p><a class="btn btn-default btn-lg primary-button" role="button" data-aos="fade"
+                               data-aos-duration="2000" id="home-home-arabesque-button-1-a"
+                               href="{% url 'info:services' %}">You had me at hello!</a></div>
+                </div>
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container">
+                        <h1 data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-heading-2-h1"
+                            class="primary-heading">Never-Ending Soundscape<br></h1>
+                        <p data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-paragraph-2-p"
+                           class="primary-paragraph">Fill the ocean with the waves of your soul.<br></p><a
+                            class="btn btn-default btn-lg primary-button" role="button" data-aos="fade"
+                            data-aos-duration="2000" id="home-home-arabesque-button-2-a"
+                            href="{% url 'info:services' %}">What...?<br></a></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-2-div" class="arabesque-div">
+                <div class="container arabesque-container" id="home-home-background-color-2-div">
+                    <div class="intro">
+                        <h1 class="text-center primary-heading" data-aos="slide-up"
+                            id="home-home-arabesque-heading-3-h1">VectorFlux Sound Design</h1>
+                        <p class="text-center primary-paragraph" data-aos="slide-up" data-aos-duration="600"
+                           id="home-home-arabesque-paragraph-3-p">Enhance your performance. It's that simple.</p>
+                    </div>
+                    <div class="row text-center features">
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div id="home-home-arabesque-info-box-1-div" class="info-box">
+                                <div id="home-home-arabesque-column-1-div" class="arabesque-column"><i
+                                        class="glyphicon glyphicon-map-marker icon-class" data-aos="fade-up"
+                                        data-aos-duration="1750" id="home-home-icon-1-i"></i>
+                                    <h3 class="text-uppercase name info-box-heading" data-aos="fade-down"
+                                        data-aos-duration="1300">Anywhere</h3>
+                                    <p data-aos="fade" data-aos-duration="2850" class="info-box-paragraph">It doesn't
+                                        matter where you are. Our studio welcomes you with open arms. Whether you are
+                                        next door or across the globe (or flat Earth, if you're into that) we will be
+                                        here for you.</p><a class="text-uppercase info-box-link"
+                                                            data-aos="fade" data-aos-duration="2050"
+                                                            id="home-home-info-box-link-1-a"
+                                                            href="{% url 'info:services' %}">Learn more »</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up" data-aos-duration="1300">
+                            <div id="home-home-arabesque-info-box-2-div" class="box">
+                                <div id="home-home-arabesque-column-2-div" class="arabesque-column"><i
+                                        class="glyphicon glyphicon-time icon-class" data-aos="fade-up"
+                                        data-aos-duration="1900" id="home-home-icon-2-i"></i>
+                                    <h3 class="text-uppercase name info-box-heading" data-aos="fade-down"
+                                        data-aos-duration="1650">Any Time</h3>
+                                    <p data-aos="fade" data-aos-duration="2900" class="info-box-paragraph">We are here
+                                        for you all around the clock, friend. Our team of audio engineers and
+                                        technicians are constantly working to satisfy your artistic vision.</p><a
+                                            class="text-uppercase info-box-link" data-aos="fade"
+                                            data-aos-duration="2300"
+                                            id="home-home-info-box-link-2-a" href="{% url 'info:services' %}">Learn more
+                                        »</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up-left" data-aos-duration="1050">
+                            <div id="home-home-arabesque-info-box-3-div" class="box">
+                                <div id="home-home-arabesque-column-3-div" class="arabesque-column"><i
+                                        class="glyphicon glyphicon-phone icon-class" data-aos="fade-up"
+                                        data-aos-duration="1850" id="home-home-icon-3-i"></i>
+                                    <h3 class="text-uppercase name info-box-heading" data-aos="fade-down"
+                                        data-aos-duration="1950">Mobile</h3>
+                                    <p data-aos="fade" data-aos-duration="2800" class="info-box-paragraph">Place an
+                                        order on your phone if that's what your little heart tells you to do. If you
+                                        truly believe that is where your destiny lies, we are here to support you.</p><a
+                                            class="text-uppercase info-box-link" data-aos="fade"
+                                            data-aos-duration="2600" id="home-home-info-box-link-3-a"
+                                            href="{% url 'info:services' %}">Learn more »</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-3-div" class="arabesque-div">
+                <div class="container text-center arabesque-container" id="home-home-background-color-3-div">
+                    <h1 data-aos="fade-left" data-aos-duration="1050" id="home-home-arabesque-heading-4-h1"
+                        class="primary-heading">Immersive Art</h1>
+                    <p data-aos="fade-right" data-aos-duration="1750" id="home-home-arabesque-paragraph-4-p"
+                       class="primary-paragraph">The vastness of space beckons you into a dimension of artistic sound
+                        design unlike anything you've heard before.<br></p><a
+                        class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                        data-aos-duration="1300" id="home-home-arabesque-button-3-a"
+                        href="{% url 'info:services' %}">Yes!<br></a></div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-4-div" class="arabesque-div">
+                <div class="container text-center arabesque-container" id="home-home-background-color-4-div">
+                    <div>
+                        <h1 data-aos="fade-up" data-aos-duration="1650" data-aos-delay="300"
+                            id="home-home-arabesque-heading-5-h1" class="primary-heading">Visions of Audio</h1>
+                        <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150"
+                           id="home-home-arabesque-paragraph-5-p" class="primary-paragraph">You will be one with the
+                            universe. Let us handle the rest.<br></p><a class="btn btn-default btn-lg primary-button"
+                                                                        role="button" data-aos="fade-up"
+                                                                        data-aos-duration="1400"
+                                                                        id="home-home-arabesque-button-4-a"
+                                                                        href="{% url 'info:services' %}">Integrate<br></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-color-5-div">
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container">
+                        <h1 data-aos="fade-down" data-aos-duration="1000" id="home-home-arabesque-heading-6-h1"
+                            class="primary-heading">Age of Unlimited Audio</h1>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                <p data-aos="fade-right" data-aos-duration="1500" id="home-home-arabesque-paragraph-6-p"
+                                   class="primary-paragraph">More music. More art. More life.</p><a
+                                    class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                                    data-aos-duration="3000" id="home-home-arabesque-button-5-a"
+                                    href="{% url 'info:services' %}">Learn More</a></div>
+                            <div
+                                    class="col-md-6 text-left"><img data-aos="fade-left" data-aos-duration="1500"
+                                                                    id="home-home-wave-image-img"
+                                                                    src="{% static 'img/home/insert-1.jpg' %}"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arabesque-div" style="height: 600px;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="home2.html"><img class="logo"
+                                                                                            src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{% static '/js/smart-forms.min.js' %}"></script>
+    <script src="{% static '/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static '/js/Music-Widget.js' %}"></script>
+    <script src="{% static '/js/order/calculate-price.js' %}"></script>
+    <script src="{% static '/js/order/coupon-display.js' %}"></script>
+    <script src="{% static '/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static '/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static '/js/order/coupon.js' %}"></script>
+    <script src="{% static '/js/order/validate.js' %}"></script>
+    <script src="{% static '/js/playlisttest.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    <div class="container">
+        <div class="jumbotron">
+            <p>You lead the way, I'll follow.</p>
+        </div>
+
+        <div class="jumbotron">
+            <h2>
+                Mixers: Joshua and Marco are trailblazing again.
+                With our new and improved proprietary technology
+                we will mix your music better than ever before.
+            </h2>
+        </div>
+    </div>
+{% endblock %}
+
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Home</title>
+        <meta name="description" content="Welcome to VectorFlux Sound Design. We offer Mixing and Mastering Services. ">
+        <link rel="stylesheet" href="{% static 'assets/bootstrap2/css/bootstrap2.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static 'assets/css/Article-Clean.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Header-Blue.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/home/Features-Boxed.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/Registration-Form-with-Photo.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/services/services-jumbotron.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/playlisttest.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    </head>
+
+    <body id="home-home-background-body">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <style>
+            body {
+                min-height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+        <div id="home-home-background-1-div">
+            <div id="home-home-background-color-div">
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container">
+                        <h1 data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-heading-1-h1"
+                            class="arabesque-heading">No More Quotes</h1>
+                        <p data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-paragraph-1-p"
+                           class="arabesque-paragraph">The entirety of human civilization has been leading up to
+                            this.<br></p><a class="btn btn-default btn-lg arabesque-button" role="button"
+                                            href="{% url 'info:services' %}" data-aos="fade" data-aos-duration="2000"
+                                            id="home-home-arabesque-button-1-a">You had me at hello!</a></div>
+                </div>
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container">
+                        <h1 data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-heading-2-h1"
+                            class="arabesque-heading">Never-Ending Soundscape<br></h1>
+                        <p data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-paragraph-2-p"
+                           class="arabesque-paragraph">Fill the ocean with the waves of your soul.<br></p><a
+                            class="btn btn-default btn-lg arabesque-button" role="button"
+                            href="{% url 'info:services' %}" data-aos="fade" data-aos-duration="2000"
+                            id="home-home-arabesque-button-2-a">What...?<br></a></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-2-div" class="arabesque-div">
+                <div class="container arabesque-container" id="home-home-background-color-2-div">
+                    <div class="intro">
+                        <h1 class="text-center arabesque-heading" data-aos="slide-up"
+                            id="home-home-arabesque-heading-3-h1">VectorFlux Sound Design</h1>
+                        <p class="text-center arabesque-paragraph" data-aos="slide-up" data-aos-duration="600"
+                           id="home-home-arabesque-paragraph-3-p">Enhance your performance. It's that simple.</p>
+                    </div>
+                    <div class="row text-center features">
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div id="home-home-arabesque-info-box-1-div" class="info-box">
+                                <div id="home-home-arabesque-column-1-div" class="arabesque-column"><i
+                                        class="glyphicon glyphicon-map-marker icon-class" data-aos="fade-up"
+                                        data-aos-duration="1750" id="home-home-icon-1-i"></i>
+                                    <h3 class="text-uppercase name info-box-heading" data-aos="fade-down"
+                                        data-aos-duration="1300">Anywhere</h3>
+                                    <p data-aos="fade" data-aos-duration="2850" class="info-box-paragraph">It doesn't
+                                        matter where you are. Our studio welcomes you with open arms. Whether you are
+                                        next door or across the globe (or flat Earth, if you're into that) we will be
+                                        here for you.</p><a class="text-uppercase info-box-link"
+                                                            href="#" data-aos="fade" data-aos-duration="2050"
+                                                            id="home-home-info-box-link-1-a">Learn more »</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up" data-aos-duration="1300">
+                            <div id="home-home-arabesque-info-box-2-div" class="box">
+                                <div id="home-home-arabesque-column-2-div" class="arabesque-column"><i
+                                        class="glyphicon glyphicon-time icon-class" data-aos="fade-up"
+                                        data-aos-duration="1900" id="home-home-icon-2-i"></i>
+                                    <h3 class="text-uppercase name info-box-heading" data-aos="fade-down"
+                                        data-aos-duration="1650">Any Time</h3>
+                                    <p data-aos="fade" data-aos-duration="2900" class="info-box-paragraph">We are here
+                                        for you all around the clock, friend. Our team of audio engineers and
+                                        technicians are constantly working to satisfy your artistic vision.</p><a
+                                            class="text-uppercase info-box-link" href="#" data-aos="fade"
+                                            data-aos-duration="2300" id="home-home-info-box-link-2-a">Learn more »</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up-left" data-aos-duration="1050">
+                            <div id="home-home-arabesque-info-box-3-div" class="box">
+                                <div id="home-home-arabesque-column-3-div" class="arabesque-column"><i
+                                        class="glyphicon glyphicon-phone icon-class" data-aos="fade-up"
+                                        data-aos-duration="1850" id="home-home-icon-3-i"></i>
+                                    <h3 class="text-uppercase name info-box-heading" data-aos="fade-down"
+                                        data-aos-duration="1950">Mobile</h3>
+                                    <p data-aos="fade" data-aos-duration="2800" class="info-box-paragraph">Place an
+                                        order on your phone if that's what your little heart tells you to do. If you
+                                        truly believe that is where your destiny lies, we are here to support you.</p><a
+                                            class="text-uppercase info-box-link" href="#" data-aos="fade"
+                                            data-aos-duration="2600" id="home-home-info-box-link-3-a">Learn more »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-3-div" class="arabesque-div">
+                <div class="container text-center arabesque-container" id="home-home-background-color-3-div">
+                    <h1 data-aos="fade-left" data-aos-duration="1050" id="home-home-arabesque-heading-4-h1"
+                        class="arabesque-heading">Immersive Art</h1>
+                    <p data-aos="fade-right" data-aos-duration="1750" id="home-home-arabesque-paragraph-4-p"
+                       class="arabesque-paragraph">The vastness of space beckons you into a dimension of artistic sound
+                        design unlike anything you've heard before.<br></p><a
+                        class="btn btn-default btn-lg arabesque-button" role="button" href="{% url 'info:services' %}"
+                        data-aos="fade-up"
+                        data-aos-duration="1300" id="home-home-arabesque-button-3-a">Yes!<br></a></div>
+            </div>
+            <div id="home-home-background-4-div" class="arabesque-div">
+                <div class="container text-center arabesque-container" id="home-home-background-color-4-div">
+                    <div>
+                        <h1 data-aos="fade-up" data-aos-duration="1650" data-aos-delay="300"
+                            id="home-home-arabesque-heading-5-h1" class="arabesque-heading">Visions of Audio</h1>
+                        <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150"
+                           id="home-home-arabesque-paragraph-5-p" class="arabesque-paragraph">You will be one with the
+                            universe. Let us handle the rest.<br></p><a class="btn btn-default btn-lg arabesque-button"
+                                                                        role="button" href="{% url 'info:services' %}"
+                                                                        data-aos="fade-up" data-aos-duration="1400"
+                                                                        id="home-home-arabesque-button-4-a">Integrate<br></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-color-5-div">
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container">
+                        <h1 data-aos="fade-down" data-aos-duration="1000" id="home-home-arabesque-heading-6-h1"
+                            class="arabesque-heading">Age of Unlimited Audio</h1>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                <p data-aos="fade-right" data-aos-duration="1500" id="home-home-arabesque-paragraph-6-p"
+                                   class="arabesque-paragraph"
+                                   style="color: rgb(219,218,228);text-shadow: 2px 1px rgb(149,148,160);">More music.
+                                    More art. More life.</p><a class="btn btn-default btn-lg arabesque-button"
+                                                               role="button" href="{% url 'info:services' %}"
+                                                               data-aos="fade-up" data-aos-duration="3000"
+                                                               id="home-home-arabesque-button-5-a">Learn More</a></div>
+                            <div
+                                    class="col-md-6 text-left"><img src="{% static 'assets/img/insert-1.jpg' %}"
+                                                                    data-aos="fade-left" data-aos-duration="1500"
+                                                                    id="home-home-wave-image-img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arabesque-div" style="height: 600px;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap2/js/bootstrap2.min.js' %}"></script>
+    <script src="{% static 'assets/js/smart-forms.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static 'assets/js/MUSA_form-wizard.js' %}"></script>
+    <script src="{% static 'assets/js/Music-Widget.js' %}"></script>
+    <script src="{% static 'assets/js/order/calculate-price.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-display.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon.js' %}"></script>
+    <script src="{% static 'assets/js/order/validate.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/playlisttest.js' %}"></script>
+    <script src="{% static 'assets/js/Simple-Slider.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Home</title>
+        <meta name="description" content="Welcome to VectorFlux Sound Design. We offer Mixing and Mastering Services. ">
+        <link rel="stylesheet" href="{% static 'assets/bootstrap2/css/bootstrap2.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static 'assets/css/Article-Clean.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Header-Blue.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/home/Features-Boxed.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/Registration-Form-with-Photo.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/services/services-jumbotron.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/playlisttest.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    </head>
+
+    <body style="background-size: contain;background-repeat: repeat;background-image: url(&quot;{% static 'assets/img/jumbotron-1.jpg' %}&quot;);width: 100%;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <style>
+            body {
+                min-height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+        <div style="background-image: url(&quot;{% static 'assets/img/jumbotron-18.jpg' %}&quot;);">
+            <div style="background-color: rgba(51,19,67,0.85);">
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container"
+                         style="background: linear-gradient(to bottom right, rgba(67,20,91,0.85) 0%, rgba(22,1,33,0.85) 40%, rgba(23,0,22,0.85) 80%, rgba(54,24,40,0.85) 90%);background-image: url(&quot;none&quot;);">
+                        <h1 data-aos="fade" data-aos-duration="2000" id="arabesque-heading-home-1"
+                            class="arabesque-heading"
+                            style="background: linear-gradient(to bottom right, rgb(255,157,128) 0%, rgb(215,13,0) 80%);color: transparent;-webkit-background-clip: text;">
+                            No More Quotes</h1>
+                        <p data-aos="fade" data-aos-duration="2000" class="arabesque-paragraph"
+                           style="color: rgb(255,225,200);/*text-shadow: 2px 1px black;*/">The entirety of human
+                            civilization has been leading up to this.<br></p><a
+                            class="btn btn-default btn-lg arabesque-button" role="button"
+                            href="{% url 'info:services' %}" data-aos="fade" data-aos-duration="2000"
+                            style="background-image: url(&quot;{% static 'assets/img/jumbotron-10.jpg' %}&quot;);background-size: cover;background-position: right;text-shadow: 2px 1px rgb(57,26,67);color: rgb(232,232,194);">You
+                        had me at hello!</a></div>
+                </div>
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container"
+                         style="background: linear-gradient(to left, rgba(111,81,126,0.85) 0%, rgba(51,19,67,0.85) 100%);background-image: url(&quot;none&quot;);">
+                        <h1 data-aos="fade" data-aos-duration="2000" id="arabesque-heading-home-2"
+                            class="arabesque-heading"
+                            style="background: linear-gradient(to bottom right, rgb(213,171,196) 0%, rgb(113,0,132) 90%);color: transparent;-webkit-background-clip: text;">
+                            Never-Ending Soundscape<br></h1>
+                        <p data-aos="fade" data-aos-duration="2000" class="arabesque-paragraph"
+                           style="color: rgb(254,230,255);text-shadow: 2px 2px rgb(92,77,108);">Fill the ocean with the
+                            waves of your soul.<br></p><a class="btn btn-default btn-lg arabesque-button" role="button"
+                                                          href="{% url 'info:services' %}" data-aos="fade"
+                                                          data-aos-duration="2000"
+                                                          style="color: rgb(227,194,222);text-shadow: 1px 1px rgb(92,77,108);background-image: url(&quot;{% static 'assets/img/button-2.jpg' %}&quot;);background-size: cover;background-position: bottom;">What...?<br></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="arabesque-div"
+                 style="background-image: url(&quot;{% static 'assets/img/jumbotron-22.jpg' %}&quot;);background-size: cover;background-position: top;">
+                <div class="container arabesque-container"
+                     style="background: linear-gradient(to bottom left, rgba(55,4,35,0.94) 0%, rgba(29,0,34,0.92) 20%, rgba(55,0,46,0.78) 80%);">
+                    <div class="intro">
+                        <h2 class="text-center arabesque-heading" data-aos="slide-up" id="arabesque-heading-home-4"
+                            style="color: rgb(197,186,201);">VectorFlux Sound Design</h2>
+                        <p class="text-center arabesque-paragraph" data-aos="slide-up" data-aos-duration="600"
+                           style="color: rgb(255,255,255);text-shadow: 2px 1px rgb(99,55,115);">Enhance your
+                            performance. It's that simple.</p>
+                    </div>
+                    <div class="row features">
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div class="box"
+                                 style="background-image: url(&quot;{% static 'assets/img/card-2.jpg' %}&quot;);">
+                                <div class="arabesque-column" style="background-color: rgba(88,83,108,0.63);"><i
+                                        class="glyphicon glyphicon-map-marker icon-class" data-aos="fade-up"
+                                        data-aos-duration="1750" style="color: rgba(93,73,101,0.75);"></i>
+                                    <h3 class="text-uppercase name" data-aos="fade-down" data-aos-duration="1300"
+                                        style="color: rgb(255,255,255);text-shadow: 2px 2px rgb(99,55,115);font-family: Raleway, sans-serif;letter-spacing: 4px;">
+                                        Anywhere</h3>
+                                    <p data-aos="fade" data-aos-duration="2850" class="description"
+                                       style="color: rgb(255,255,255);text-shadow: 2px 1px rgb(99,55,115);font-family: 'Roboto Slab', serif;letter-spacing: 1px;font-size: 12px;">
+                                        It doesn't matter where you are. Our studio welcomes you with open arms. Whether
+                                        you are next door or across the globe (or flat Earth, if you're into that) we
+                                        will be here for you.</p><a class="text-uppercase learn-more"
+                                                                    href="#" data-aos="fade" data-aos-duration="2050"
+                                                                    style="letter-spacing: 4px;color: rgb(225,210,231);font-family: Raleway, sans-serif;">Learn
+                                        more »</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up" data-aos-duration="1300">
+                            <div class="box"
+                                 style="background-image: url(&quot;{% static 'assets/img/card-2.jpg' %}&quot;);">
+                                <div class="arabesque-column" style="background-color: rgba(59,95,67,0.62);"><i
+                                        class="glyphicon glyphicon-time icon-class" data-aos="fade-up"
+                                        data-aos-duration="1900" id="icon-home-2"
+                                        style="color: rgba(73,71,75,0.75);"></i>
+                                    <h3 class="text-uppercase name glow" data-aos="fade-down" data-aos-duration="1650"
+                                        style="color: rgb(255,255,255);text-shadow: 2px 2px rgb(99,55,115);font-family: Raleway, sans-serif;letter-spacing: 4px;">
+                                        Any Time</h3>
+                                    <p data-aos="fade" data-aos-duration="2900" class="description"
+                                       style="color: rgb(255,255,255);text-shadow: 2px 1px rgb(99,55,115);font-family: 'Roboto Slab', serif;letter-spacing: 1px;font-size: 12px;">
+                                        We are here for you all around the clock, friend. Our team of audio engineers
+                                        and technicians are constantly working to satisfy your artistic vision.</p><a
+                                            class="text-uppercase learn-more" href="#" data-aos="fade"
+                                            data-aos-duration="2300"
+                                            style="letter-spacing: 4px;color: rgb(213,213,214);font-family: Raleway, sans-serif;">Learn
+                                        more »</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up-left" data-aos-duration="1050">
+                            <div class="box"
+                                 style="background-image: url(&quot;{% static 'assets/img/card-2.jpg' %}&quot;);">
+                                <div class="arabesque-column" style="background-color: rgba(156,120,94,0.56);"><i
+                                        class="glyphicon glyphicon-phone icon-class" data-aos="fade-up"
+                                        data-aos-duration="1850" style="color: rgba(101,75,83,0.7);"></i>
+                                    <h3 class="text-uppercase name glow" data-aos="fade-down" data-aos-duration="1950"
+                                        style="color: rgb(255,255,255);text-shadow: 2px 2px rgb(99,55,115);font-family: Raleway, sans-serif;letter-spacing: 4px;">
+                                        Mobile</h3>
+                                    <p data-aos="fade" data-aos-duration="2800" class="description"
+                                       style="color: rgb(255,255,255);text-shadow: 2px 1px rgb(99,55,115);font-family: 'Roboto Slab', serif;letter-spacing: 1px;">
+                                        Place an order on your phone if that's what your little heart tells you to do.
+                                        If you truly believe that is where your destiny lies, we are here to support
+                                        you.</p><a class="text-uppercase learn-more" href="#" data-aos="fade"
+                                                   data-aos-duration="2600"
+                                                   style="letter-spacing: 4px;color: rgb(255,233,233);font-family: Raleway, sans-serif;">Learn
+                                        more »</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="arabesque-div"
+                 style="background-image: url(&quot;{% static 'assets/img/jumbotron-17.jpg' %}&quot;);height: 700px;">
+                <div class="container text-center arabesque-container" style="background-color: rgba(37,4,58,0.85);">
+                    <h1 data-aos="fade-left" data-aos-duration="1050" id="arabesque-heading-home-5"
+                        class="arabesque-heading" style="color: rgb(238,226,207);">Immersive Art</h1>
+                    <p data-aos="fade-right" data-aos-duration="1750" class="arabesque-paragraph"
+                       style="color: rgb(237,236,234);text-shadow: 2px 1px rgb(89,79,73);">The vastness of space beckons
+                        you into a dimension of artistic sound design unlike anything you've heard before.<br></p><a
+                        class="btn btn-default btn-lg arabesque-button" role="button" href="{% url 'info:services' %}"
+                        data-aos="fade-up"
+                        data-aos-duration="1300"
+                        style="text-shadow: 2px 1px rgb(89,79,73);color: rgb(237,236,234);background-image: url(&quot;{% static 'assets/img/jumbotron-10.jpg' %}&quot;);background-size: cover;background-position: bottom;">Yes!<br></a>
+                </div>
+            </div>
+            <div class="arabesque-div"
+                 style="background-image: url(&quot;{% static 'assets/img/tesselation-1.jpg' %}&quot;);background-size: contain;background-position: center;height: 800px;">
+                <div class="container text-center arabesque-container"
+                     style="background: linear-gradient(0.29turn, rgba(100,100,100,0.8) 0%, rgba(255,255,255,0.95) 25%, rgba(255,248,248,0.95) 75%, rgba(255,251,148,0.59) 100%);">
+                    <div style="background-size: cover;background-position: bottom;">
+                        <h1 data-aos="fade-up" data-aos-duration="1650" data-aos-delay="300"
+                            id="arabesque-heading-home-7" class="arabesque-heading" style="color: rgb(255,221,182);">
+                            Visions of Audio</h1>
+                        <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150" class="arabesque-paragraph"
+                           style="color: rgb(230,217,202);text-shadow: 2px 2px rgb(191,126,139);">You will be one with
+                            the universe. Let us handle the rest.<br></p><a
+                            class="btn btn-default btn-lg arabesque-button" role="button"
+                            href="{% url 'info:services' %}" data-aos="fade-up" data-aos-duration="1400"
+                            style="text-shadow: 2px 1px rgb(89,79,73);color: rgb(237,236,234);background-image: url(&quot;{% static 'assets/img/button-1.jpg' %}&quot;);background-size: cover;background-position: bottom;">Integrate<br></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div style="background: linear-gradient(to bottom right, rgba(153,19,124,0.38) 0%, rgba(42,4,55,0.88) 20%, rgba(255,140,153,0.53) 60%, rgba(147,89,89,0.75) 70%);">
+                <div class="arabesque-div" style="background: initial;">
+                    <div class="container text-center arabesque-container">
+                        <h1 data-aos="fade-down" data-aos-duration="1000" id="arabesque-heading-home-3"
+                            class="arabesque-heading" style="color: rgb(185,184,201);">Age of Unlimited Audio</h1>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                <p data-aos="fade-right" data-aos-duration="1500" class="arabesque-paragraph"
+                                   style="color: rgb(219,218,228);text-shadow: 2px 1px rgb(149,148,160);">More music.
+                                    More art. More life.</p><a class="btn btn-default btn-lg arabesque-button"
+                                                               role="button" href="{% url 'info:services' %}"
+                                                               data-aos="fade-up" data-aos-duration="3000"
+                                                               style="text-shadow: 2px 1px rgb(77,80,96);background-image: url(&quot;{% static 'assets/img/button-1.jpg' %}&quot;);background-size: cover;color: rgb(223,222,237);">Learn
+                                More</a></div>
+                            <div
+                                    class="col-md-6 text-left"><img src="{% static 'assets/img/insert-1.jpg' %}"
+                                                                    data-aos="fade-left" data-aos-duration="1500"
+                                                                    id="img-wav"
+                                                                    style="/*width: 400px;*/height: 160px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arabesque-div" style="height: 600px;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap2/js/bootstrap2.min.js' %}"></script>
+    <script src="{% static 'assets/js/smart-forms.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static 'assets/js/MUSA_form-wizard.js' %}"></script>
+    <script src="{% static 'assets/js/Music-Widget.js' %}"></script>
+    <script src="{% static 'assets/js/order/calculate-price.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-display.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon.js' %}"></script>
+    <script src="{% static 'assets/js/order/validate.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/playlisttest.js' %}"></script>
+    <script src="{% static 'assets/js/Simple-Slider.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}

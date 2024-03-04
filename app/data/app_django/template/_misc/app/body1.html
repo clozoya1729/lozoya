@@ -1,0 +1,8 @@
+{% extends 'template/base/general/base.html' %}
+{% load static %}
+{% block body %}
+    <div id="dashboardID" hidden>{{ dashboardID }}</div>
+    {{ navbar |safe }}
+    {% include 'dashboard/sidebars.html' %}
+    {% include 'dashboard/editor.html' %}
+{% endblock %}

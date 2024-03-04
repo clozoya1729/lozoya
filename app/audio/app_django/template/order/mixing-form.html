@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    {% include 'css.html' %}
+    <div class="container">
+        <h1>
+            Order
+        </h1>
+        <form method="post" enctype="multipart/form-data" id="id_order_form">
+            {% csrf_token %}
+            {% for field in form %}
+                {{ field.label }}
+                {% ifequal field.name 'terms' %}
+                    I have read and agree to the
+                    <a href="{% url 'info:terms' %}">
+                        Terms of Service
+                    </a>
+                {% endifequal %}
+                {{ field }}
+                {% if field.name == 'terms' or field.name == 'master' %}
+                    <br>
+                {% endif %}
+            {% endfor %}
+            {# include "order/paypal-button.html" #}
+            <button type="submit" onclick="validate_email()">
+                Submit
+            </button>
+        </form>
+        <label id="label_price" for="id_price">Price:</label>
+    </div>
+    {% include 'js.html' %}
+{% endblock %}

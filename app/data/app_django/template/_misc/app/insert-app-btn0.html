@@ -1,0 +1,67 @@
+{{ insertAppModal |safe }}
+<div class="dropdown multilevel">
+    <button class="nav-link btn btn-info btn dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+            type="button"
+            id="insert-app-btn">
+        Insert App
+    </button>
+    <div class="dropdown-menu dropdown-menu-left">
+        <div class="dropright">
+            <a class="btn dropdown-toggle dropdown-item"
+               data-toggle="dropdown"
+               aria-expanded="false"
+               role="button">
+                Machine Learning
+            </a>
+            <div class="dropdown-menu">
+                <div class="dropright">
+                    <a class="dropdown-item"
+                       href="#"
+                       onclick="insert_app('classification0');">
+                        Classification
+                    </a>
+                    <a class="dropdown-item"
+                       href="#"
+                       onclick="insert_app('clustering');">
+                        Clustering
+                    </a>
+                    <a class="dropdown-item"
+                       href="#"
+                       onclick="insert_app('dimensionalityreduction');">
+                        Dimensionality Reduction
+                    </a>
+                    <a class="dropdown-item"
+                       href="#"
+                       onclick="insert_app('regression');">
+                        Regression
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropright">
+            <a class="btn dropdown-toggle dropdown-item"
+               data-toggle="dropdown"
+               aria-expanded="false"
+               role="button">
+                Plot
+            </a>
+            <div class="dropdown-menu">
+                <div class="dropright">
+                    <a class="dropdown-item"
+                       href="#"
+                       onclick="insert_app('histogram');">
+                        Histogram
+                    </a>
+                    <a class="dropdown-item"
+                       href="#"
+                       onclick="insert_app('scatter');">
+                        Scatter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

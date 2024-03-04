@@ -1,0 +1,35 @@
+<div class="app-container"
+     id="{{ objectID }}">
+    <div class="app-panel-group panel-group"
+         role="tablist"
+         aria-multiselectable="true"
+         id="{{ href }}"
+         onclick="resize_plots({{ n }})">
+        <div class="panel panel-default app-panel">
+            <div class="panel-heading text-left app-panel-heading"
+                 role="tab"
+                 id="{{ appHeading }}"
+                 data-toggle="collapse"
+                 data-parent="#{{ href }}"
+                 aria-expanded="true"
+                 href="#{{ href }} .item-1">
+                <h6 class="app-heading-bar panel-title">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    <a role="button"
+                       data-toggle="collapse"
+                       aria-expanded="true"
+                       data-parent="#{{ href }}"
+                       href="#{{ href }} .item-1"
+                       id="{{ href }}">
+                        {{ objectType }}
+                    </a>
+                </h6>
+            </div>
+            <div class="app-panel-collapse panel-collapse collapse in item-1" role="tabpanel">
+                <div class="app-panel-body">
+                    {{ body |safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

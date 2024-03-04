@@ -1,0 +1,1449 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | FAQ</title>
+        <meta name="description" content="Frequently Asked Questions.">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static '/css/general/button.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/color.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/footer.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/heading.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/image.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/link.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/list.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/misc.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/navbar.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/paragraph.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/text.css' %}">
+        <link rel="stylesheet" href="{% static '/css/home/home.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static '/css/info/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static '/css/info/services.css' %}">
+        <link rel="stylesheet" href="{% static '/css/legal/policy.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard-1.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/music-widget.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/player.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    </head>
+
+    <body id="info-faq-background-body" class="faq-body">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="info-faq-background-div" class="header-blue">
+        <div class="container" id="info-faq-page-container">
+            <div class="intro">
+                <h2 class="text-center primary-heading">Frequently Asked Questions</h2>
+            </div>
+            <div class="row articles">
+                <div class="col-md-7 col-sm-6 item">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-1">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-1" aria-expanded="true"
+                                 href="#info-faq-accordion-1 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-1"
+                                                                                                          href="#info-faq-accordion-1 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">How
+                                    do I place an order?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Just place an order. Simple as that.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-2">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-2" aria-expanded="true"
+                                 href="#info-faq-accordion-2 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-2"
+                                                                                                          href="#info-faq-accordion-2 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    is Repair?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Our Repair service focuses on removing unwanted signals present in your audio. This includes the reduction of extraneous noise such as ventilation or wind. Our engineers can also reduce signal bleed from other instruments. For example, if there is too much hi-hat signal in your snare recording, we will reduce the amount of hi-hat that is audible in your snare recording without affecting the tonal quality of the snare.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-3">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-3" aria-expanded="true"
+                                 href="#info-faq-accordion-3 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-3"
+                                                                                                          href="#info-faq-accordion-3 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    is Performance Correction?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Performance Correction includes the adjustment of pitch in case a note deviates from the tonal center established by the arrangement. Special care is taken to ensure that notes which are off-key on purpose are retained, while notes that are accidentaly performed too flat or sharp are corrected.<br>Note that this is not auto-tune, as each note is tuned manually according to the composition.<br><br>If you request Performance Correction along with another service (mixing, mastering, repair), you will receive a version of your results with Performance Correction and a version without. This is in addition to the two versions that are included with mixing and mastering. Therefore, you will receive a total of four results when you select this option.<br></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-4">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-4" aria-expanded="true"
+                                 href="#info-faq-accordion-4 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-4"
+                                                                                                          href="#info-faq-accordion-4 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    if I want a revision?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Your order includes one revision coupon. If you would like to make changes to your results, navigate to www.vectorflux.com/order/revision and enter your order ID, coupon code, and your prefered version of the results (A or B). Along with this information, describe the changes you would like to have made (e.g. "I would like the bass to be less prominent."). Our engineers will address your comments and you will receive a revised result.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-5">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-5" aria-expanded="true"
+                                 href="#info-faq-accordion-5 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-5"
+                                                                                                          href="#info-faq-accordion-5 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    type of audio files can I upload?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Only WAV files are currently accepted. If you have a different file format such as FLAC or OGG, please convert this into one of the aforementioned formats before placing your order.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-6">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-6" aria-expanded="true"
+                                 href="#info-faq-accordion-6 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-6"
+                                                                                                          href="#info-faq-accordion-6 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    is the Reference field for?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>The reference field is for you to list songs or artists that you would like to model your songs after. Our engineers will listen to the music you list here and mix and master your project in a similar style while retaining a unique sound based on your composition.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-7">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-7" aria-expanded="true"
+                                 href="#info-faq-accordion-7 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-7"
+                                                                                                          href="#info-faq-accordion-7 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">How
+                                    much will my project cost to mix?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Prices depend on the number of tracks, the length of the project, and whether you request mastering.</span>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="../base/home0.html"><img class="logo"
+                                                                                                    src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{% static '/js/smart-forms.min.js' %}"></script>
+    <script src="{% static '/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static '/js/Music-Widget.js' %}"></script>
+    <script src="{% static '/js/order/calculate-price.js' %}"></script>
+    <script src="{% static '/js/order/coupon-display.js' %}"></script>
+    <script src="{% static '/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static '/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static '/js/order/coupon.js' %}"></script>
+    <script src="{% static '/js/order/validate.js' %}"></script>
+    <script src="{% static '/js/playlisttest.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | FAQ</title>
+        <meta name="description" content="Frequently Asked Questions.">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static '/css/general/button.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/color.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/footer.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/heading.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/image.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/link.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/list.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/misc.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/navbar.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/paragraph.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/text.css' %}">
+        <link rel="stylesheet" href="{% static '/css/home/home.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static '/css/info/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static '/css/info/services.css' %}">
+        <link rel="stylesheet" href="{% static '/css/legal/policy.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard-1.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/music-widget.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/player.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    </head>
+
+    <body id="info-faq-background-body" class="faq-body">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="info-faq-background-div" class="header-blue">
+        <div class="container" id="info-faq-page-container">
+            <div class="intro">
+                <h2 class="text-center primary-heading">Frequently Asked Questions</h2>
+            </div>
+            <div class="row articles">
+                <div class="col-md-7 col-sm-6 item">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-1">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-1" aria-expanded="true"
+                                 href="#info-faq-accordion-1 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-1"
+                                                                                                          href="#info-faq-accordion-1 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">How
+                                    do I place an order?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Just place an order. Simple as that.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-2">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-2" aria-expanded="true"
+                                 href="#info-faq-accordion-2 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-2"
+                                                                                                          href="#info-faq-accordion-2 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    is Repair?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Our Repair service focuses on removing unwanted signals present in your audio. This includes the reduction of extraneous noise such as ventilation or wind. Our engineers can also reduce signal bleed from other instruments. For example, if there is too much hi-hat signal in your snare recording, we will reduce the amount of hi-hat that is audible in your snare recording without affecting the tonal quality of the snare.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-3">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-3" aria-expanded="true"
+                                 href="#info-faq-accordion-3 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-3"
+                                                                                                          href="#info-faq-accordion-3 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    is Performance Correction?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Performance Correction includes the adjustment of pitch in case a note deviates from the tonal center established by the arrangement. Special care is taken to ensure that notes which are off-key on purpose are retained, while notes that are accidentaly performed too flat or sharp are corrected.<br>Note that this is not auto-tune, as each note is tuned manually according to the composition.<br><br>If you request Performance Correction along with another service (mixing, mastering, repair), you will receive a version of your results with Performance Correction and a version without. This is in addition to the two versions that are included with mixing and mastering. Therefore, you will receive a total of four results when you select this option.<br></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-4">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-4" aria-expanded="true"
+                                 href="#info-faq-accordion-4 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-4"
+                                                                                                          href="#info-faq-accordion-4 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    if I want a revision?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Your order includes one revision coupon. If you would like to make changes to your results, navigate to www.vectorflux.com/order/revision and enter your order ID, coupon code, and your prefered version of the results (A or B). Along with this information, describe the changes you would like to have made (e.g. "I would like the bass to be less prominent."). Our engineers will address your comments and you will receive a revised result.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-5">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-5" aria-expanded="true"
+                                 href="#info-faq-accordion-5 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-5"
+                                                                                                          href="#info-faq-accordion-5 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    type of audio files can I upload?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Only WAV files are currently accepted. If you have a different file format such as FLAC or OGG, please convert this into one of the aforementioned formats before placing your order.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-6">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-6" aria-expanded="true"
+                                 href="#info-faq-accordion-6 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-6"
+                                                                                                          href="#info-faq-accordion-6 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    is the Reference field for?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>The reference field is for you to list songs or artists that you would like to model your songs after. Our engineers will listen to the music you list here and mix and master your project in a similar style while retaining a unique sound based on your composition.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-7">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-7" aria-expanded="true"
+                                 href="#info-faq-accordion-7 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-7"
+                                                                                                          href="#info-faq-accordion-7 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">How
+                                    much will my project cost to mix?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Prices depend on the number of tracks, the length of the project, and whether you request mastering.</span>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="home2.html"><img class="logo"
+                                                                                            src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{% static '/js/smart-forms.min.js' %}"></script>
+    <script src="{% static '/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static '/js/Music-Widget.js' %}"></script>
+    <script src="{% static '/js/order/calculate-price.js' %}"></script>
+    <script src="{% static '/js/order/coupon-display.js' %}"></script>
+    <script src="{% static '/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static '/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static '/js/order/coupon.js' %}"></script>
+    <script src="{% static '/js/order/validate.js' %}"></script>
+    <script src="{% static '/js/playlisttest.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | FAQ</title>
+        <meta name="description" content="Frequently Asked Questions.">
+        <link rel="stylesheet" href="{% static 'assets/bootstrap2/css/bootstrap2.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static 'assets/css/Article-Clean.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Header-Blue.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/home/Features-Boxed.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/Registration-Form-with-Photo.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/services/services-jumbotron.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/playlisttest.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    </head>
+
+    <body id="info-faq-background-body" class="faq-body">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="info-faq-background-div" class="header-blue">
+        <div class="container" id="info-faq-page-container">
+            <div class="intro">
+                <h2 class="text-center arabesque-heading">Frequently Asked Questions</h2>
+            </div>
+            <div class="row articles">
+                <div class="col-md-7 col-sm-6 item">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-1">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-1" aria-expanded="true"
+                                 href="#info-faq-accordion-1 .item-1">
+                                <h4 class="panel-title"><img src="{% static 'assets/img/logo-no-text.png' %}"
+                                                             class="img-logo-accordion"><a role="button"
+                                                                                           data-toggle="collapse"
+                                                                                           data-parent="#info-faq-accordion-1"
+                                                                                           aria-expanded="false"
+                                                                                           href="#info-faq-accordion-1 .item-1"
+                                                                                           id="order-success-detail-accordion-title">How
+                                    do I place an order?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Just place an order. Simple as that.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-2">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-2" aria-expanded="true"
+                                 href="#info-faq-accordion-2 .item-1">
+                                <h4 class="panel-title"><img src="{% static 'assets/img/logo-no-text.png' %}"
+                                                             class="img-logo-accordion"><a role="button"
+                                                                                           data-toggle="collapse"
+                                                                                           data-parent="#info-faq-accordion-2"
+                                                                                           aria-expanded="false"
+                                                                                           href="#info-faq-accordion-2 .item-1"
+                                                                                           id="order-success-detail-accordion-title">What
+                                    is Repair?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Our Repair service focuses on removing unwanted signals present in your audio. This includes the reduction of extraneous noise such as ventilation or wind. Our engineers can also reduce signal bleed from other instruments. For example, if there is too much hi-hat signal in your snare recording, we will reduce the amount of hi-hat that is audible in your snare recording without affecting the tonal quality of the snare.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-3">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-3" aria-expanded="true"
+                                 href="#info-faq-accordion-3 .item-1">
+                                <h4 class="panel-title"><img src="{% static 'assets/img/logo-no-text.png' %}"
+                                                             class="img-logo-accordion"><a role="button"
+                                                                                           data-toggle="collapse"
+                                                                                           data-parent="#info-faq-accordion-3"
+                                                                                           aria-expanded="false"
+                                                                                           href="#info-faq-accordion-3 .item-1"
+                                                                                           id="order-success-detail-accordion-title">What
+                                    is Performance Correction?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Performance Correction includes the adjustment of pitch in case a note deviates from the tonal center established by the arrangement. Special care is taken to ensure that notes which are off-key on purpose are retained, while notes that are accidentaly performed too flat or sharp are corrected.<br><br>If you request Performance Correction along with another service (mixing, mastering, repair), you will receive a version of your results with Performance Correction and a version without. This is in addition to the two versions that are included with mixing and mastering. Therefore, you will receive a total of four results when you select this option.<br></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-4">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-4" aria-expanded="true"
+                                 href="#info-faq-accordion-4 .item-1">
+                                <h4 class="panel-title"><img src="{% static 'assets/img/logo-no-text.png' %}"
+                                                             class="img-logo-accordion"><a role="button"
+                                                                                           data-toggle="collapse"
+                                                                                           data-parent="#info-faq-accordion-4"
+                                                                                           aria-expanded="false"
+                                                                                           href="#info-faq-accordion-4 .item-1"
+                                                                                           id="order-success-detail-accordion-title">What
+                                    if I want a revision?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Your order includes one revision coupon. If you would like to make changes to your results, navigate to www.vectorflux.com/order/revision and enter your order ID, coupon code, and your prefered version of the results (A or B). Along with this information, describe the changes you would like to have made (e.g. "I would like the bass to be less prominent."). Our engineers will address your comments and you will receive a revised result.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-5">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-5" aria-expanded="true"
+                                 href="#info-faq-accordion-5 .item-1">
+                                <h4 class="panel-title"><img src="{% static 'assets/img/logo-no-text.png' %}"
+                                                             class="img-logo-accordion"><a role="button"
+                                                                                           data-toggle="collapse"
+                                                                                           data-parent="#info-faq-accordion-5"
+                                                                                           aria-expanded="false"
+                                                                                           href="#info-faq-accordion-5 .item-1"
+                                                                                           id="order-success-detail-accordion-title">What
+                                    type of audio files can I upload?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>If you have a different file format such as FLAC or OGG, please convert this into one of the aforementioned formats before placing your order.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-6">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-6" aria-expanded="true"
+                                 href="#info-faq-accordion-6 .item-1">
+                                <h4 class="panel-title"><img src="{% static 'assets/img/logo-no-text.png' %}"
+                                                             class="img-logo-accordion"><a role="button"
+                                                                                           data-toggle="collapse"
+                                                                                           data-parent="#info-faq-accordion-6"
+                                                                                           aria-expanded="false"
+                                                                                           href="#info-faq-accordion-6 .item-1"
+                                                                                           id="order-success-detail-accordion-title">What
+                                    is the Reference field for?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>The reference field is for you to list songs or artists that you would like to model your songs after. Our engineers will listen to the music you list here and mix and master your project in a similar style while retaining a unique sound based on your sound.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-7">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-7" aria-expanded="true"
+                                 href="#info-faq-accordion-7 .item-1">
+                                <h4 class="panel-title"><img src="{% static 'assets/img/logo-no-text.png' %}"
+                                                             class="img-logo-accordion"><a role="button"
+                                                                                           data-toggle="collapse"
+                                                                                           data-parent="#info-faq-accordion-7"
+                                                                                           aria-expanded="false"
+                                                                                           href="#info-faq-accordion-7 .item-1"
+                                                                                           id="order-success-detail-accordion-title">How
+                                    much will my project cost to mix?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Prices depend on the number of tracks, the length of the project, and whether you request mastering.</span>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap2/js/bootstrap2.min.js' %}"></script>
+    <script src="{% static 'assets/js/smart-forms.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static 'assets/js/MUSA_form-wizard.js' %}"></script>
+    <script src="{% static 'assets/js/Music-Widget.js' %}"></script>
+    <script src="{% static 'assets/js/order/calculate-price.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-display.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon.js' %}"></script>
+    <script src="{% static 'assets/js/order/validate.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/playlisttest.js' %}"></script>
+    <script src="{% static 'assets/js/Simple-Slider.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | FAQ</title>
+        <meta name="description" content="Frequently Asked Questions.">
+        <link rel="stylesheet" href="{% static 'assets/bootstrap2/css/bootstrap2.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static 'assets/css/Article-Clean.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/Header-Blue.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/home/Features-Boxed.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/contact-us/Registration-Form-with-Photo.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/info/services/services-jumbotron.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget-1.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/Music-Widget.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/playlisttest.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    </head>
+
+    <body class="faq-body"
+          style="background-image: url(&quot;{% static 'assets/img/tesselation-1.jpg' %}&quot;);background-size: cover;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header-blue"
+         style="height: 100%;background: linear-gradient(to bottom right, rgba(255,255,255,0.98) 0%, rgba(81,63,36,0.69) 80%);width: 100%;padding: 0px 15px;">
+        <div class="container" style="padding-top: 100px;height: 100%;">
+            <div class="intro">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <p class="text-center">Answers</p>
+            </div>
+            <div class="row articles">
+                <div class="col-md-7 col-sm-6 item" style="width: 100%;">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="accordion-1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center" role="tab"
+                                 style="background-color: rgba(245,245,245,0);opacity: 1;">
+                                <h4 class="panel-title"><a role="button" data-toggle="collapse"
+                                                           data-parent="#accordion-1" aria-expanded="false"
+                                                           href="#accordion-1 .item-1">How do I place an order?</a><i
+                                        class="glyphicon glyphicon-triangle-bottom" style="margin-left: 7px;"></i></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1" role="tabpanel">
+                                <div class="panel-body"><span>Just place an order. Simple as that.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="accordion-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center" role="tab">
+                                <h4 class="panel-title"><a role="button" data-toggle="collapse"
+                                                           data-parent="#accordion-2" aria-expanded="false"
+                                                           href="#accordion-2 .item-1">What is Repair?</a><i
+                                        class="glyphicon glyphicon-triangle-bottom" style="margin-left: 7px;"></i></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1" role="tabpanel">
+                                <div class="panel-body"><span>Our Repair service focuses on removing unwanted signals present in your audio. This includes the reduction of extraneous noise such as ventilation or wind. Our engineers can also reduce signal bleed from other instruments. For example, if there is too much hi-hat signal in your snare recording, we will reduce the amount of hi-hat that is audible in your snare recording without affecting the tonal quality of the snare.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="accordion-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center" role="tab">
+                                <h4 class="panel-title"><a role="button" data-toggle="collapse"
+                                                           data-parent="#accordion-2" aria-expanded="false"
+                                                           href="#accordion-2 .item-1">What is Performance
+                                    Correction?</a><i class="glyphicon glyphicon-triangle-bottom"
+                                                      style="margin-left: 7px;"></i></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1" role="tabpanel">
+                                <div class="panel-body"><span>Performance Correction includes the adjustment of pitch in case a note deviates from the tonal center established by the arrangement. Special care is taken to ensure that notes which are off-key on purpose are retained, while notes that are accidentaly performed too flat or sharp are corrected.<br><br>If you request Performance Correction along with another service (mixing, mastering, repair), you will receive a version of your results with Performance Correction and a version without. This is in addition to the two versions that are included with mixing and mastering. Therefore, you will receive a total of four results when you select this option.<br></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="accordion-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center" role="tab">
+                                <h4 class="panel-title"><a role="button" data-toggle="collapse"
+                                                           data-parent="#accordion-2" aria-expanded="false"
+                                                           href="#accordion-2 .item-1">What if I want a revision?</a><i
+                                        class="glyphicon glyphicon-triangle-bottom" style="margin-left: 7px;"></i></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1" role="tabpanel">
+                                <div class="panel-body"><span>Your order includes one revision coupon. If you would like to make changes to your results, navigate to www.vectorflux.com/order/revision and enter your order ID, coupon code, and your prefered version of the results (A or B). Along with this information, describe the changes you would like to have made (e.g. "I would like the bass to be less prominent."). Our engineers will address your comments and you will receive a revised result.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="accordion-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center" role="tab">
+                                <h4 class="panel-title"><a role="button" data-toggle="collapse"
+                                                           data-parent="#accordion-2" aria-expanded="false"
+                                                           href="#accordion-2 .item-1">What type of audio files can I
+                                    upload?</a><i class="glyphicon glyphicon-triangle-bottom"
+                                                  style="margin-left: 7px;"></i></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1" role="tabpanel">
+                                <div class="panel-body"><span>If you have a different file format such as FLAC or OGG, please convert this into one of the aforementioned formats before placing your order.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="accordion-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center" role="tab">
+                                <h4 class="panel-title"><a role="button" data-toggle="collapse"
+                                                           data-parent="#accordion-2" aria-expanded="false"
+                                                           href="#accordion-2 .item-1">What is the Reference field
+                                    for?</a><i class="glyphicon glyphicon-triangle-bottom"
+                                               style="margin-left: 7px;"></i></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1" role="tabpanel">
+                                <div class="panel-body"><span>The reference field is for you to list songs or artists that you would like to model your songs after. Our engineers will listen to the music you list here and mix and master your project in a similar style while retaining a unique sound based on your sound.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="accordion-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center" role="tab" href="#accordion-3 .item-1">
+                                <h4 class="panel-title"><a role="button" data-toggle="collapse"
+                                                           data-parent="#accordion-3" aria-expanded="false"
+                                                           href="#accordion-3 .item-1">How much will my project cost to
+                                    mix?</a><i class="glyphicon glyphicon-triangle-bottom"
+                                               style="margin-left: 7px;"></i></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1" role="tabpanel">
+                                <div class="panel-body"><span>Prices depend on the number of tracks, the length of the project, and whether you request mastering.</span>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap2/js/bootstrap2.min.js' %}"></script>
+    <script src="{% static 'assets/js/smart-forms.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static 'assets/js/MUSA_form-wizard.js' %}"></script>
+    <script src="{% static 'assets/js/Music-Widget.js' %}"></script>
+    <script src="{% static 'assets/js/order/calculate-price.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-display.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static 'assets/js/order/coupon.js' %}"></script>
+    <script src="{% static 'assets/js/order/validate.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/PHP-Contact-Form-dark.js' %}"></script>
+    <script src="{% static 'assets/js/playlisttest.js' %}"></script>
+    <script src="{% static 'assets/js/Simple-Slider.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | FAQ</title>
+        <meta name="description" content="Frequently Asked Questions.">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel="stylesheet" href="{% static '/css/general/button.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/color.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/components.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/heading.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/image.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/link.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/list.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/misc.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/navbar.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/paragraph.css' %}">
+        <link rel="stylesheet" href="{% static '/css/general/text.css' %}">
+        <link rel="stylesheet" href="{% static '/css/home/home.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="{% static '/css/info/contact-us.css' %}">
+        <link rel="stylesheet" href="{% static '/css/info/services.css' %}">
+        <link rel="stylesheet" href="{% static '/css/legal/policy.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/Drag--Drop-Upload-Form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/MUSA_form-wizard.css' %}">
+        <link rel="stylesheet" href="{% static '/css/order/form/order-form.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/music-widget.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/player.css' %}">
+        <link rel="stylesheet" href="{% static '/css/playlist/slider.css' %}">
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    </head>
+
+    <body id="info-faq-background-body" class="faq-body">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="info-faq-background-div" class="header-blue">
+        <div class="container" id="info-faq-page-container">
+            <div class="intro">
+                <h2 class="text-center primary-heading">Frequently Asked Questions</h2>
+            </div>
+            <div class="row articles">
+                <div class="col-md-7 col-sm-6 item">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-1">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-1" aria-expanded="true"
+                                 href="#info-faq-accordion-1 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-1"
+                                                                                                          href="#info-faq-accordion-1 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">How
+                                    do I place an order?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Just place an order. Simple as that.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-2">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-2" aria-expanded="true"
+                                 href="#info-faq-accordion-2 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-2"
+                                                                                                          href="#info-faq-accordion-2 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    is Repair?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Our Repair service focuses on removing unwanted signals present in your audio. This includes the reduction of extraneous noise such as ventilation or wind. Our engineers can also reduce signal bleed from other instruments. For example, if there is too much hi-hat signal in your snare recording, we will reduce the amount of hi-hat that is audible in your snare recording without affecting the tonal quality of the snare.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-3">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-3" aria-expanded="true"
+                                 href="#info-faq-accordion-3 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-3"
+                                                                                                          href="#info-faq-accordion-3 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    is Performance Correction?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Performance Correction includes the adjustment of pitch in case a note deviates from the tonal center established by the arrangement. Special care is taken to ensure that notes which are off-key on purpose are retained, while notes that are accidentaly performed too flat or sharp are corrected.<br>Note that this is not auto-tune, as each note is tuned manually according to the composition.<br><br>If you request Performance Correction along with another service (mixing, mastering, repair), you will receive a version of your results with Performance Correction and a version without. This is in addition to the two versions that are included with mixing and mastering. Therefore, you will receive a total of four results when you select this option.<br></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-4">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-4" aria-expanded="true"
+                                 href="#info-faq-accordion-4 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-4"
+                                                                                                          href="#info-faq-accordion-4 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    if I want a revision?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Your order includes one revision coupon. If you would like to make changes to your results, navigate to www.vectorflux.com/order/revision and enter your order ID, coupon code, and your prefered version of the results (A or B). Along with this information, describe the changes you would like to have made (e.g. "I would like the bass to be less prominent."). Our engineers will address your comments and you will receive a revised result.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-5">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-5" aria-expanded="true"
+                                 href="#info-faq-accordion-5 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-5"
+                                                                                                          href="#info-faq-accordion-5 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    type of audio files can I upload?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Only WAV files are currently accepted. If you have a different file format such as FLAC or OGG, please convert this into one of the aforementioned formats before placing your order.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-6">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-6" aria-expanded="true"
+                                 href="#info-faq-accordion-6 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-6"
+                                                                                                          href="#info-faq-accordion-6 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">What
+                                    is the Reference field for?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>The reference field is for you to list songs or artists that you would like to model your songs after. Our engineers will listen to the music you list here and mix and master your project in a similar style while retaining a unique sound based on your composition.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="info-faq-accordion-7">
+                        <div class="panel panel-default order-success-detail-accordion-item">
+                            <div class="panel-heading text-left" role="tab" id="order-success-detail-accordion-heading"
+                                 data-toggle="collapse" data-parent="#info-faq-accordion-7" aria-expanded="true"
+                                 href="#info-faq-accordion-7 .item-1">
+                                <h4 class="panel-title"><img class="img-logo-accordion"
+                                                             src="{% static 'img/logo-no-text.png' %}"><a role="button"
+                                                                                                          data-toggle="collapse"
+                                                                                                          aria-expanded="false"
+                                                                                                          data-parent="#info-faq-accordion-7"
+                                                                                                          href="#info-faq-accordion-7 .item-1"
+                                                                                                          id="order-success-detail-accordion-title">How
+                                    much will my project cost to mix?</a></h4>
+                            </div>
+                            <div class="panel-collapse collapse item-1 order-success-detail-accordion-content"
+                                 role="tabpanel">
+                                <div class="panel-body order-success-detail-accordion-body"><span>Prices depend on the number of tracks, the length of the project, and whether you request mastering.</span>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="home.html"><img class="logo"
+                                                                                           src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{% static '/js/smart-forms.min.js' %}"></script>
+    <script src="{% static '/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="{% static '/js/Music-Widget.js' %}"></script>
+    <script src="{% static '/js/order/calculate-price.js' %}"></script>
+    <script src="{% static '/js/order/coupon-display.js' %}"></script>
+    <script src="{% static '/js/order/coupon-getters.js' %}"></script>
+    <script src="{% static '/js/order/coupon-setters.js' %}"></script>
+    <script src="{% static '/js/order/coupon.js' %}"></script>
+    <script src="{% static '/js/order/validate.js' %}"></script>
+    <script src="{% static '/js/playlisttest.js' %}"></script>
+    </body>
+
+    </html>
+
+{% endblock %}

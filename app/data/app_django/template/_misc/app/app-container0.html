@@ -1,0 +1,47 @@
+<div id="%appZone%">
+    <div class="jumbotron ts-app"
+         id="%appName%">
+        <div aria-multiselectable="true"
+             class="panel-group"
+             id="%accordionID%"
+             role="tablist">
+            <div class="panel panel-default">
+                <div aria-expanded="true"
+                     class="panel-heading text-left"
+                     data-parent="#%accordionID%"
+                     data-toggle="collapse"
+                     href="#%accordionID% .item-1"
+                     id="%appHeading%"
+                     role="tab"
+                     style="cursor: pointer;">
+                    <h4 class="panel-title">
+                        <i class="icon glyphicon glyphicon-menu-hamburger">
+                        </i>
+                        App %n%: %appType%
+                    </h4>
+                </div>
+
+                <div class="panel-collapse collapse in item-1"
+                     role="tabpanel">
+                    <div class="panel-body">
+                        <div class="col-md-2">
+                            <div class="btn-group">
+                                %appOptions%
+                                %appSettings%
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="btn-group"
+                                 role="group">
+                                %appButtons%
+                            </div>
+                        </div>
+                        <div class="col-md-12" id="%appDistrict%">
+                            %appCode%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

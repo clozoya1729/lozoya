@@ -1,0 +1,58 @@
+:root {
+    --font-size-largest: 4rem;
+    --letter-spacing-largest: 0.3rem;
+}
+
+.primary-heading {
+    color: var(--primary-heading-color);
+    font: var(--primary-heading-font);
+    text-shadow: 0.075rem 0.075rem rgb(255, 128, 49);
+    letter-spacing: var(--primary-heading-letter-spacing);
+    margin: var(--primary-heading-margin);
+    padding: var(--primary-heading-padding);
+}
+
+.primary-paragraph {
+    font: var(--primary-paragraph-font);
+    letter-spacing: var(--primary-paragraph-letter-spacing);
+    padding: var(--primary-paragraph-padding);
+}
+
+.secondary-heading {
+    color: var(--secondary-heading-color);
+    font: var(--secondary-heading-font);
+    letter-spacing: var(--secondary-heading-letter-spacing);
+    margin: var(--secondary-heading-margin);
+    padding: var(--secondary-heading-padding);
+}
+
+.secondary-paragraph {
+    font: var(--secondary-paragraph-font);
+    letter-spacing: var(--secondary-paragraph-letter-spacing);
+}
+
+.tertiary-heading {
+    color: var(--tertiary-heading-color);
+    font: var(--tertiary-heading-font);
+    letter-spacing: var(--tertiary-heading-letter-spacing);
+    margin: var(--tertiary-heading-margin);
+    padding: var(--tertiary-heading-padding);
+}
+
+.tertiary-paragraph {
+    font: var(--tertiary-paragraph-font);
+    letter-spacing: var(--tertiary-paragraph-letter-spacing);
+}
+
+.form-field-label {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(194, 108, 65);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.primary-date {
+    font-size: calc(var(--font-size-largest) / 2.5);
+    font-family: 'Lora', serif;
+}
+

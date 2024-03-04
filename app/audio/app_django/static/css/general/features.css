@@ -1,0 +1,1624 @@
+.features-blue {
+    color: #fff;
+    background: linear-gradient(135deg, #172a74, #21a9af);
+    background-color: #184e8e;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .features-blue {
+        padding-bottom: 10px;
+    }
+}
+
+.features-blue p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.features-blue h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+@media (max-width: 767px) {
+    .features-blue h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.features-blue .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 60px;
+}
+
+@media (max-width: 767px) {
+    .features-blue .intro {
+        margin-bottom: 40px;
+    }
+}
+
+.features-blue .item {
+    min-height: 100px;
+    padding-left: 80px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .features-blue .item {
+        min-height: 0;
+    }
+}
+
+.features-blue .item .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+.features-blue .item .description {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.features-blue .item .icon {
+    font-size: 40px;
+    color: #ffcc1e;
+    float: left;
+    margin-left: -65px;
+}
+
+.info-box {
+    background-size: cover;
+    padding: 0px;
+    background-position: bottom;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon-class {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: inherit;
+}
+
+.features-boxed .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.arabesque-heading {
+    color: white;
+    text-shadow: 1px 1px rgb(255, 128, 49);
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 48px;
+    font-size: 48px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.arabesque-paragraph {
+    letter-spacing: 0.01em;
+    line-height: 32px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    padding-bottom: 50px;
+}
+
+.arabesque-button {
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 24px;
+}
+
+#home-home-arabesque-heading-1-h1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 0, 0, 0.26), 2px 2px 2px rgba(255, 0, 0, 0.22), 2px 2px rgba(255, 255, 0, 0.13), 1px 1px rgba(255, 107, 0, 0.2);
+}
+
+#home-home-arabesque-heading-2-h1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 149, 244, 0.12), 2px 2px 2px rgba(204, 0, 255, 0.16), 2px 2px rgba(255, 151, 238, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+}
+
+#home-home-arabesque-heading-6-h1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 149, 149, 0.2), 2px 2px 2px rgba(255, 0, 153, 0.16), 2px 2px rgba(255, 151, 195, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+}
+
+#home-home-arabesque-heading-6-h1 {
+    color: rgb(185, 184, 201);
+    text-shadow: 2px 2px rgba(255, 0, 213, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+}
+
+#home-home-arabesque-heading-1-h1 {
+    text-shadow: 2px 2px rgba(255, 255, 0, 0.13), 1px 1px rgba(255, 107, 0, 0.2);
+    background: linear-gradient(to bottom right, rgb(255, 157, 128) 0%, rgb(215, 13, 0) 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#home-home-arabesque-heading-2-h1 {
+    text-shadow: 2px 2px rgba(255, 151, 238, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+    background: linear-gradient(to bottom right, rgb(213, 171, 196) 0%, rgb(113, 0, 132) 90%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#home-home-arabesque-heading-3-h1 {
+    text-shadow: 1px 1px rgb(99, 55, 115), 2px 2px rgba(120, 70, 130, 0.5);
+    color: rgb(197, 186, 201);
+}
+
+#home-home-arabesque-heading-3-h1:hover {
+    text-shadow: 1px 1px rgb(99, 55, 115), 2px 2px rgba(120, 70, 130, 0.5), 3px 3px rgba(99, 55, 115, 0.52), 4px 4px rgba(120, 70, 130, 0.25), -2px -2px 2px rgba(255, 149, 244, 0.12), 2px 2px 2px rgba(204, 0, 255, 0.16);
+}
+
+#home-home-arabesque-heading-4-h1 {
+    color: rgb(238, 226, 207);
+    text-shadow: 1px 1px rgba(255, 153, 0, 0.63), 2px 2px rgba(239, 72, 0, 0.45), 3px 3px rgba(109, 87, 87, 0.29);
+}
+
+#home-home-arabesque-heading-4-h1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 153, 0, 0.27), 2px 2px 2px rgba(255, 0, 0, 0.22), 2px 2px rgba(255, 255, 0, 0.19), -2px -4px rgba(255, 199, 0, 0.2), 1px 1px rgba(255, 153, 0, 0.63), 2px 2px rgba(239, 72, 0, 0.45), 3px 3px rgba(109, 87, 87, 0.29);
+}
+
+#home-home-arabesque-heading-5-h1 {
+    color: rgb(255, 221, 182);
+    text-shadow: 2px 2px rgb(205, 148, 158);
+}
+
+#home-home-arabesque-heading-5-h1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 153, 0, 0.22), 2px 2px 2px rgba(255, 0, 0, 0.22), 2px 2px rgba(255, 255, 0, 0.13), 1px 1px rgba(255, 107, 0, 0.2), 1px 1px rgba(255, 153, 0, 0.63), 2px 2px rgba(239, 72, 0, 0.45), 3px 3px rgba(109, 87, 87, 0.29);
+}
+
+.arabesque-button:hover {
+    box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.17);
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-class:hover {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8), 2px 2px rgba(255, 255, 255, 0.42), -2px -1px rgba(255, 255, 255, 0.33);
+}
+
+.arabesque-block {
+    height: 600px;
+}
+
+#info-services-arabesque-heading-2-h2 {
+    margin-top: 50px;
+    background: linear-gradient(to bottom right, rgb(195, 255, 180) 0%, rgb(65, 112, 70) 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px rgba(35, 84, 35, 0.43), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+#info-services-arabesque-heading-4-h2 {
+    /*color: white;*/
+    margin-top: 50px;
+    background: linear-gradient(to bottom right, rgb(45, 32, 15) 0%, rgb(45, 28, 6) 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px rgb(235, 217, 197), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+#info-services-arabesque-heading-5-h2 {
+    margin-top: 50px;
+    background: linear-gradient(to bottom right, rgb(193, 125, 41) 0%, rgb(37, 25, 11) 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px rgb(112, 64, 5), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+#info-services-arabesque-heading-3-h2 {
+    /*color: white;*/
+    margin-top: 50px;
+    background: linear-gradient(to bottom right, rgb(205, 198, 119) 0%, rgb(197, 156, 42) 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px rgb(173, 137, 111), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+@media (max-width: 767px) {
+    #home-home-wave-image-img {
+        width: 100%;
+    }
+}
+
+.arabesque-column {
+    padding: 30px 60px;
+}
+
+@media (max-width: 1199px) {
+    .arabesque-column {
+        padding: 30px 60px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 767px) {
+    .arabesque-column {
+        padding: 30px 60px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 991px) {
+    .arabesque-column {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .arabesque-column {
+        height: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .cards-img {
+        width: 100%;
+        margin-left: 60%;
+    }
+}
+
+@media (max-width: 991px) {
+    .cards-img {
+    }
+}
+
+#contact-form-image-holder-div {
+    background-image: url("../../image/jumbotron-18.jpg");
+}
+
+#contact-form-sendbtn-button {
+    background-color: rgb(161, 161, 161);
+}
+
+.form-field-label {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(194, 108, 65);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#contact-form-background-color-div {
+    background-color: rgba(44, 25, 37, 0.75);
+    padding: 80px;
+}
+
+#contact-form-background-div {
+    background-color: rgba(241, 247, 252, 0);
+    background-image: url("../../image/jumbotron-20.jpg");
+    background-size: cover;
+    padding: 0px;
+}
+
+.logo-img {
+    width: 200px;
+    filter: brightness(105%);
+}
+
+.background-div {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.order-form-services-div {
+    border-style: ridge;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.order-form-services-category-column {
+    padding: 0px;
+}
+
+@media (max-width: 767px) {
+    #id_order_form {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    #id_order_form {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 1199px) {
+    #id_order_form {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #id_order_form {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.list-group-item {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#home-home-background-body {
+    background-image: url("../../image/jumbotron-1.jpg");
+    width: 100%;
+}
+
+#home-home-background-1-div {
+    background-image: url("../../image/jumbotron-18.jpg");
+}
+
+#contact-form-info-holder-form {
+    background-color: rgba(186, 186, 186, 0);
+    background-size: cover;
+}
+
+#contact-form-arabesque-heading-h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(194, 108, 65);
+}
+
+#home-home-background-color-div {
+    background-color: rgba(51, 19, 67, 0.85);
+}
+
+#home-home-arabesque-paragraph-1-p {
+    color: rgb(255, 225, 200);
+    text-shadow: 2px 1px black;
+}
+
+#home-home-arabesque-button-1-a {
+    background-image: url("../../image/jumbotron-10.jpg");
+    background-size: cover;
+    background-position: right;
+    text-shadow: 2px 1px rgb(57, 26, 67);
+    color: rgb(232, 232, 194);
+}
+
+#home-home-arabesque-button-2-a {
+    color: rgb(227, 194, 222);
+    text-shadow: 1px 1px rgb(92, 77, 108);
+    background-image: url("../../image/button-2.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#home-home-arabesque-paragraph-2-p {
+    color: rgb(254, 230, 255);
+    text-shadow: 2px 2px rgb(92, 77, 108);
+}
+
+#home-home-background-2-div {
+    background-image: url("../../image/jumbotron-22.jpg");
+    background-position: top;
+}
+
+#home-home-background-color-2-div {
+    background: linear-gradient(to bottom left, rgba(55, 4, 35, 0.94) 0%, rgba(29, 0, 34, 0.92) 20%, rgba(55, 0, 46, 0.78) 80%);
+}
+
+#home-home-arabesque-paragraph-3-p {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px rgb(99, 55, 115);
+}
+
+#home-home-arabesque-info-box-1-div {
+    background-image: url("../../image/arabesque/card-2.jpg");
+}
+
+#home-home-arabesque-column-1-div {
+    background-color: rgba(88, 83, 108, 0.63);
+}
+
+#home-home-icon-1-i {
+    color: rgba(93, 73, 101, 0.75);
+}
+
+.text-uppercase.name.info-box-heading {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(99, 55, 115);
+    font-family: Raleway, sans-serif;
+    letter-spacing: 4px;
+}
+
+.info-box-paragraph {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px rgb(99, 55, 115);
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.info-box-link {
+    letter-spacing: 4px;
+    font-family: Raleway, sans-serif;
+}
+
+#home-home-info-box-link-1-a {
+    color: rgb(225, 210, 231);
+}
+
+#home-home-info-box-link-3-a {
+    color: rgb(255, 233, 233);
+}
+
+#home-home-info-box-link-2-a {
+    color: rgb(213, 213, 214);
+}
+
+#home-home-arabesque-column-3-div {
+    background-color: rgba(156, 120, 94, 0.56);
+}
+
+#home-home-arabesque-column-2-div {
+    background-color: rgba(59, 95, 67, 0.62);
+}
+
+#home-home-icon-2-i {
+    color: rgba(73, 71, 75, 0.75);
+}
+
+#home-home-icon-3-i {
+    color: rgba(101, 75, 83, 0.7);
+}
+
+#home-home-arabesque-info-box-3-div {
+    background-image: url("../../image/arabesque/card-2.jpg");
+}
+
+#home-home-arabesque-info-box-2-div {
+    background-image: url("../../image/arabesque/card-2.jpg");
+}
+
+#home-home-background-3-div {
+    background-image: url("../../image/jumbotron-17.jpg");
+    height: 700px;
+}
+
+#home-home-background-color-3-div {
+    background-color: rgba(37, 4, 58, 0.85);
+}
+
+.order-success-detail-accordion-body {
+    padding: 23px 100px 30px 100px;
+    background-color: rgba(255, 230, 219, 0.95);
+}
+
+.order-success-detail-accordion-content {
+    background-image: url("../../image/jumbotron-18.jpg");
+    background-size: cover;
+}
+
+#order-success-detail-accordion-heading {
+    background-image: url("none");
+    background-color: rgba(255, 209, 189, 0.76);
+}
+
+.order-success-detail-accordion-item {
+    background-image: url("../../image/jumbotron-19.jpg");
+    background-size: cover;
+}
+
+#order-success-detail-accordion-title {
+    color: rgb(130, 111, 96);
+    text-shadow: 1px 1px rgb(99, 85, 76);
+}
+
+#home-home-arabesque-paragraph-4-p {
+    color: rgb(237, 236, 234);
+    text-shadow: 2px 1px rgb(89, 79, 73);
+}
+
+#home-home-arabesque-button-3-a {
+    text-shadow: 2px 1px rgb(89, 79, 73);
+    color: rgb(237, 236, 234);
+    background-image: url("../../image/jumbotron-10.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#home-home-background-4-div {
+    background-image: url("../../image/tesselation-1.jpg");
+    background-size: contain;
+    background-position: center;
+    height: 800px;
+}
+
+#home-home-background-color-4-div {
+    background: linear-gradient(0.29turn, rgba(100, 100, 100, 0.8) 0%, rgba(255, 255, 255, 0.95) 25%, rgba(255, 248, 248, 0.95) 75%, rgba(255, 251, 148, 0.59) 100%);
+}
+
+#home-home-arabesque-paragraph-5-p {
+    color: rgb(230, 217, 202);
+    text-shadow: 2px 2px rgb(191, 126, 139);
+}
+
+#home-home-arabesque-button-4-a {
+    text-shadow: 2px 1px rgb(89, 79, 73);
+    color: rgb(237, 236, 234);
+    background-image: url("../../image/button-1.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#home-home-background-color-5-div {
+    background: linear-gradient(to bottom right, rgba(153, 19, 124, 0.38) 0%, rgba(42, 4, 55, 0.88) 20%, rgba(255, 140, 153, 0.53) 60%, rgba(147, 89, 89, 0.75) 70%);
+}
+
+#home-home-arabesque-paragraph-6-p {
+    color: rgb(219, 218, 228);
+    text-shadow: 2px 1px rgb(149, 148, 160);
+}
+
+#home-home-arabesque-button-5-a {
+    text-shadow: 2px 1px rgb(77, 80, 96);
+    background-image: url("../../image/button-1.jpg");
+    background-size: cover;
+    color: rgb(223, 222, 237);
+}
+
+#home-home-wave-image-img {
+    /*width: 400px;*/
+    height: 160px;
+}
+
+.img-logo-accordion {
+    width: 80px;
+    margin-top: -5px;
+    margin-right: -25px;
+}
+
+#order-success-detail-accordion-heading:hover {
+    box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+#info-faq-background-body {
+    background-image: url("../../image/tesselation-1.jpg");
+    background-size: cover;
+}
+
+#info-faq-background-div {
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(94, 45, 42, 0.98) 0%, rgba(55, 17, 65, 0.69) 80%);
+    width: 100%;
+    padding: 0px 15px;
+}
+
+#info-faq-page-container {
+    padding-top: 100px;
+    height: 100%;
+}
+
+.col-md-7.col-sm-6.item {
+    width: 100%;
+}
+
+#info-services-background-body {
+    background-size: contain;
+    background-repeat: repeat;
+    background-image: url("../../image/jumbotron-1.jpg");
+    background-attachment: fixed;
+}
+
+#info-services-background-1-div {
+    background-image: url("../../image/jumbotron-10.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#info-services-arabesque-heading-1-h2 {
+    color: transparent;
+    text-shadow: 1px 1px rgb(157, 97, 16), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+#info-services-paragraph-1-p {
+    font-family: Roboto, sans-serif;
+}
+
+.heading-h3 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.description-p {
+    font-family: Raleway, sans-serif;
+}
+
+#info-services-background-2-div {
+    background: linear-gradient(135deg, rgba(31, 40, 28, 0.97), rgba(87, 99, 63, 0.92));
+}
+
+.container-padding {
+    padding-top: 100px;
+}
+
+#info-services-paragraph-2-p {
+    color: rgb(255, 255, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#info-services-background-3-div {
+    background-image: url("../../image/jumbotron-18.jpg");
+    background-size: auto;
+    background-position: 64% 10%;
+}
+
+#info-services-background-3-color-div {
+    background: linear-gradient(135deg, #342f2c, rgba(92, 76, 56, 0.82));
+}
+
+#info-services-paragraph-3-p {
+    color: rgb(255, 255, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#info-services-background-4-div {
+    background: linear-gradient(135deg, rgba(47, 32, 32, 0.83), rgba(198, 184, 157, 0.93));
+}
+
+#info-services-paragraph-4-p {
+    color: rgb(255, 255, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#info-services-background-5-div {
+    background-image: url("../../image/jumbotron-17.jpg");
+    background-size: auto;
+    background-position: 70% 100%;
+}
+
+#info-services-background-5-color-div {
+    background-color: rgba(41, 24, 3, 0.75);
+}
+
+#info-services-paragraph-5-p {
+    color: rgb(255, 255, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.info-box {
+    background-size: cover;
+    padding: 0px;
+    background-position: bottom;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon-class {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: inherit;
+}
+
+.features-boxed .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.arabesque-heading {
+    color: white;
+    text-shadow: 1px 1px rgb(255, 128, 49);
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 48px;
+    font-size: 48px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.arabesque-paragraph {
+    letter-spacing: 0.01em;
+    line-height: 32px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    padding-bottom: 50px;
+}
+
+.arabesque-button {
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 24px;
+}
+
+#home-home-arabesque-heading-1-h1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 0, 0, 0.26), 2px 2px 2px rgba(255, 0, 0, 0.22), 2px 2px rgba(255, 255, 0, 0.13), 1px 1px rgba(255, 107, 0, 0.2);
+}
+
+#home-home-arabesque-heading-2-h1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 149, 244, 0.12), 2px 2px 2px rgba(204, 0, 255, 0.16), 2px 2px rgba(255, 151, 238, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+}
+
+#home-home-arabesque-heading-6-h1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 149, 149, 0.2), 2px 2px 2px rgba(255, 0, 153, 0.16), 2px 2px rgba(255, 151, 195, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+}
+
+#home-home-arabesque-heading-6-h1 {
+    color: rgb(185, 184, 201);
+    text-shadow: 2px 2px rgba(255, 0, 213, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+}
+
+#home-home-arabesque-heading-1-h1 {
+    text-shadow: 2px 2px rgba(255, 255, 0, 0.13), 1px 1px rgba(255, 107, 0, 0.2);
+    background: linear-gradient(to bottom right, rgb(255, 157, 128) 0%, rgb(215, 13, 0) 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#home-home-arabesque-heading-2-h1 {
+    text-shadow: 2px 2px rgba(255, 151, 238, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+    background: linear-gradient(to bottom right, rgb(213, 171, 196) 0%, rgb(113, 0, 132) 90%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#home-home-arabesque-heading-3-h1 {
+    text-shadow: 1px 1px rgb(99, 55, 115), 2px 2px rgba(120, 70, 130, 0.5);
+    color: rgb(197, 186, 201);
+}
+
+#home-home-arabesque-heading-3-h1:hover {
+    text-shadow: 1px 1px rgb(99, 55, 115), 2px 2px rgba(120, 70, 130, 0.5), 3px 3px rgba(99, 55, 115, 0.52), 4px 4px rgba(120, 70, 130, 0.25), -2px -2px 2px rgba(255, 149, 244, 0.12), 2px 2px 2px rgba(204, 0, 255, 0.16);
+}
+
+#home-home-arabesque-heading-4-h1 {
+    color: rgb(238, 226, 207);
+    text-shadow: 1px 1px rgba(255, 153, 0, 0.63), 2px 2px rgba(239, 72, 0, 0.45), 3px 3px rgba(109, 87, 87, 0.29);
+}
+
+#home-home-arabesque-heading-4-h1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 153, 0, 0.27), 2px 2px 2px rgba(255, 0, 0, 0.22), 2px 2px rgba(255, 255, 0, 0.19), -2px -4px rgba(255, 199, 0, 0.2), 1px 1px rgba(255, 153, 0, 0.63), 2px 2px rgba(239, 72, 0, 0.45), 3px 3px rgba(109, 87, 87, 0.29);
+}
+
+#home-home-arabesque-heading-5-h1 {
+    color: rgb(255, 221, 182);
+    text-shadow: 2px 2px rgb(205, 148, 158);
+}
+
+#home-home-arabesque-heading-5-h1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 153, 0, 0.22), 2px 2px 2px rgba(255, 0, 0, 0.22), 2px 2px rgba(255, 255, 0, 0.13), 1px 1px rgba(255, 107, 0, 0.2), 1px 1px rgba(255, 153, 0, 0.63), 2px 2px rgba(239, 72, 0, 0.45), 3px 3px rgba(109, 87, 87, 0.29);
+}
+
+.arabesque-button:hover {
+    box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.17);
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-class:hover {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8), 2px 2px rgba(255, 255, 255, 0.42), -2px -1px rgba(255, 255, 255, 0.33);
+}
+
+.arabesque-block {
+    height: 600px;
+}
+
+#info-services-arabesque-heading-2-h2 {
+    margin-top: 50px;
+    background: linear-gradient(to bottom right, rgb(195, 255, 180) 0%, rgb(65, 112, 70) 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px rgba(35, 84, 35, 0.43), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+#info-services-arabesque-heading-4-h2 {
+    /*color: white;*/
+    margin-top: 50px;
+    background: linear-gradient(to bottom right, rgb(45, 32, 15) 0%, rgb(45, 28, 6) 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px rgb(235, 217, 197), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+#info-services-arabesque-heading-5-h2 {
+    margin-top: 50px;
+    background: linear-gradient(to bottom right, rgb(193, 125, 41) 0%, rgb(37, 25, 11) 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px rgb(112, 64, 5), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+#info-services-arabesque-heading-3-h2 {
+    /*color: white;*/
+    margin-top: 50px;
+    background: linear-gradient(to bottom right, rgb(205, 198, 119) 0%, rgb(197, 156, 42) 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px rgb(173, 137, 111), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+@media (max-width: 767px) {
+    #home-home-wave-image-img {
+        width: 100%;
+    }
+}
+
+.arabesque-column {
+    padding: 30px 60px;
+}
+
+@media (max-width: 1199px) {
+    .arabesque-column {
+        padding: 30px 60px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 767px) {
+    .arabesque-column {
+        padding: 30px 60px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 991px) {
+    .arabesque-column {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .arabesque-column {
+        height: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .cards-img {
+        width: 100%;
+        margin-left: 60%;
+    }
+}
+
+@media (max-width: 991px) {
+    .cards-img {
+    }
+}
+
+#contact-form-image-holder-div {
+    background-image: url("../../img1/jumbotron-18.jpg");
+}
+
+#contact-form-sendbtn-button {
+    background-color: rgb(161, 161, 161);
+}
+
+.form-field-label {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(194, 108, 65);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#contact-form-background-color-div {
+    background-color: rgba(44, 25, 37, 0.75);
+    padding-top: 80px;
+}
+
+#contact-form-background-div {
+    background-color: rgba(241, 247, 252, 0);
+    background-image: url("../../img1/jumbotron-20.jpg");
+    background-size: cover;
+    padding: 0px;
+}
+
+.logo-img {
+    width: 200px;
+    filter: brightness(105%);
+}
+
+.background-div {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.order-form-services-div {
+    border-style: ridge;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.order-form-services-category-column {
+    padding: 0px;
+}
+
+@media (max-width: 767px) {
+    #id_order_form {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    #id_order_form {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 1199px) {
+    #id_order_form {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #id_order_form {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.list-group-item {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#home-home-background-body {
+    background-image: url("../../img1/jumbotron-1.jpg");
+    width: 100%;
+}
+
+#home-home-background-1-div {
+    background-image: url("../../img1/jumbotron-18.jpg");
+}
+
+#contact-form-info-holder-form {
+    background-color: rgba(186, 186, 186, 0);
+    background-size: cover;
+}
+
+#contact-form-arabesque-heading-h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(194, 108, 65);
+}
+
+#home-home-background-color-div {
+    background-color: rgba(51, 19, 67, 0.85);
+}
+
+#home-home-arabesque-paragraph-1-p {
+    color: rgb(255, 225, 200);
+    text-shadow: 2px 1px black;
+}
+
+#home-home-arabesque-button-1-a {
+    background-image: url("../../img1/jumbotron-10.jpg");
+    background-size: cover;
+    background-position: right;
+    text-shadow: 2px 1px rgb(57, 26, 67);
+    color: rgb(232, 232, 194);
+}
+
+#home-home-arabesque-button-2-a {
+    color: rgb(227, 194, 222);
+    text-shadow: 1px 1px rgb(92, 77, 108);
+    background-image: url("../../img1/button-2.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#home-home-arabesque-paragraph-2-p {
+    color: rgb(254, 230, 255);
+    text-shadow: 2px 2px rgb(92, 77, 108);
+}
+
+#home-home-background-2-div {
+    background-image: url("../../img1/jumbotron-22.jpg");
+    background-position: top;
+}
+
+#home-home-background-color-2-div {
+    background: linear-gradient(to bottom left, rgba(55, 4, 35, 0.94) 0%, rgba(29, 0, 34, 0.92) 20%, rgba(55, 0, 46, 0.78) 80%);
+}
+
+#home-home-arabesque-paragraph-3-p {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px rgb(99, 55, 115);
+}
+
+#home-home-arabesque-info-box-1-div {
+    background-image: url("../../img1/card-2.jpg");
+}
+
+#home-home-arabesque-column-1-div {
+    background-color: rgba(88, 83, 108, 0.63);
+}
+
+#home-home-icon-1-i {
+    color: rgba(93, 73, 101, 0.75);
+}
+
+.text-uppercase.name.info-box-heading {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(99, 55, 115);
+    font-family: Raleway, sans-serif;
+    letter-spacing: 4px;
+}
+
+.info-box-paragraph {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px rgb(99, 55, 115);
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.info-box-link {
+    letter-spacing: 4px;
+    font-family: Raleway, sans-serif;
+}
+
+#home-home-info-box-link-1-a {
+    color: rgb(225, 210, 231);
+}
+
+#home-home-info-box-link-3-a {
+    color: rgb(255, 233, 233);
+}
+
+#home-home-info-box-link-2-a {
+    color: rgb(213, 213, 214);
+}
+
+#home-home-arabesque-column-3-div {
+    background-color: rgba(156, 120, 94, 0.56);
+}
+
+#home-home-arabesque-column-2-div {
+    background-color: rgba(59, 95, 67, 0.62);
+}
+
+#home-home-icon-2-i {
+    color: rgba(73, 71, 75, 0.75);
+}
+
+#home-home-icon-3-i {
+    color: rgba(101, 75, 83, 0.7);
+}
+
+#home-home-arabesque-info-box-3-div {
+    background-image: url("../../img1/card-2.jpg");
+}
+
+#home-home-arabesque-info-box-2-div {
+    background-image: url("../../img1/card-2.jpg");
+}
+
+#home-home-background-3-div {
+    background-image: url("../../img1/jumbotron-17.jpg");
+    height: 700px;
+}
+
+#home-home-background-color-3-div {
+    background-color: rgba(37, 4, 58, 0.85);
+}
+
+.order-success-detail-accordion-body {
+    padding: 23px 100px 30px 100px;
+    background-color: rgba(255, 230, 219, 0.95);
+}
+
+.order-success-detail-accordion-content {
+    background-image: url("../../img1/jumbotron-18.jpg");
+    background-size: cover;
+}
+
+#order-success-detail-accordion-heading {
+    background-image: url("none");
+    background-color: rgba(255, 209, 189, 0.76);
+}
+
+.order-success-detail-accordion-item {
+    background-image: url("../../img1/jumbotron-19.jpg");
+    background-size: cover;
+}
+
+#order-success-detail-accordion-title {
+    color: rgb(130, 111, 96);
+    text-shadow: 1px 1px rgb(99, 85, 76);
+}
+
+#home-home-arabesque-paragraph-4-p {
+    color: rgb(237, 236, 234);
+    text-shadow: 2px 1px rgb(89, 79, 73);
+}
+
+#home-home-arabesque-button-3-a {
+    text-shadow: 2px 1px rgb(89, 79, 73);
+    color: rgb(237, 236, 234);
+    background-image: url("../../img1/jumbotron-10.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#home-home-background-4-div {
+    background-image: url("../../img1/tesselation-1.jpg");
+    background-size: contain;
+    background-position: center;
+    height: 800px;
+}
+
+#home-home-background-color-4-div {
+    background: linear-gradient(0.29turn, rgba(100, 100, 100, 0.8) 0%, rgba(255, 255, 255, 0.95) 25%, rgba(255, 248, 248, 0.95) 75%, rgba(255, 251, 148, 0.59) 100%);
+}
+
+#home-home-arabesque-paragraph-5-p {
+    color: rgb(230, 217, 202);
+    text-shadow: 2px 2px rgb(191, 126, 139);
+}
+
+#home-home-arabesque-button-4-a {
+    text-shadow: 2px 1px rgb(89, 79, 73);
+    color: rgb(237, 236, 234);
+    background-image: url("../../img1/button-1.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#home-home-background-color-5-div {
+    background: linear-gradient(to bottom right, rgba(153, 19, 124, 0.38) 0%, rgba(42, 4, 55, 0.88) 20%, rgba(255, 140, 153, 0.53) 60%, rgba(147, 89, 89, 0.75) 70%);
+}
+
+#home-home-arabesque-paragraph-6-p {
+    color: rgb(219, 218, 228);
+    text-shadow: 2px 1px rgb(149, 148, 160);
+}
+
+#home-home-arabesque-button-5-a {
+    text-shadow: 2px 1px rgb(77, 80, 96);
+    background-image: url("../../img1/button-1.jpg");
+    background-size: cover;
+    color: rgb(223, 222, 237);
+}
+
+#home-home-wave-image-img {
+    /*width: 400px;*/
+    height: 160px;
+}
+
+.img-logo-accordion {
+    width: 80px;
+    margin-top: -5px;
+    margin-right: -25px;
+}
+
+#order-success-detail-accordion-heading:hover {
+    box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+#info-faq-background-body {
+    background-image: url("../../img1/tesselation-1.jpg");
+    background-size: cover;
+}
+
+#info-faq-background-div {
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(94, 45, 42, 0.98) 0%, rgba(55, 17, 65, 0.69) 80%);
+    width: 100%;
+    padding: 0px 15px;
+}
+
+#info-faq-page-container {
+    padding-top: 100px;
+    height: 100%;
+}
+
+.col-md-7.col-sm-6.item {
+    width: 100%;
+}
+
+#info-services-background-body {
+    background-size: contain;
+    background-repeat: repeat;
+    background-image: url("../../img1/jumbotron-1.jpg");
+    background-attachment: fixed;
+}
+
+#info-services-background-1-div {
+    background-image: url("../../img1/jumbotron-10.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#info-services-arabesque-heading-1-h2 {
+    color: transparent;
+    text-shadow: 1px 1px rgb(157, 97, 16), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+#info-services-paragraph-1-p {
+    font-family: Roboto, sans-serif;
+}
+
+.heading-h3 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.description-p {
+    font-family: Raleway, sans-serif;
+}
+
+#info-services-background-2-div {
+    background: linear-gradient(135deg, rgba(31, 40, 28, 0.97), rgba(87, 99, 63, 0.92));
+}
+
+.container-padding {
+    padding-top: 100px;
+}
+
+#info-services-paragraph-2-p {
+    color: rgb(255, 255, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#info-services-background-3-div {
+    background-image: url("../../img1/jumbotron-18.jpg");
+    background-size: auto;
+    background-position: 64% 10%;
+}
+
+#info-services-background-3-color-div {
+    background: linear-gradient(135deg, #342f2c, rgba(92, 76, 56, 0.82));
+}
+
+#info-services-paragraph-3-p {
+    color: rgb(255, 255, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#info-services-background-4-div {
+    background: linear-gradient(135deg, rgba(47, 32, 32, 0.83), rgba(198, 184, 157, 0.93));
+}
+
+#info-services-paragraph-4-p {
+    color: rgb(255, 255, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#info-services-background-5-div {
+    background-image: url("../../img1/jumbotron-17.jpg");
+    background-size: auto;
+    background-position: 70% 100%;
+}
+
+#info-services-background-5-color-div {
+    background-color: rgba(41, 24, 3, 0.75);
+}
+
+#info-services-paragraph-5-p {
+    color: rgb(255, 255, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.box {
+    background-size: cover;
+    padding: 0px;
+    background-position: bottom;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon-class {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: inherit;
+}
+
+.features-boxed .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.arabesque-heading {
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 48px;
+    font-size: 52px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.arabesque-paragraph {
+    letter-spacing: 1px;
+    line-height: 36px;
+    font-family: Roboto, sans-serif;
+    font-size: 28px;
+    padding-bottom: 50px;
+}
+
+.arabesque-button {
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 24px;
+}
+
+.arabesque-paragraph:hover {
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.44), 1px 2px rgba(77, 0, 0, 0.44);
+}
+
+#arabesque-heading-home-1:hover {
+    text-shadow: -2px -2px 2px rgba(255, 0, 0, 0.26), 2px 2px 2px rgba(255, 0, 0, 0.22), 2px 2px rgba(255, 255, 0, 0.13), 1px 1px rgba(255, 107, 0, 0.2);
+}
+
+#arabesque-heading-home-2:hover {
+    text-shadow: -2px -2px 2px rgba(255, 149, 244, 0.12), 2px 2px 2px rgba(204, 0, 255, 0.16), 2px 2px rgba(255, 151, 238, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+}
+
+#arabesque-heading-home-3:hover {
+    text-shadow: -2px -2px 2px rgba(255, 149, 149, 0.2), 2px 2px 2px rgba(255, 0, 153, 0.16), 2px 2px rgba(255, 151, 195, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+}
+
+#arabesque-heading-home-3 {
+    text-shadow: 2px 2px rgba(255, 0, 213, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+}
+
+#arabesque-heading-home-2 {
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.12);
+}
+
+#arabesque-heading-home-1 {
+    text-shadow: 2px 2px rgba(255, 255, 0, 0.13), 1px 1px rgba(255, 107, 0, 0.2);
+}
+
+#arabesque-heading-home-2 {
+    text-shadow: 2px 2px rgba(255, 151, 238, 0.13), 1px 1px rgba(255, 0, 122, 0.2);
+}
+
+#arabesque-heading-home-4 {
+    text-shadow: 1px 1px rgb(99, 55, 115), 2px 2px rgba(120, 70, 130, 0.5);
+}
+
+#arabesque-heading-home-4:hover {
+    text-shadow: 1px 1px rgb(99, 55, 115), 2px 2px rgba(120, 70, 130, 0.5), 3px 3px rgba(99, 55, 115, 0.52), 4px 4px rgba(120, 70, 130, 0.25), -2px -2px 2px rgba(255, 149, 244, 0.12), 2px 2px 2px rgba(204, 0, 255, 0.16);
+}
+
+#arabesque-heading-home-1 {
+}
+
+#arabesque-heading-home-5 {
+    text-shadow: 1px 1px rgba(255, 153, 0, 0.63), 2px 2px rgba(239, 72, 0, 0.45), 3px 3px rgba(109, 87, 87, 0.29);
+}
+
+#arabesque-heading-home-5:hover {
+    text-shadow: -2px -2px 2px rgba(255, 153, 0, 0.27), 2px 2px 2px rgba(255, 0, 0, 0.22), 2px 2px rgba(255, 255, 0, 0.19), -2px -4px rgba(255, 199, 0, 0.2), 1px 1px rgba(255, 153, 0, 0.63), 2px 2px rgba(239, 72, 0, 0.45), 3px 3px rgba(109, 87, 87, 0.29);
+}
+
+#arabesque-heading-home-7 {
+    text-shadow: 2px 2px rgb(205, 148, 158);
+}
+
+#arabesque-heading-home-7:hover {
+    text-shadow: -2px -2px 2px rgba(255, 153, 0, 0.22), 2px 2px 2px rgba(255, 0, 0, 0.22), 2px 2px rgba(255, 255, 0, 0.13), 1px 1px rgba(255, 107, 0, 0.2), 1px 1px rgba(255, 153, 0, 0.63), 2px 2px rgba(239, 72, 0, 0.45), 3px 3px rgba(109, 87, 87, 0.29);
+}
+
+.arabesque-button:hover {
+    box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.17);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.icon-class:hover {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8), 2px 2px rgba(255, 255, 255, 0.42), -2px -1px rgba(255, 255, 255, 0.33);
+}
+
+.arabesque-block {
+    height: 600px;
+}
+
+#arabesque-heading-info-services-2 {
+    background: linear-gradient(to bottom right, rgb(195, 255, 180) 0%, rgb(65, 112, 70) 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px rgba(35, 84, 35, 0.43), 2px 2px rgba(224, 255, 216, 0.2);
+}
+
+#arabesque-heading-info-services-4 {
+    color: white;
+}
+
+#arabesque-heading-info-services-5 {
+    color: white;
+}
+
+#arabesque-heading-info-services-3 {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    #img-wav {
+        width: 100%;
+    }
+}
+
+.arabesque-column {
+    padding: 30px 60px;
+}
+
+@media (max-width: 1199px) {
+    .arabesque-column {
+        padding: 30px 60px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 767px) {
+    .arabesque-column {
+        padding: 30px 60px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 991px) {
+    .arabesque-column {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .arabesque-column {
+        height: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .cards-img {
+        width: 100%;
+        margin-left: 60%;
+    }
+}
+
+@media (max-width: 991px) {
+    .cards-img {
+    }
+}
+
+#contact-form-image-holder-div {
+    background-image: url("../../image/jumbotron-18.jpg");
+}
+
+#contact-form-sendbtn-button {
+    background-color: rgb(161, 161, 161);
+}
+
+.form-field-label {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(194, 108, 65);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#contact-form-bgcolor-div {
+    background-color: rgba(44, 25, 37, 0.75);
+    padding: 80px;
+}
+
+#contact-form-background-div {
+    background-color: rgba(241, 247, 252, 0);
+    background-image: url("../../image/jumbotron-20.jpg");
+    background-size: cover;
+    padding: 0px;
+}
+
+.logo-img {
+    width: 200px;
+    filter: brightness(105%);
+}
+
+.background-div {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.order-form-services-div {
+    border-style: ridge;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.order-form-services-category-column {
+    padding: 0px;
+}
+
+@media (max-width: 767px) {
+    #id_order_form {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    #id_order_form {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 1199px) {
+    #id_order_form {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #id_order_form {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.list-group-item {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+

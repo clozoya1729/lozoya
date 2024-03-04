@@ -1,0 +1,33 @@
+<div class="sidebar"
+     id="%sidebarID%">
+    <div class="sidebar-header">
+        <div class="close-sidebar"
+             id="%closeButtonID%"
+             onclick="close_sidebar('%sidebarID%');">
+            Close
+            <i class="glyphicon glyphicon-chevron-right">
+            </i>
+        </div>
+        <h4 class="sidebar-title"
+            id="%sidebarTitleID%">
+            %sidebarTitle%
+        </h4>
+    </div>
+    <hr>
+    <div id="%sidebarBodyID%">
+        %sidebarCode%
+    </div>
+    <hr>
+</div>
+
+<button id="%sidebarButtonID%"
+        class="%buttonClass%"
+        type="button"
+        role="group"
+        onclick="open_sidebar('%sidebarID%');">
+    <i class="%iconClass%">
+    </i>
+    %buttonText%
+</button>
+
+

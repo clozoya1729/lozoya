@@ -1,0 +1,85 @@
+.register-photo .image-holder {
+    display: table-cell;
+    width: auto;
+    background: url(meeting.jpg);
+    background-size: cover;
+}
+
+.register-photo .form-container {
+    display: table;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-photo form {
+    display: table-cell;
+    width: 400px;
+    background-color: #bababa;
+    padding: 40px 60px;
+    color: #4a5663;
+}
+
+@media (max-width: 991px) {
+    .register-photo form {
+        padding: 40px;
+        /*padding-left: 0;*/
+        /*padding-right: 0;*/
+    }
+}
+
+.register-photo form .form-control {
+    background: #f7f9fc;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 6px;
+    height: 40px;
+}
+
+.register-photo form .btn-primary {
+    background: #f4476b;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important;
+}
+
+.register-photo form .btn-primary:hover, .register-photo form .btn-primary:active {
+    background: #eb3b60;
+}
+
+.register-photo form .btn-primary:active {
+    transform: translateY(1px);
+}
+
+.sarici {
+  /*border: solid 1px;*/
+  /*border-radius: 6px;*/
+  /*border-color: #eee;*/
+}
+
+input {
+  width: 100%;
+  /*display: none;*/
+  color: #999;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.sarici {
+  width: 100%;
+  padding: 10px 4px;
+  height: 100px;
+}
+

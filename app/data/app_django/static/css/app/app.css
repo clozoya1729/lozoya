@@ -1,0 +1,446 @@
+#app_page {
+    min-height: 72vh;
+}
+
+.app-panel {
+    font-size: 9pt;
+    border: 1px solid slategrey;
+    border-radius: 3px;
+}
+
+.app-panel-body {
+    padding: 4px 0 0 10px;
+    min-height: 70vh;
+}
+
+.app-panel-heading {
+    padding: 0 0 0 10px;
+    height: 20px;
+    background: slategrey;
+    border: 1px solid rgb(50, 50, 50);
+    color: white;
+}
+
+.app-panel-heading:hover {
+    padding: 0 0 0 10px;
+    height: 20px;
+    background: slategrey;
+    border: var(--app-panel-heading-hover);
+    color: white;
+}
+
+.app-panel-heading {
+    cursor: pointer;
+}
+
+.app-panel-heading a {
+    color: white;
+}
+
+.app-panel-heading a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.app-container {
+    /*padding: 10px;*/
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    /*color: white;*/
+}
+
+.app-panel-group {
+    width: 100%;
+}
+
+/*.app-panel {*/
+/*}*/
+
+.app-heading-bar {
+    display: inline-block;
+    font-size: 9pt;
+    padding: 0;
+}
+
+/*.app-panel-body {*/
+/*    padding: 5px 10px 5px 10px;*/
+/*}*/
+
+/*.app-panel-collapse {*/
+/*    background: rgb(50, 50, 50);*/
+/*}*/
+
+
+/*.btn-toolbar-btn {*/
+/*    padding: 2px 3px 0 3px;*/
+/*    height: 24px;*/
+/*    width: 24px;*/
+/*    background: rgb(100, 100, 100);*/
+/*    color: white;*/
+/*}*/
+
+
+/*.button-delete-app {*/
+/*    float: right;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    color: red;*/
+/*    height: 20px;*/
+/*    width: 20px;*/
+/*    border: 1px solid red;*/
+/*    font-size: 14pt;*/
+
+/*}*/
+
+/*.button-delete-app:hover {*/
+/*    background: rgb(125, 50, 50);*/
+/*    color: white;*/
+/*}*/
+
+.btn-toolbar {
+    display: inline-block;
+}
+
+
+.btn-toolbar-btn {
+    border: var(--app-btn-border);
+    background: var(--app-btn-bg);
+    font-size: var(--app-btn-font-size);
+    padding: var(--app-btn-padding);
+}
+
+.btn-toolbar-btn:hover {
+    border: var(--app-btn-border-hover);
+}
+
+.app-btn-group {
+    margin-bottom: var(--app-btn-margin-bottom);
+}
+
+.open-sidebar {
+    background: var(--app-settings-btn-bg)
+}
+
+.app-panel-body .nav-link:hover {
+    background: var(--tab-bg-hover);
+    border: var(--tab-border-hover);
+    border-bottom: var(--tab-border-bottom-hover);
+    color: var(--tab-color-hover);
+}
+
+.app-panel-body .active-tab {
+    background: var(--tab-bg-selected);
+    border: var(--tab-border-selected);
+    border-bottom: var(--tab-border-bottom-selected);
+    color: var(--tab-color-selected);
+}
+
+.app-panel-body .active-tab:hover {
+    background: var(--tab-bg-selected);
+    border: var(--tab-border-selected);
+    border-bottom: var(--tab-border-bottom-selected);
+    color: var(--tab-color-selected);
+}
+
+#app_page {
+    min-height: 72vh;
+}
+
+#app_page {
+    min-height: 72vh;
+}
+
+#main {
+    height: 90vh;
+}
+
+.app-panel {
+    font-size: 9pt;
+    border: 1px solid slategrey;
+    border-radius: 3px;
+}
+
+.app-panel-body {
+    padding: 4px 0 0 10px;
+    min-height: 70vh;
+}
+
+.app-panel-heading {
+    padding: 0 0 0 10px;
+    height: 20px;
+    background: slategrey;
+    border: 1px solid rgb(50, 50, 50);
+    color: white;
+}
+
+.app-panel-heading:hover {
+    padding: 0 0 0 10px;
+    height: 20px;
+    background: slategrey;
+    border: var(--app-panel-heading-hover);
+    color: white;
+}
+
+.app-panel-heading {
+    cursor: pointer;
+}
+
+.app-panel-heading a {
+    color: white;
+}
+
+.app-panel-heading a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.app-container {
+    /*padding: 10px;*/
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    /*color: white;*/
+}
+
+.app-panel-group {
+    width: 100%;
+}
+
+/*.app-panel {*/
+/*}*/
+
+.app-heading-bar {
+    display: inline-block;
+    font-size: 9pt;
+    padding: 0;
+}
+
+/*.app-panel-body {*/
+/*    padding: 5px 10px 5px 10px;*/
+/*}*/
+
+/*.app-panel-collapse {*/
+/*    background: rgb(50, 50, 50);*/
+/*}*/
+
+
+/*.btn-toolbar-btn {*/
+/*    padding: 2px 3px 0 3px;*/
+/*    height: 24px;*/
+/*    width: 24px;*/
+/*    background: rgb(100, 100, 100);*/
+/*    color: white;*/
+/*}*/
+
+
+/*.button-delete-app {*/
+/*    float: right;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    color: red;*/
+/*    height: 20px;*/
+/*    width: 20px;*/
+/*    border: 1px solid red;*/
+/*    font-size: 14pt;*/
+
+/*}*/
+
+/*.button-delete-app:hover {*/
+/*    background: rgb(125, 50, 50);*/
+/*    color: white;*/
+/*}*/
+
+.btn-toolbar {
+    display: inline-block;
+}
+
+
+.btn-toolbar-btn {
+    border: var(--app-btn-border);
+    background: var(--app-btn-bg);
+    font-size: var(--app-btn-font-size);
+    padding: var(--app-btn-padding);
+}
+
+.btn-toolbar-btn:hover {
+    border: var(--app-btn-border-hover);
+}
+
+.app-btn-group {
+    margin-bottom: var(--app-btn-margin-bottom);
+}
+
+.open-sidebar {
+    background: var(--app-settings-btn-bg)
+}
+
+.app-panel-body .nav-link:hover {
+    background: var(--tab-bg-hover);
+    border: var(--tab-border-hover);
+    border-bottom: var(--tab-border-bottom-hover);
+    color: var(--tab-color-hover);
+}
+
+.app-panel-body .active-tab {
+    background: var(--tab-bg-selected);
+    border: var(--tab-border-selected);
+    border-bottom: var(--tab-border-bottom-selected);
+    color: var(--tab-color-selected);
+}
+
+.app-panel-body .active-tab:hover {
+    background: var(--tab-bg-selected);
+    border: var(--tab-border-selected);
+    border-bottom: var(--tab-border-bottom-selected);
+    color: var(--tab-color-selected);
+}
+
+#app_page {
+    min-height: 72vh;
+}
+
+#main {
+    height: 40vh;
+}
+
+.app-panel {
+    font-size: 9pt;
+    border: 1px solid slategrey;
+    border-radius: 3px;
+}
+
+.app-panel-body {
+    padding: 4px 0 0 10px;
+    min-height: 70vh;
+}
+
+.app-panel-heading {
+    padding: 0 0 0 10px;
+    height: 20px;
+    background: slategrey;
+    border: 1px solid rgb(50, 50, 50);
+    color: white;
+}
+
+.app-panel-heading:hover {
+    padding: 0 0 0 10px;
+    height: 20px;
+    background: slategrey;
+    border: var(--app-panel-heading-hover);
+    color: white;
+}
+
+.app-panel-heading {
+    cursor: pointer;
+}
+
+.app-panel-heading a {
+    color: white;
+}
+
+.app-panel-heading a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.app-container {
+    /*padding: 10px;*/
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    /*color: white;*/
+}
+
+.app-panel-group {
+    width: 100%;
+}
+
+/*.app-panel {*/
+/*}*/
+
+.app-heading-bar {
+    display: inline-block;
+    font-size: 9pt;
+    padding: 0;
+}
+
+/*.app-panel-body {*/
+/*    padding: 5px 10px 5px 10px;*/
+/*}*/
+
+/*.app-panel-collapse {*/
+/*    background: rgb(50, 50, 50);*/
+/*}*/
+
+
+/*.btn-toolbar-btn {*/
+/*    padding: 2px 3px 0 3px;*/
+/*    height: 24px;*/
+/*    width: 24px;*/
+/*    background: rgb(100, 100, 100);*/
+/*    color: white;*/
+/*}*/
+
+
+/*.button-delete-app {*/
+/*    float: right;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    color: red;*/
+/*    height: 20px;*/
+/*    width: 20px;*/
+/*    border: 1px solid red;*/
+/*    font-size: 14pt;*/
+
+/*}*/
+
+/*.button-delete-app:hover {*/
+/*    background: rgb(125, 50, 50);*/
+/*    color: white;*/
+/*}*/
+
+.btn-toolbar {
+    display: inline-block;
+}
+
+
+.btn-toolbar-btn {
+    border: var(--app-btn-border);
+    background: var(--app-btn-bg);
+    font-size: var(--app-btn-font-size);
+    padding: var(--app-btn-padding);
+}
+
+.btn-toolbar-btn:hover {
+    border: var(--app-btn-border-hover);
+}
+
+.app-btn-group {
+    margin-bottom: var(--app-btn-margin-bottom);
+}
+
+.open-sidebar {
+    background: var(--app-settings-btn-bg)
+}
+
+.app-panel-body .nav-link:hover {
+    background: var(--tab-bg-hover);
+    border: var(--tab-border-hover);
+    border-bottom: var(--tab-border-bottom-hover);
+    color: var(--tab-color-hover);
+}
+
+.app-panel-body .active-tab {
+    background: var(--tab-bg-selected);
+    border: var(--tab-border-selected);
+    border-bottom: var(--tab-border-bottom-selected);
+    color: var(--tab-color-selected);
+}
+
+.app-panel-body .active-tab:hover {
+    background: var(--tab-bg-selected);
+    border: var(--tab-border-selected);
+    border-bottom: var(--tab-border-bottom-selected);
+    color: var(--tab-color-selected);
+}

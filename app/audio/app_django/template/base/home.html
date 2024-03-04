@@ -1,0 +1,304 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VectorFlux | Home</title>
+        <meta name="description" content="Welcome to VectorFlux Sound Design. We offer Mixing and Mastering Services. ">
+        {% include 'css.html' %}
+    </head>
+    <body id="home-home-background-body">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <style>
+            body {
+                min-height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+        <div id="home-home-background-1-div">
+            <div id="home-home-background-color-div">
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container">
+                        <h1 data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-heading-1-h1"
+                            class="primary-heading">No More Quotes</h1>
+                        <p data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-paragraph-1-p"
+                           class="primary-paragraph">The entirety of human civilization has been leading up to this.<br>
+                        </p><a class="btn btn-default btn-lg primary-button" role="button" data-aos="fade"
+                               data-aos-duration="2000" id="home-home-arabesque-button-1-a"
+                               href="{% url 'info:services' %}">You had me at hello!</a></div>
+                </div>
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container">
+                        <h1 data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-heading-2-h1"
+                            class="primary-heading">Never-Ending Soundscape<br></h1>
+                        <p data-aos="fade" data-aos-duration="2000" id="home-home-arabesque-paragraph-2-p"
+                           class="primary-paragraph">Fill the ocean with the waves of your soul.<br></p><a
+                            class="btn btn-default btn-lg primary-button" role="button" data-aos="fade"
+                            data-aos-duration="2000" id="home-home-arabesque-button-2-a"
+                            href="{% url 'info:services' %}">What...?<br></a></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-2-div" class="arabesque-div">
+                <div class="container arabesque-container" id="home-home-background-color-2-div">
+                    <div class="intro">
+                        <h1 class="text-center primary-heading" data-aos="slide-up"
+                            id="home-home-arabesque-heading-3-h1">VectorFlux Sound Design</h1>
+                        <p class="text-center primary-paragraph" data-aos="slide-up" data-aos-duration="600"
+                           id="home-home-arabesque-paragraph-3-p">Enhance your performance. It's that simple.</p>
+                    </div>
+                    <div class="row text-center features">
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div id="home-home-arabesque-info-box-1-div" class="info-box">
+                                <div id="home-home-arabesque-column-1-div" class="arabesque-column"><i
+                                        class="glyphicon glyphicon-map-marker icon-class" data-aos="fade-up"
+                                        data-aos-duration="1750" id="home-home-icon-1-i"></i>
+                                    <h3 class="text-uppercase name info-box-heading" data-aos="fade-down"
+                                        data-aos-duration="1300">Anywhere</h3>
+                                    <p data-aos="fade" data-aos-duration="2850" class="info-box-paragraph">It doesn't
+                                        matter where you are. Our studio welcomes you with open arms. Whether you are
+                                        next door or across the globe (or flat Earth, if you're into that) we will be
+                                        here for you.</p><a class="text-uppercase info-box-link"
+                                                            data-aos="fade" data-aos-duration="2050"
+                                                            id="home-home-info-box-link-1-a"
+                                                            href="{% url 'info:services' %}">Learn more »</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up" data-aos-duration="1300">
+                            <div id="home-home-arabesque-info-box-2-div" class="box">
+                                <div id="home-home-arabesque-column-2-div" class="arabesque-column"><i
+                                        class="glyphicon glyphicon-time icon-class" data-aos="fade-up"
+                                        data-aos-duration="1900" id="home-home-icon-2-i"></i>
+                                    <h3 class="text-uppercase name info-box-heading" data-aos="fade-down"
+                                        data-aos-duration="1650">Any Time</h3>
+                                    <p data-aos="fade" data-aos-duration="2900" class="info-box-paragraph">We are here
+                                        for you all around the clock, friend. Our team of audio engineers and
+                                        technicians are constantly working to satisfy your artistic vision.</p><a
+                                            class="text-uppercase info-box-link" data-aos="fade"
+                                            data-aos-duration="2300"
+                                            id="home-home-info-box-link-2-a" href="{% url 'info:services' %}">Learn more
+                                        »</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 item" data-aos="fade-up-left" data-aos-duration="1050">
+                            <div id="home-home-arabesque-info-box-3-div" class="box">
+                                <div id="home-home-arabesque-column-3-div" class="arabesque-column"><i
+                                        class="glyphicon glyphicon-phone icon-class" data-aos="fade-up"
+                                        data-aos-duration="1850" id="home-home-icon-3-i"></i>
+                                    <h3 class="text-uppercase name info-box-heading" data-aos="fade-down"
+                                        data-aos-duration="1950">Mobile</h3>
+                                    <p data-aos="fade" data-aos-duration="2800" class="info-box-paragraph">Place an
+                                        order on your phone if that's what your little heart tells you to do. If you
+                                        truly believe that is where your destiny lies, we are here to support you.</p><a
+                                            class="text-uppercase info-box-link" data-aos="fade"
+                                            data-aos-duration="2600" id="home-home-info-box-link-3-a"
+                                            href="{% url 'info:services' %}">Learn more »</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-3-div" class="arabesque-div">
+                <div class="container text-center arabesque-container" id="home-home-background-color-3-div">
+                    <h1 data-aos="fade-left" data-aos-duration="1050" id="home-home-arabesque-heading-4-h1"
+                        class="primary-heading">Immersive Art</h1>
+                    <p data-aos="fade-right" data-aos-duration="1750" id="home-home-arabesque-paragraph-4-p"
+                       class="primary-paragraph">The vastness of space beckons you into a dimension of artistic sound
+                        design unlike anything you've heard before.<br></p><a
+                        class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                        data-aos-duration="1300" id="home-home-arabesque-button-3-a"
+                        href="{% url 'info:services' %}">Yes!<br></a></div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-4-div" class="arabesque-div">
+                <div class="container text-center arabesque-container" id="home-home-background-color-4-div">
+                    <div>
+                        <h1 data-aos="fade-up" data-aos-duration="1650" data-aos-delay="300"
+                            id="home-home-arabesque-heading-5-h1" class="primary-heading">Visions of Audio</h1>
+                        <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150"
+                           id="home-home-arabesque-paragraph-5-p" class="primary-paragraph">You will be one with the
+                            universe. Let us handle the rest.<br></p><a class="btn btn-default btn-lg primary-button"
+                                                                        role="button" data-aos="fade-up"
+                                                                        data-aos-duration="1400"
+                                                                        id="home-home-arabesque-button-4-a"
+                                                                        href="{% url 'info:services' %}">Integrate<br></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="home-home-background-color-5-div">
+                <div class="arabesque-div">
+                    <div class="container text-center arabesque-container">
+                        <h1 data-aos="fade-down" data-aos-duration="1000" id="home-home-arabesque-heading-6-h1"
+                            class="primary-heading">Age of Unlimited Audio</h1>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                <p data-aos="fade-right" data-aos-duration="1500" id="home-home-arabesque-paragraph-6-p"
+                                   class="primary-paragraph">More music. More art. More life.</p><a
+                                    class="btn btn-default btn-lg primary-button" role="button" data-aos="fade-up"
+                                    data-aos-duration="3000" id="home-home-arabesque-button-5-a"
+                                    href="{% url 'info:services' %}">Learn More</a></div>
+                            <div
+                                    class="col-md-6 text-left"><img data-aos="fade-left" data-aos-duration="1500"
+                                                                    id="home-home-wave-image-img"
+                                                                    src="{% static 'img/home/insert-1.jpg' %}"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arabesque-div" style="height: 600px;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="../home/home0.html"><img class="logo"
+                                                                                                    src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'js.html' %}
+    </body>
+    </html>
+{% endblock %}
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>navbar</title>
+        {% include 'css.html' %}
+    </head>
+    <body>
+    <style>
+        body {
+            background-image: url("{% static 'assets/img/jonas_verstuyft.jpg' %}");
+            min-height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    <div>
+        <div class="header-blue" style="background-image: url(&quot;{% static 'assets/img/rope_metal.jpg' %}&quot;);">
+            <div class="container hero">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0">
+                        <h1 data-aos="fade-up" data-aos-duration="1000">A New Age of Audio</h1>
+                        <p data-aos="fade-up" data-aos-duration="1500">The online music production revolution is
+                            here.</p><a class="btn btn-default btn-lg action-button" role="button"
+                                        href="{% url 'order:service-selection' %}" data-aos="fade-up"
+                                        data-aos-duration="3000">Learn More</a></div>
+                    <div class="col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 hidden-xs hidden-sm phone-holder">
+                        <div class="iphone-mockup">
+                            <div class="screen"
+                                 style="background-image: url(&quot;{% static 'assets/img/logo-no-text.png' %}&quot;);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 591.333px;"></div>
+        <div class="header-blue"
+             style="height: 591.333px;background: linear-gradient(to bottom right, #ffff99 0%, #ff9966 100%);">
+            <div class="container hero">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0">
+                        <h1 data-aos="fade" data-aos-duration="2000">Welcome To A Never-Ending Soundscape</h1>
+                        <p data-aos="fade" data-aos-duration="2000">Each drop of water in the ocean could be your audio
+                            engineer.</p><a class="btn btn-default btn-lg action-button" role="button"
+                                            href="{% url 'info:services' %}" data-aos="fade" data-aos-duration="2000">What...?</a>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 hidden-xs hidden-sm phone-holder">
+                        <div class="iphone-mockup">
+                            <div class="screen"
+                                 style="background-image: url(&quot;{% static 'assets/img/logo-no-text.png' %}&quot;);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><img id="id_subjumbotron_img"
+                  style="background-image: url(&quot;{% static 'assets/img/beach_birds_eye_0.jpg' %}&quot;);"></div>
+    </div>
+    </body>
+    {% include 'js.html' %}
+    </html>
+{% endblock %}

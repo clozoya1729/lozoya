@@ -1,0 +1,1557 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="description" content="Place an order for our sound design services.">
+        <title>VectorFlux | Order</title>
+        {% include 'css.html' %}
+    </head>
+    <body style="background-image: url(&quot;{% static 'assets/img/jumbotron-22.jpg' %}&quot;);background-size: cover;background-repeat: no-repeat;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" id="id_notification" style="text-align: center;color: grey;display: none;">
+        <h1 style="font-size: 36px;">Please wait while your files are uploaded.<br>Leaving this page will cancel your
+            order.</h1>
+    </div>
+    <div id="id_order_form_container"
+         style="color: rgb(228,222,215);background-color: rgba(115,108,139,0.86);padding-top: 40px;padding-bottom: 30px;background-size: cover;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center arabesque-heading"
+                    style="color: white;text-shadow: 1px 1px rgb(194,108,65);padding-top: 20px;">Step Into The
+                    Manifold</h2>
+                <p class="text-center arabesque-paragraph"
+                   style="color: #e6ded9;text-shadow: 1px 1px rgb(170,126,177);">Tell Us About Your Project</p>
+            </div>
+            <div>
+                <form id="id_order_form" method="post" enctype="multipart/form-data"
+                      data-validate-coupon-url="{% url 'order:ajax-validate-coupon' %}">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Project Name</label>
+                                <div>
+                                    {{ form.project_name }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Files</label>
+                                <div>
+                                    {{ form.files }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-3 col-md-offset-0">
+                            <div class="form-group"><label class="control-label form-field-label">Services</label>
+                                <div class="order-form-services-div">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">Mix</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.mix }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">&nbsp; Correction</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.performance_correction }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">&nbsp; Repair</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.repair }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order-form-services-div">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">Master</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.master }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group"><label class="control-label form-field-label">Details</label>
+                                <div>
+                                    {{ form.details }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Email</label>
+                                <div>
+                                    {{ form.email }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Date Due</label>
+                                <div>
+                                    {{ form.date_due }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Reference</label>
+                                <div>
+                                    {{ form.reference }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Coupon</label><span
+                                    class="label label-default" id="id_coupon_message"></span>
+                                <div>
+                                    {{ form.coupon_redeemed }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group"><span>I have read and agree to the <a
+                                    href="{% url 'legal:terms' %}">Terms of Service</a></span></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div>
+                                    {{ form.terms }}
+
+                                    <p id="msg" class="hidden error">You must agree to the terms of service.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="longest_duration" hidden>0</p>
+                    {% csrf_token %}
+                    {% if errs or form.errors %}
+                        <div class="alert alert-danger"><strong>
+                            {% for err in errs %}
+                                &#8226; {{ err }}<br>
+                            {% endfor %}
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    &#8226;
+                                    {% if error == 'Enter a valid email address.' and field.name == 'email' %}
+                                        Enter a valid email address.
+                                    {% elif error == 'This field is required.' and field.name == 'email' %}
+                                        Enter the email address you wish your results to be sent to.
+                                    {% elif error == 'This field is required.' and field.name == 'terms' %}
+                                        You must read and agree to the
+                                        <a href="{% url 'legal:terms' %}">
+                                            Terms of Service
+                                        </a>
+                                        before placing an order.
+                                    {% elif error == 'This field is required.' and field.name == 'files' %}
+                                        No audio files have been selected.
+                                    {% else %}
+                                        {{ error|escape }} {{ field.name|escape }}
+                                    {% endif %}
+                                    <br>
+                                {% endfor %}
+                                {% for error in form.non_field_errors %}
+                                    &#8226; {{ error|escape }}<br>
+                                {% endfor %}
+                            {% endfor %}
+                        </strong></div>
+                    {% endif %}
+
+                    <div class="row" id="label_price">
+                        <div class="col-xs-1 price-bar" style="width: 70px;">
+                            <input type="text" class="price-bar" id="label_price_label" value="Price: " readonly
+                                   style="color: black; font-weight: bold;">
+                        </div>
+                        <div class="col-xs-1 price-bar" id="label_original_price_div"
+                             style="display: none; width: 100px;">
+                            <input type="text" class="price-bar" id="label_original_price" value="$0.00" readonly
+                                   style="color: black;">
+                        </div>
+                        <div class="col-xs-1 price-bar" id="label_discount_div" style="width:105px; display: none;">
+                            <input type="text" class="price-bar" id="label_discount" value="-$0.00=" readonly
+                                   style="color: green; font-weight: bold;">
+                        </div>
+                        <div class="col-xs-1 price-bar" style="width: 105px;">
+                            <input type="text" class="price-bar" id="label_final_price" value="$0.00" readonly
+                                   style="color: black; font-weight: bold;">
+                        </div>
+                    </div>
+                    {{ form.price }}
+                    {{ form.discount_redeemed }}
+
+                    {% include "order/paypal-button.html" %}
+
+                    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('#id_performance_correction').attr('disabled', true);
+                            $('#id_mix').change(function () {
+                                $('#id_performance_correction').attr('disabled', !this.checked);
+                                $('#id_repair').attr('disabled', !this.checked);
+                            });
+
+                            $('#id_mix').change(function () {
+                                if ($(this).prop('checked')) {
+                                    var x = 0;
+                                } else {
+                                    $('#id_performance_correction').prop('checked', false);
+                                    $('#id_repair').prop('checked', false);
+                                }
+                            });
+                            $('#id_mix').trigger('change');
+                        });
+
+
+                    </script>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <body style="background-image: url(&quot;{% static 'assets/img/jumbotron-22.jpg' %}&quot;);background-size: cover;background-repeat: no-repeat;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" id="id_notification" style="text-align: center;color: grey;display: none;">
+        <h1 style="font-size: 36px;">Please wait while your files are uploaded.<br>Leaving this page will cancel your
+            order.</h1>
+    </div>
+    <div id="id_order_form_container"
+         style="color: rgb(228,222,215);background-color: rgba(115,108,139,0.86);padding-top: 40px;padding-bottom: 30px;background-size: cover;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center arabesque-heading" style="color: white;text-shadow: 1px 1px rgb(194,108,65);">
+                    Kontaktieren Sie uns.</h2>
+                <p class="text-center arabesque-paragraph" style="color: #e6ded9;">Wir sind jederzeit erreichbar auch
+                    über Facebook.</p>
+            </div>
+            <div>
+                <form id="id_order_form" method="post" enctype="multipart/form-data"
+                      data-validate-coupon-url="{% url 'order:ajax-validate-coupon' %}">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Project Name</label>
+                                <div>
+                                    {{ form.project_name }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Files</label>
+                                <div>
+                                    {{ form.files }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-3 col-md-offset-0">
+                            <div class="form-group"><label class="control-label form-field-label">Services</label>
+                                <div class="order-form-services-div">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">Mix</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.mix }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">&nbsp; Correction</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.performance_correction }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">&nbsp; Repair</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.repair }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order-form-services-div">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">Master</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.master }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group"><label class="control-label form-field-label">Details</label>
+                                <div>
+                                    {{ form.details }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Email</label>
+                                <div>
+                                    {{ form.email }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Date Due</label>
+                                <div>
+                                    {{ form.date_due }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Reference</label>
+                                <div>
+                                    {{ form.reference }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Coupon</label><span
+                                    class="label label-default" id="id_coupon_message"></span>
+                                <div>
+                                    {{ form.coupon_redeemed }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group"><span>I have read and agree to the <a
+                                    href="{% url 'legal:terms' %}">Terms of Service</a></span></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div>
+                                    {{ form.terms }}
+
+                                    <p id="msg" class="hidden error">You must agree to the terms of service.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="longest_duration" hidden>0</p>
+                    {% csrf_token %}
+                    {% if errs or form.errors %}
+                        <div class="alert alert-danger"><strong>
+                            {% for err in errs %}
+                                &#8226; {{ err }}<br>
+                            {% endfor %}
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    &#8226;
+                                    {% if error == 'Enter a valid email address.' and field.name == 'email' %}
+                                        Enter a valid email address.
+                                    {% elif error == 'This field is required.' and field.name == 'email' %}
+                                        Enter the email address you wish your results to be sent to.
+                                    {% elif error == 'This field is required.' and field.name == 'terms' %}
+                                        You must read and agree to the
+                                        <a href="{% url 'legal:terms' %}">
+                                            Terms of Service
+                                        </a>
+                                        before placing an order.
+                                    {% elif error == 'This field is required.' and field.name == 'files' %}
+                                        No audio files have been selected.
+                                    {% else %}
+                                        {{ error|escape }} {{ field.name|escape }}
+                                    {% endif %}
+                                    <br>
+                                {% endfor %}
+                                {% for error in form.non_field_errors %}
+                                    &#8226; {{ error|escape }}<br>
+                                {% endfor %}
+                            {% endfor %}
+                        </strong></div>
+                    {% endif %}
+
+                    <div class="row" id="label_price">
+                        <div class="col-xs-1 price-bar" style="width: 70px;">
+                            <input type="text" class="price-bar" id="label_price_label" value="Price: " readonly
+                                   style="color: black; font-weight: bold;">
+                        </div>
+                        <div class="col-xs-1 price-bar" id="label_original_price_div"
+                             style="display: none; width: 100px;">
+                            <input type="text" class="price-bar" id="label_original_price" value="$0.00" readonly
+                                   style="color: black;">
+                        </div>
+                        <div class="col-xs-1 price-bar" id="label_discount_div" style="width:105px; display: none;">
+                            <input type="text" class="price-bar" id="label_discount" value="-$0.00=" readonly
+                                   style="color: green; font-weight: bold;">
+                        </div>
+                        <div class="col-xs-1 price-bar" style="width: 105px;">
+                            <input type="text" class="price-bar" id="label_final_price" value="$0.00" readonly
+                                   style="color: black; font-weight: bold;">
+                        </div>
+                    </div>
+                    {{ form.price }}
+                    {{ form.discount_redeemed }}
+
+                    {% include "order/paypal-button.html" %}
+
+                    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('#id_performance_correction').attr('disabled', true);
+                            $('#id_mix').change(function () {
+                                $('#id_performance_correction').attr('disabled', !this.checked);
+                                $('#id_repair').attr('disabled', !this.checked);
+                            });
+
+                            $('#id_mix').change(function () {
+                                if ($(this).prop('checked')) {
+                                    var x = 0;
+                                } else {
+                                    $('#id_performance_correction').prop('checked', false);
+                                    $('#id_repair').prop('checked', false);
+                                }
+                            });
+                            $('#id_mix').trigger('change');
+                        });
+
+
+                    </script>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <body style="background-image: url(&quot;{% static 'assets/img/jumbotron-22.jpg' %}&quot;);background-size: cover;background-repeat: no-repeat;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'assets/img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'home' %}"
+                                          style="width: 82px;padding-right: 0px;margin-right: -15px;"><img
+                    src="{% static 'assets/img/logo-no-text.png' %}" style="width: 130px;"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;">
+                    <li role="presentation"><a href="{% url 'home' %}"
+                                               style="background: -webkit-linear-gradient(left, #ff9800, #ff9500, #ff4b00);color: transparent;-webkit-background-clip: text;font-size: 36px;font-weight: bold;letter-spacing: 2px;font-family: 'Titillium Web', sans-serif;padding-left: 0px;">VectorFlux</a>
+                    </li>
+                    <li
+                            role="presentation"><a href="#"
+                                                   style="padding-left: 0px;margin-left: -10px;margin-top: 10px;">Sound
+                        Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a href="{% url 'order:form' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Place
+                        Order</a></li>
+                    <li role="presentation"><a href="{% url 'info:services' %}"
+                                               style="font-family: 'Nanum Gothic', sans-serif;font-size: 24px;font-weight: bold;margin-top: 12px;margin-bottom: -12px;">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" id="id_notification" style="text-align: center;color: grey;display: none;">
+        <h1 style="font-size: 36px;">Please wait while your files are uploaded.<br>Leaving this page will cancel your
+            order.</h1>
+    </div>
+    <div id="id_order_form_container"
+         style="color: rgb(228,222,215);background-color: rgba(115,108,139,0.86);padding-top: 40px;padding-bottom: 30px;background-size: cover;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center arabesque-heading" style="color: white;text-shadow: 1px 1px rgb(194,108,65);">
+                    Step Into The Manifold</h2>
+                <p class="text-center arabesque-paragraph" style="color: #e6ded9;">Tell Us About Your Project</p>
+            </div>
+            <div>
+                <form id="id_order_form" method="post" enctype="multipart/form-data"
+                      data-validate-coupon-url="{% url 'order:ajax-validate-coupon' %}">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Project Name</label>
+                                <div>
+                                    {{ form.project_name }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Files</label>
+                                <div>
+                                    {{ form.files }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-3 col-md-offset-0">
+                            <div class="form-group"><label class="control-label form-field-label">Services</label>
+                                <div class="order-form-services-div">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">Mix</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.mix }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">&nbsp; Correction</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.performance_correction }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">&nbsp; Repair</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.repair }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order-form-services-div">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">Master</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.master }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group"><label class="control-label form-field-label">Details</label>
+                                <div>
+                                    {{ form.details }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Email</label>
+                                <div>
+                                    {{ form.email }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Date Due</label>
+                                <div>
+                                    {{ form.date_due }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Reference</label>
+                                <div>
+                                    {{ form.reference }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Coupon</label><span
+                                    class="label label-default" id="id_coupon_message"></span>
+                                <div>
+                                    {{ form.coupon_redeemed }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group"><span>I have read and agree to the <a
+                                    href="{% url 'legal:terms' %}">Terms of Service</a></span></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div>
+                                    {{ form.terms }}
+
+                                    <p id="msg" class="hidden error">You must agree to the terms of service.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="longest_duration" hidden>0</p>
+                    {% csrf_token %}
+                    {% if errs or form.errors %}
+                        <div class="alert alert-danger"><strong>
+                            {% for err in errs %}
+                                &#8226; {{ err }}<br>
+                            {% endfor %}
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    &#8226;
+                                    {% if error == 'Enter a valid email address.' and field.name == 'email' %}
+                                        Enter a valid email address.
+                                    {% elif error == 'This field is required.' and field.name == 'email' %}
+                                        Enter the email address you wish your results to be sent to.
+                                    {% elif error == 'This field is required.' and field.name == 'terms' %}
+                                        You must read and agree to the
+                                        <a href="{% url 'legal:terms' %}">
+                                            Terms of Service
+                                        </a>
+                                        before placing an order.
+                                    {% elif error == 'This field is required.' and field.name == 'files' %}
+                                        No audio files have been selected.
+                                    {% else %}
+                                        {{ error|escape }} {{ field.name|escape }}
+                                    {% endif %}
+                                    <br>
+                                {% endfor %}
+                                {% for error in form.non_field_errors %}
+                                    &#8226; {{ error|escape }}<br>
+                                {% endfor %}
+                            {% endfor %}
+                        </strong></div>
+                    {% endif %}
+
+                    <div class="row" id="label_price">
+                        <div class="col-xs-1 price-bar" style="width: 70px;">
+                            <input type="text" class="price-bar" id="label_price_label" value="Price: " readonly
+                                   style="color: black; font-weight: bold;">
+                        </div>
+                        <div class="col-xs-1 price-bar" id="label_original_price_div"
+                             style="display: none; width: 100px;">
+                            <input type="text" class="price-bar" id="label_original_price" value="$0.00" readonly
+                                   style="color: black;">
+                        </div>
+                        <div class="col-xs-1 price-bar" id="label_discount_div" style="width:105px; display: none;">
+                            <input type="text" class="price-bar" id="label_discount" value="-$0.00=" readonly
+                                   style="color: green; font-weight: bold;">
+                        </div>
+                        <div class="col-xs-1 price-bar" style="width: 105px;">
+                            <input type="text" class="price-bar" id="label_final_price" value="$0.00" readonly
+                                   style="color: black; font-weight: bold;">
+                        </div>
+                    </div>
+                    {{ form.price }}
+                    {{ form.discount_redeemed }}
+
+                    {% include "order/paypal-button.html" %}
+
+                    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('#id_performance_correction').attr('disabled', true);
+                            $('#id_mix').change(function () {
+                                $('#id_performance_correction').attr('disabled', !this.checked);
+                                $('#id_repair').attr('disabled', !this.checked);
+                            });
+
+                            $('#id_mix').change(function () {
+                                if ($(this).prop('checked')) {
+                                    var x = 0;
+                                } else {
+                                    $('#id_performance_correction').prop('checked', false);
+                                    $('#id_repair').prop('checked', false);
+                                }
+                            });
+                            $('#id_mix').trigger('change');
+                        });
+
+
+                    </script>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer"
+         style="background-image: url(&quot;{% static 'assets/img/tesselation.jpg' %}&quot;);background-size: cover;background-position: center;">
+        <div class="footer"
+             style="background-color: rgba(242,241,241,0.9);color: rgb(0,0,0);padding-bottom: 15px;/*padding-top: 15px;*/">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin-top:5%;margin-bottom:3%;"><a href="{% url 'home' %}"><img
+                                src="{% static 'assets/img/logo-no-text.png' %}" class="logo-img"></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-11 col-xs-11"><img
+                            src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                            alt="Pay with PayPal, PayPal Credit or any major credit card." class="cards-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2" style="background-color: rgba(200,200,200,0.9);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text"
+                           style="margin-top: 5%;margin-bottom: 8%%;font-size: 1.25em;font-family: 'Nanum Gothic', sans-serif;">
+                            <a href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a href="{% url 'legal:terms' %}">Terms
+                            of Service</a>&nbsp;| <a href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-left"
+                           style="margin-top: 5%;margin-bottom: 3%;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;color: grey;">
+                            © 2019 VectorFlux. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <body style="background-image: url(&quot;{% static 'img/jumbotron/jumbotron-22.jpg' %}&quot;);background-size: cover;background-repeat: no-repeat;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" id="id_notification" style="text-align: center;color: grey;display: none;">
+        <h1 style="font-size: 36px;">Please wait while your files are uploaded.<br>Leaving this page will cancel your
+            order.</h1>
+    </div>
+    <div id="id_order_form_container"
+         style="color: rgb(228,222,215);background-color: rgba(115,108,139,0.86);padding-top: 40px;padding-bottom: 30px;background-size: cover;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center arabesque-heading"
+                    style="color: white;text-shadow: 1px 1px rgb(194,108,65);padding-top: 20px;">Step Into The
+                    Manifold</h2>
+                <p class="text-center arabesque-paragraph"
+                   style="color: #e6ded9;text-shadow: 1px 1px rgb(170,126,177);">Tell Us About Your Project</p>
+            </div>
+            <div>
+                <form id="id_order_form" method="post" enctype="multipart/form-data"
+                      data-validate-coupon-url="{% url 'order:ajax-validate-coupon' %}">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Project Name</label>
+                                <div>
+                                    {{ form.project_name }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Files</label>
+                                <div>
+                                    {{ form.files }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-3 col-md-offset-0">
+                            <div class="form-group"><label class="control-label form-field-label">Services</label>
+                                <div class="order-form-services-div">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">Mix</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.mix }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">&nbsp; Correction</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.performance_correction }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">&nbsp; Repair</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.repair }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order-form-services-div">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">Master</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.master }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group"><label class="control-label form-field-label">Details</label>
+                                <div>
+                                    {{ form.details }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Email</label>
+                                <div>
+                                    {{ form.email }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Date Due</label>
+                                <div>
+                                    {{ form.date_due }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Reference</label>
+                                <div>
+                                    {{ form.reference }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Coupon</label><span
+                                    class="label label-default" id="id_coupon_message"></span>
+                                <div>
+                                    {{ form.coupon_redeemed }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group"><span>I have read and agree to the <a
+                                    href="{% url 'legal:terms' %}">Terms of Service</a></span></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div>
+                                    {{ form.terms }}
+
+                                    <p id="msg" class="hidden error">You must agree to the terms of service.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="longest_duration" hidden>0</p>
+                    {% csrf_token %}
+                    {% if errs or form.errors %}
+                        <div class="alert alert-danger"><strong>
+                            {% for err in errs %}
+                                &#8226; {{ err }}<br>
+                            {% endfor %}
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    &#8226;
+                                    {% if error == 'Enter a valid email address.' and field.name == 'email' %}
+                                        Enter a valid email address.
+                                    {% elif error == 'This field is required.' and field.name == 'email' %}
+                                        Enter the email address you wish your results to be sent to.
+                                    {% elif error == 'This field is required.' and field.name == 'terms' %}
+                                        You must read and agree to the
+                                        <a href="{% url 'legal:terms' %}">
+                                            Terms of Service
+                                        </a>
+                                        before placing an order.
+                                    {% elif error == 'This field is required.' and field.name == 'files' %}
+                                        No audio files have been selected.
+                                    {% else %}
+                                        {{ error|escape }} {{ field.name|escape }}
+                                    {% endif %}
+                                    <br>
+                                {% endfor %}
+                                {% for error in form.non_field_errors %}
+                                    &#8226; {{ error|escape }}<br>
+                                {% endfor %}
+                            {% endfor %}
+                        </strong></div>
+                    {% endif %}
+
+                    <div class="row" id="label_price">
+                        <div class="col-xs-1 price-bar" style="width: 70px;">
+                            <input type="text" class="price-bar" id="label_price_label" value="Price: " readonly
+                                   style="color: black; font-weight: bold;">
+                        </div>
+                        <div class="col-xs-1 price-bar" id="label_original_price_div"
+                             style="display: none; width: 100px;">
+                            <input type="text" class="price-bar" id="label_original_price" value="$0.00" readonly
+                                   style="color: black;">
+                        </div>
+                        <div class="col-xs-1 price-bar" id="label_discount_div" style="width:105px; display: none;">
+                            <input type="text" class="price-bar" id="label_discount" value="-$0.00=" readonly
+                                   style="color: green; font-weight: bold;">
+                        </div>
+                        <div class="col-xs-1 price-bar" style="width: 105px;">
+                            <input type="text" class="price-bar" id="label_final_price" value="$0.00" readonly
+                                   style="color: black; font-weight: bold;">
+                        </div>
+                    </div>
+                    {{ form.price }}
+                    {{ form.discount_redeemed }}
+
+                    {% include "order/paypal-button.html" %}
+
+                    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('#id_performance_correction').attr('disabled', true);
+                            $('#id_mix').change(function () {
+                                $('#id_performance_correction').attr('disabled', !this.checked);
+                                $('#id_repair').attr('disabled', !this.checked);
+                            });
+
+                            $('#id_mix').change(function () {
+                                if ($(this).prop('checked')) {
+                                    var x = 0;
+                                } else {
+                                    $('#id_performance_correction').prop('checked', false);
+                                    $('#id_repair').prop('checked', false);
+                                }
+                            });
+                            $('#id_mix').trigger('change');
+                        });
+
+
+                    </script>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="../info/home.html"><img class="logo"
+                                                                                                   src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <body style="background-image: url(&quot;{% static 'img/jumbotron/jumbotron-22.jpg' %}&quot;);background-size: cover;background-repeat: no-repeat;">
+    <nav class="navbar navbar-default navbar-fixed-top"
+         style="background-size: cover;background-image: url(&quot;{% static 'img/navbar.jpg' %}&quot;);padding-top: 10px;padding-bottom: 10px;width: 100%;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand"
+                                          style="width: 82px;padding-right: 0px;padding-left: 0px;margin-left: 0px;"
+                                          href="{% url 'home' %}"><img class="logo"
+                                                                       src="{% static 'img/logo-no-text.png' %}"></a>
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"
+                    style="padding: 0px 40px;margin-top: 7px;margin-bottom: -20px;margin-left: -30px;">
+                    <li role="presentation"><a id="navbar-company-name" class="navbar-company-name"
+                                               href="{% url 'home' %}"
+                                               style="padding-right: 1.5rem;padding-bottom: 1rem;padding-top: 1rem;">VectorFlux</a>
+                    </li>
+                    <li role="presentation"><a
+                            style="padding-left: 0px;margin-left: -10px;font-size: var(--navbar-subtitle-font-size);padding-top: calc(var(--navbar-name-font-size) - var(--navbar-subtitle-font-size));padding-bottom: 0px;padding-right: 0px;"
+                            href="{% url 'home' %}">Sound Design</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                    <li role="presentation"><a class="navbar-link" href="{% url 'order:form' %}"
+                                               style="margin-top: 1rem;">Place Order</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:services' %}"
+                                               style="margin-top: 1rem;">Services</a></li>
+                    <li role="presentation"><a class="navbar-link" href="{% url 'info:portfolio' %}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" id="id_notification" style="text-align: center;color: grey;display: none;">
+        <h1 style="font-size: 36px;">Please wait while your files are uploaded.<br>Leaving this page will cancel your
+            order.</h1>
+    </div>
+    <div id="id_order_form_container"
+         style="color: rgb(228,222,215);background-color: rgba(115,108,139,0.86);padding-top: 40px;padding-bottom: 30px;background-size: cover;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center arabesque-heading"
+                    style="color: white;text-shadow: 1px 1px rgb(194,108,65);padding-top: 20px;">Step Into The
+                    Manifold</h2>
+                <p class="text-center arabesque-paragraph"
+                   style="color: #e6ded9;text-shadow: 1px 1px rgb(170,126,177);">Tell Us About Your Project</p>
+            </div>
+            <div>
+                <form id="id_order_form" method="post" enctype="multipart/form-data"
+                      data-validate-coupon-url="{% url 'order:ajax-validate-coupon' %}">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Project Name</label>
+                                <div>
+                                    {{ form.project_name }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Files</label>
+                                <div>
+                                    {{ form.files }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-3 col-md-offset-0">
+                            <div class="form-group"><label class="control-label form-field-label">Services</label>
+                                <div class="order-form-services-div">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">Mix</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.mix }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">&nbsp; Correction</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.performance_correction }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">&nbsp; Repair</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.repair }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order-form-services-div">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="background-color: transparent;">
+                                            <div class="row">
+                                                <div class="col-md-5 order-form-services-category-column"><span
+                                                        class="label label-default">Master</span></div>
+                                                <div class="col-lg-7 col-md-2">
+                                                    <div>
+                                                        {{ form.master }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group"><label class="control-label form-field-label">Details</label>
+                                <div>
+                                    {{ form.details }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Email</label>
+                                <div>
+                                    {{ form.email }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Date Due</label>
+                                <div>
+                                    {{ form.date_due }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Reference</label>
+                                <div>
+                                    {{ form.reference }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="control-label form-field-label">Coupon</label><span
+                                    class="label label-default" id="id_coupon_message"></span>
+                                <div>
+                                    {{ form.coupon_redeemed }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group"><span>I have read and agree to the <a
+                                    href="{% url 'legal:terms' %}">Terms of Service</a></span></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div>
+                                    {{ form.terms }}
+
+                                    <p id="msg" class="hidden error">You must agree to the terms of service.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="longest_duration" hidden>0</p>
+                    {% csrf_token %}
+                    {% if errs or form.errors %}
+                        <div class="alert alert-danger"><strong>
+                            {% for err in errs %}
+                                &#8226; {{ err }}<br>
+                            {% endfor %}
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    &#8226;
+                                    {% if error == 'Enter a valid email address.' and field.name == 'email' %}
+                                        Enter a valid email address.
+                                    {% elif error == 'This field is required.' and field.name == 'email' %}
+                                        Enter the email address you wish your results to be sent to.
+                                    {% elif error == 'This field is required.' and field.name == 'terms' %}
+                                        You must read and agree to the
+                                        <a href="{% url 'legal:terms' %}">
+                                            Terms of Service
+                                        </a>
+                                        before placing an order.
+                                    {% elif error == 'This field is required.' and field.name == 'files' %}
+                                        No audio files have been selected.
+                                    {% else %}
+                                        {{ error|escape }} {{ field.name|escape }}
+                                    {% endif %}
+                                    <br>
+                                {% endfor %}
+                                {% for error in form.non_field_errors %}
+                                    &#8226; {{ error|escape }}<br>
+                                {% endfor %}
+                            {% endfor %}
+                        </strong></div>
+                    {% endif %}
+
+                    <div class="row" id="label_price">
+                        <div class="col-xs-1 price-bar" style="width: 70px;">
+                            <input type="text" class="price-bar" id="label_price_label" value="Price: " readonly
+                                   style="color: black; font-weight: bold;">
+                        </div>
+                        <div class="col-xs-1 price-bar" id="label_original_price_div"
+                             style="display: none; width: 100px;">
+                            <input type="text" class="price-bar" id="label_original_price" value="$0.00" readonly
+                                   style="color: black;">
+                        </div>
+                        <div class="col-xs-1 price-bar" id="label_discount_div" style="width:105px; display: none;">
+                            <input type="text" class="price-bar" id="label_discount" value="-$0.00=" readonly
+                                   style="color: green; font-weight: bold;">
+                        </div>
+                        <div class="col-xs-1 price-bar" style="width: 105px;">
+                            <input type="text" class="price-bar" id="label_final_price" value="$0.00" readonly
+                                   style="color: black; font-weight: bold;">
+                        </div>
+                    </div>
+                    {{ form.price }}
+                    {{ form.discount_redeemed }}
+
+                    {% include "order/paypal-button.html" %}
+
+                    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('#id_performance_correction').attr('disabled', true);
+                            $('#id_mix').change(function () {
+                                $('#id_performance_correction').attr('disabled', !this.checked);
+                                $('#id_repair').attr('disabled', !this.checked);
+                            });
+
+                            $('#id_mix').change(function () {
+                                if ($(this).prop('checked')) {
+                                    var x = 0;
+                                } else {
+                                    $('#id_performance_correction').prop('checked', false);
+                                    $('#id_repair').prop('checked', false);
+                                }
+                            });
+                            $('#id_mix').trigger('change');
+                        });
+
+
+                    </script>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="id_footer" class="footer">
+        <div class="footer-1"
+             style="background-color: rgba(242,241,241,0.5);color: rgb(0,0,0);padding: 15px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-8">
+                        <p class="text-left" style="margin: 0px;"><a href="../base/home0.html"><img class="logo"
+                                                                                                    src="{% static 'img/logo-no-text.png' %}"></a>
+                        </p><img class="cards-img"
+                                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png"
+                                 alt="Pay with PayPal, PayPal Credit or any major credit card."
+                                 style="width: 50%;"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right footer-text" id="footer-info" style="margin-bottom: 0px;"><a
+                                href="{% url 'contact:form' %}">Contact Us</a> | <a href="{% url 'info:faq' %}">FAQ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2" style="padding: 5px 0px 5px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-left footer-text" id="footer-legal" style="margin: 0px;"><a
+                                href="{% url 'legal:privacy' %}">Privacy Stament</a> | <a
+                                href="{% url 'legal:terms' %}">Terms of Service</a>&nbsp;| <a
+                                href="{% url 'legal:credits' %}">Credits</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">
+                        <p class="text-right" id="footer-copyright" style="margin: 0px;">© 2019 VectorFlux. All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    {% include 'js.html' %}
+    </html>
+{% endblock %}

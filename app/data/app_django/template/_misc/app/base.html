@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% include 'template/base/general/css.html' %}
+    {% include 'template/base/app/css.html' %}
+</head>
+<body id="app_body">
+{{ navbar |safe }}
+{% block body %}
+{% endblock %}
+{% include 'template/base/general/footer.html' %}
+{% include 'template/base/general/js.html' %}
+</body>
+</html>

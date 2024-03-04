@@ -1,0 +1,30 @@
+.app-panel-body .nav-link {
+    font-size: var(--tab-font-size);
+    padding: var(--tab-padding);
+    background: var(--tab-bg);
+    border: var(--tab-border);
+    border-bottom: var(--tab-border-bottom);
+    color: var(--tab-color);
+    cursor: pointer;
+}
+
+.app-panel-body .nav-link:hover {
+    background: var(--tab-bg-hover);
+    border: var(--tab-border-hover);
+    border-bottom: var(--tab-border-bottom-hover);
+    color: var(--tab-color-hover);
+}
+
+.app-panel-body .active-tab {
+    background: var(--tab-bg-selected);
+    border: var(--tab-border-selected);
+    border-bottom: var(--tab-border-bottom-selected);
+    color: var(--tab-color-selected);
+}
+
+.app-panel-body .active-tab:hover {
+    background: var(--tab-bg-selected);
+    border: var(--tab-border-selected);
+    border-bottom: var(--tab-border-bottom-selected);
+    color: var(--tab-color-selected);
+}

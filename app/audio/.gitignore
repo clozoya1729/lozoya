@@ -32,7 +32,7 @@ MANIFEST
 *.manifest
 *.spec
 
-# Installer logs
+# Installer logs0
 pip-log.txt
 pip-delete-this-directory.txt
 
@@ -58,7 +58,7 @@ cover/
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
+../vectorflux-django0/db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:
@@ -68,7 +68,7 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-# Sphinx documentation
+# Sphinx documentation2
 docs/_build/
 
 # PyBuilder
@@ -135,7 +135,7 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
+# mkdocs documentation2
 /site
 
 # mypy

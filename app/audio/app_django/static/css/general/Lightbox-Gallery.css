@@ -1,0 +1,683 @@
+.photo-gallery {
+    color: #313437;
+    background-color: #fff;
+}
+
+.photo-gallery p {
+    color: #7d8285;
+}
+
+.photo-gallery h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+@media (max-width: 767px) {
+    .photo-gallery h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.photo-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.photo-gallery .intro p {
+    margin-bottom: 0;
+}
+
+.photo-gallery .photos {
+    padding-bottom: 20px;
+}
+
+.photo-gallery .item {
+    padding-bottom: 30px;
+}
+
+.team-grid {
+    color: #313437;
+    background-color: #fff;
+}
+
+.team-grid p {
+    color: #7d8285;
+}
+
+.team-grid h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+@media (max-width: 767px) {
+    .team-grid h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.team-grid .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.team-grid .intro p {
+    margin-bottom: 0;
+}
+
+.team-grid .people {
+    padding: 50px 0;
+}
+
+.team-grid .item {
+    margin-bottom: 30px;
+}
+
+.team-grid .item .box {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.15s ease-in;
+    /*opacity: 0;*/
+    padding-top: 80px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.team-grid .item:hover .cover {
+    opacity: 1;
+    background: linear-gradient(to bottom right, rgba(255, 255, 153, 0.78) 0%, rgba(255, 153, 102, 0.61) 100%);
+}
+
+.team-grid .item .name {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.team-grid .item .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bbd8fb;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.team-grid .social {
+    font-size: 18px;
+}
+
+.team-grid .social a {
+    color: inherit;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.team-grid .social a:hover {
+    opacity: 1;
+}
+
+@media (min-width: 992px) {
+    .col-md-3 {
+        width: 50%;
+    }
+}
+
+a:focus, a:hover {
+    /*color: #bbd8fb;*/
+    text-decoration: none;
+}
+
+.testimonials-clean {
+    color: #313437;
+    background-color: #eef4f7;
+}
+
+.testimonials-clean p {
+    color: #7d8285;
+}
+
+.testimonials-clean h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+@media (max-width: 767px) {
+    .testimonials-clean h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.testimonials-clean .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.testimonials-clean .intro p {
+    margin-bottom: 0;
+}
+
+.testimonials-clean .people {
+    padding: 50px 0 20px;
+}
+
+.testimonials-clean .item {
+    margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+    .testimonials-clean .item {
+        height: 220px;
+    }
+}
+
+.testimonials-clean .item .box {
+    padding: 30px;
+    background-color: #fff;
+    position: relative;
+}
+
+.testimonials-clean .item .box:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -24px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-width: 12px 15px;
+    border-top-color: #fff;
+}
+
+.testimonials-clean .item .author {
+    margin-top: 28px;
+    padding-left: 25px;
+}
+
+.testimonials-clean .item .name {
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: inherit;
+}
+
+.testimonials-clean .item .title {
+    font-size: 13px;
+    color: #9da9ae;
+}
+
+.testimonials-clean .item .description {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.testimonials-clean .item img {
+    max-width: 40px;
+    float: left;
+    margin-right: 12px;
+    margin-top: -5px;
+}
+
+
+.header-blue {
+    background: linear-gradient(135deg, #172a74, #21a9af);
+    background-color: #184e8e;
+    padding-bottom: 120px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media (max-width: 767px) {
+    .header-blue {
+        padding-bottom: 80px;
+    }
+}
+
+.header-blue .navbar {
+    background: transparent;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .header-blue .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-blue .navbar .navbar-header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-blue .navbar .navbar-right {
+        margin-bottom: 20px;
+    }
+}
+
+.header-blue .navbar .navbar-brand {
+    font-weight: bold;
+    color: inherit;
+}
+
+.header-blue .navbar .navbar-brand:hover {
+    color: #f0f0f0;
+}
+
+.header-blue .navbar .navbar-collapse p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.header-blue .navbar .navbar-collapse p .login {
+    color: #d9d9d9;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.header-blue .navbar .navbar-collapse p .login:hover {
+    color: #fff;
+}
+
+.header-blue .navbar .navbar-toggle {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-blue .navbar .navbar-toggle:hover, .header-blue .navbar-toggle:focus {
+    background: none;
+}
+
+.header-blue .navbar .navbar-toggle .icon-bar {
+    background-color: #eee;
+}
+
+.header-blue .navbar .navbar-collapse, .header-blue .navbar .navbar-form {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-blue .navbar .navbar-nav > .active > a, .header-blue .navbar .navbar-nav > .open > a {
+    background: none;
+    box-shadow: none;
+}
+
+.header-blue .navbar.navbar-default .navbar-nav > .active > a, .header-blue .navbar.navbar-default .navbar-nav > .active > a:focus, .header-blue .navbar.navbar-default .navbar-nav > .active > a:hover {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    background: none;
+    pointer-events: none;
+}
+
+.header-blue .navbar.navbar .navbar-nav > li > a {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.header-blue .navbar.navbar-default .navbar-nav > li > a {
+    color: #d9d9d9;
+}
+
+.header-blue .navbar.navbar-default .navbar-nav > li > a:focus, .header-blue .navbar.navbar-default .navbar-nav > li > a:hover {
+    color: #fcfeff !important;
+    background-color: transparent;
+}
+
+.header-blue .navbar .navbar-nav > li > .dropdown-menu {
+    margin-top: -5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.header-blue .navbar .dropdown-menu > li > a:focus, .header-blue .navbar .dropdown-menu > li > a {
+    line-height: 2;
+    font-size: 14px;
+    color: #37434d;
+}
+
+.header-blue .navbar .dropdown-menu > li > a:focus, .header-blue .navbar .dropdown-menu > li > a:hover {
+    background: #ebeff1;
+}
+
+.header-blue .action-button, .header-blue .action-button:active {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    color: #ebeff1;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 6px 15px;
+    background: transparent;
+    transition: background-color 0.25s;
+    outline: none;
+}
+
+.header-blue .action-button:hover {
+    color: #fff;
+}
+
+.header-blue .action-button.btn-lg {
+    padding: 7px 18px;
+}
+
+.header-blue .navbar .navbar-form label {
+    color: #ccc;
+}
+
+.header-blue .navbar .navbar-form .search-field {
+    background: none;
+    border: none;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+    color: #ccc;
+    box-shadow: none;
+    color: inherit;
+    transition: border-bottom-color 0.3s;
+}
+
+@media (max-width: 767px) {
+    .header-blue .navbar .navbar-form .search-field {
+        display: inline-block;
+        width: 80%;
+    }
+}
+
+.header-blue .navbar .navbar-form .search-field:focus {
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 360px) {
+    .header-blue .hero {
+        margin-top: 20px;
+        /*text-align: center;*/
+    }
+}
+
+.header-blue .hero h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 190px;
+    margin-bottom: 24px;
+    font-weight: 300;
+}
+
+@media (max-width: 991px) {
+    .header-blue .hero h1 {
+        margin-top: 190px;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+}
+
+.header-blue .hero p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.header-blue .phone-holder {
+    text-align: right;
+}
+
+.header-blue div.iphone-mockup {
+    position: relative;
+    max-width: 300px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.header-blue .iphone-mockup img.device {
+    width: 100%;
+    height: auto;
+}
+
+.header-blue .iphone-mockup .screen {
+    position: absolute;
+    width: 88%;
+    height: 77%;
+    top: 12%;
+    border-radius: 2px;
+    left: 6%;
+    border: 1px solid #444;
+    background-color: #aaa;
+    overflow: hidden;
+    background: url(../img0/screen-content-iphone-6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-blue .iphone-mockup .screen:before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 140%;
+    top: -12%;
+    right: -60%;
+    transform: rotate(-19deg);
+    opacity: 0.2;
+}
+
+.header-blue .navbar {
+    background: transparent;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .header-blue .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-blue .navbar .navbar-header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-blue .navbar .navbar-right {
+        margin-bottom: 20px;
+    }
+}
+
+.header-blue .navbar .navbar-brand {
+    font-weight: bold;
+    color: inherit;
+}
+
+.header-blue .navbar .navbar-brand:hover {
+    color: #f0f0f0;
+}
+
+.header-blue .navbar .navbar-collapse p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.header-blue .navbar .navbar-collapse p .login {
+    color: #d9d9d9;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.header-blue .navbar .navbar-collapse p .login:hover {
+    color: #fff;
+}
+
+.header-blue .navbar .navbar-toggle {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-blue .navbar .navbar-toggle:hover, .header-blue .navbar-toggle:focus {
+    background: none;
+}
+
+.header-blue .navbar .navbar-toggle .icon-bar {
+    background-color: #eee;
+}
+
+.header-blue .navbar .navbar-collapse, .header-blue .navbar .navbar-form {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-blue .navbar .navbar-nav > .active > a, .header-blue .navbar .navbar-nav > .open > a {
+    background: none;
+    box-shadow: none;
+}
+
+.header-blue .navbar.navbar-default .navbar-nav > .active > a, .header-blue .navbar.navbar-default .navbar-nav > .active > a:focus, .header-blue .navbar.navbar-default .navbar-nav > .active > a:hover {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    background: none;
+    pointer-events: none;
+}
+
+.header-blue .navbar.navbar .navbar-nav > li > a {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.header-blue .navbar.navbar-default .navbar-nav > li > a {
+    color: #d9d9d9;
+}
+
+.header-blue .navbar.navbar-default .navbar-nav > li > a:focus, .header-blue .navbar.navbar-default .navbar-nav > li > a:hover {
+    color: #fcfeff !important;
+    background-color: transparent;
+}
+
+.header-blue .navbar .navbar-nav > li > .dropdown-menu {
+    margin-top: -5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.header-blue .navbar .dropdown-menu > li > a:focus, .header-blue .navbar .dropdown-menu > li > a {
+    line-height: 2;
+    font-size: 14px;
+    color: #37434d;
+}
+
+.header-blue .navbar .dropdown-menu > li > a:focus, .header-blue .navbar .dropdown-menu > li > a:hover {
+    background: #ebeff1;
+}
+
+.header-blue .action-button, .header-blue .action-button:active {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    color: #ebeff1;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 6px 15px;
+    background: transparent;
+    transition: background-color 0.25s;
+    outline: none;
+}
+
+.header-blue .action-button:hover {
+    color: #fff;
+}
+
+.header-blue .action-button.btn-lg {
+    padding: 7px 18px;
+}
+
+.header-blue .navbar .navbar-form label {
+    color: #ccc;
+}
+
+@media (max-width: 767px) {
+    .header-blue .navbar .navbar-form .search-field {
+        display: inline-block;
+        width: 80%;
+    }
+}
+
+.header-blue .navbar .navbar-form .search-field:focus {
+    border-bottom: 1px solid #ccc;
+}
+
+.header-blue .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.header-blue .phone-holder {
+    text-align: right;
+}
+
+.header-blue div.iphone-mockup {
+    position: relative;
+    max-width: 300px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.header-blue .iphone-mockup img.device {
+    width: 100%;
+    height: auto;
+}
+
+.header-blue .iphone-mockup .screen {
+    position: absolute;
+    width: 88%;
+    height: 77%;
+    top: 12%;
+    border-radius: 2px;
+    left: 6%;
+    border: 1px solid #444;
+    background-color: #aaa;
+    overflow: hidden;
+    background: url(screen-content-iphone-6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 1000px) {
+    .col-lg-5 {
+        width: 41.66666667%;
+    }
+}
+

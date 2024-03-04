@@ -1,0 +1,104 @@
+parameters, start, end = [], [], []
+
+class textParser():
+
+    def __init__(self):
+        with open('instructions.txt', 'r') as iFile:        #The parameters required for extraction are read from the "instructions" file
+            for line in iFile:
+                parameters.append(line.rstrip())
+        self.selectFile()
+
+    def selectFile(self):
+
+        path = parameters[0]                                #The parameters required for the extraction are read from the parameters array
+        newPath = path + "Reduced.txt"
+        path = path + ".txt"
+        iterations = int(parameters[1])
+
+
+        for i in range(2 * iterations):
+
+            if not (i%2):                                   #Reading the starting and ending points of each extraction
+                start.append(parameters[i + 2])
+            else:
+                end.append(parameters[i + 2])
+
+        self.openFile(path, newPath, iterations)
+
+
+    def openFile(self, path, newPath, iterations):
+
+        #rFile = open(path, 'r')                         #Open the file in read mode
+        with open(path, 'r') as rFile:
+            self.readFile(newPath, rFile, iterations)     #Call the read file function with the opened file as the argument
+
+
+    def readFile(self, newPath, rFile, iterations):
+
+        i = 0
+        tempList, reducedData = [], []
+        parsing = False
+
+        for line in rFile:
+
+            tempS = start[i]            #Store the current iteration's starting point
+            tempE = end[i]              #Store the current iteration's ending point
+            word = ''
+
+            if (parsing == False and tempS in line):           #Look for the starting token in each line of the document
+                parsing = True
+                print("START")
+                tempList = line.split()     #When the starting token is found, store the line into an array
+
+                smallS = self.start_end(tempList, tempList.__len__(), tempS)    #The location of the starting token in the line array
+
+                for k in range(smallS, tempList.__len__()):     #parsing the line array into a variable from the starting token
+                    word = word + tempList[k] + " "
+
+                reducedData.append(word.strip())
+                tempList.clear()
+
+            elif(parsing == True and end[i] not in line):
+                reducedData.append(line)
+
+            elif(parsing == True and tempE in line):
+                parsing = False
+                print("END")
+                tempList = line.split()                         #When the end token is found, store the line into an array
+
+                smallE = self.start_end(tempList, tempList.__len__(), tempE)        #The location of the end token in the line array
+
+                for k in range(smallE + 1):     #parsing the line array into a variable until the ending token
+                    word = word + tempList[k] + " "
+
+                reducedData.append(word.strip())
+                tempList.clear()
+                if (i < (iterations - 1)):
+                    i += 1
+                else:
+                    print(reducedData)
+                    self.createFile(newPath, reducedData)
+                    return
+
+    def start_end(self, tempList, tempList_length, tKey):
+        for j in range(tempList_length):
+            if tempList[j] == tKey:
+                return j
+
+
+    def createFile(self, newPath, reducedData):
+
+        print('New file created.')
+        wFile = open(newPath, "w")                           #Create a new file to store the reduced data
+        self.writeFile(reducedData, wFile)                   #Call the write file function with the reduced data and nnew file as arguments
+
+
+    def writeFile(self, reducedData, wFile):
+
+        for i in range(reducedData.__len__()):
+            wFile.write(reducedData[i] + "\n")               #Write the reduced data into the new file
+            i +=1
+
+        wFile.close()
+
+tP = textParser()

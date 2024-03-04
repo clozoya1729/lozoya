@@ -1,0 +1,18 @@
+.btn-toolbar-btn {
+    border: var(--app-btn-border);
+    background: var(--app-btn-bg);
+    font-size: var(--app-btn-font-size);
+    padding: var(--app-btn-padding);
+}
+
+.btn-toolbar-btn:hover {
+    border: var(--app-btn-border-hover);
+}
+
+.app-btn-group {
+    margin-bottom: var(--app-btn-margin-bottom);
+}
+
+.open-sidebar {
+    background: var(--app-settings-btn-bg)
+}
