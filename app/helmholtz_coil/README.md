@@ -1,5 +1,7 @@
-# square_helmholtz_coil
-MATLAB simulation of three perpendicular square Helmholtz coil pairs.
+# Helmholtz Coil
+
+This app is used for simulation of Helmholtz coils.
+The app can simulate circle and square Helmholtz coils.
 
 ![image](https://user-images.githubusercontent.com/57414067/119455621-01519580-bcf7-11eb-811e-b5591e4521a4.png)
 
