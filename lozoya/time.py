@@ -1,6 +1,5 @@
 import datetime
 import time
-
 import timeit
 
 timeMS = lambda: int(round(time.time() * 1000))
@@ -28,7 +27,8 @@ def fnext_week():
 
 class Timer:
     def __init__(self):
-        pass
+        self.start = timeit.default_timer()
+        self.stop = timeit.default_timer()
 
     def start(self):
         self.start = timeit.default_timer()

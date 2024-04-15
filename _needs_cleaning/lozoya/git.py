@@ -4,10 +4,11 @@ import importlib
 
 import pygit2
 
+username = 'lopartechnologies'
+accessToken = 'a1f29182d2f7f0495e29e8d06a9b0f8b212e2117'
 
-def run(dirName, project, moduleName, f, *args, **kwargs):
-    username = 'lopartechnologies'
-    accessToken = 'a1f29182d2f7f0495e29e8d06a9b0f8b212e2117'
+
+def run(username, accessToken, dirName, project, moduleName, f, *args, **kwargs):
     url = 'https://{}:x-oauth-basic@github.com/{}/{}.git'.format(accessToken, username, project)
     try:
         if os.path.isdir(dirName):

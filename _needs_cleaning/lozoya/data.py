@@ -6994,7 +6994,6 @@ df1 = pd.DataFrame(
     # +1/dev * np.random.normal(0, 1, size=(100, 1)),
     columns=['var'], index=[i for i in range(1, 101)]
 )
-
 df3 = pd.DataFrame(  # np.array(np.log(np.linspace(1, 100, 100))),
     20 * np.array(np.sin(np.linspace(0, 2 * np.pi, 100))) + 6 * np.array(
         [np.random.randint(0, 10) for i in range(0, 100)]
@@ -7006,9 +7005,7 @@ df3 = pd.DataFrame(  # np.array(np.log(np.linspace(1, 100, 100))),
 
     columns=['var3'], index=[i for i in range(1, 101)]
 )
-
 df = df1  # pd.concat([df1, df2, df3], axis=1)
-
 df2 = pd.DataFrame(  # np.array(np.log(np.linspace(1, 100, 100))),
     20 * np.array(np.sin(np.linspace(0, 2 * np.pi, 100))) + 6 * np.array(
         [np.random.randint(0, 10) for i in range(0, 100)]

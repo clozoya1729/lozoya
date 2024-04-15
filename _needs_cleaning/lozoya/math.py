@@ -1,27 +1,3 @@
-# import queue
-# import time
-# import warnings
-# from collections import OrderedDict
-# from concurrent.futures.thread import ThreadPoolExecutor
-#
-# import matplotlib
-# import matplotlib.pyplot as plt
-# import numpy as np
-# import pandas as pd
-# import scipy
-# import scipy.stats as st
-# import scipy.stats as stats
-# import seaborn as sns
-# from numba import jit
-#
-# import lozoya.math
-# import lozoya.time
-# import lozoya.configuration
-
-
-# import sympy as sym
-
-
 # import csv
 # import math
 # import os
@@ -29,10 +5,25 @@
 # import random
 # import re
 # from functools import wraps
+# import queue
+# import time
+# import warnings
+# from collections import OrderedDict
+# from concurrent.futures.thread import ThreadPoolExecutor
+
+# import matplotlib
+# import matplotlib.pyplot as plt
+# import pandas as pd
+# import scipy.stats as st
+# import seaborn as sns
+# from numba import jit
+# import sympy
 # from scipy import signal
 # from sympy.abc import e
-# import random
-# import sympy
+
+# import lozoya.math
+# import lozoya.time
+# import lozoya.configuration
 
 '''
 ###########################################################################################################
